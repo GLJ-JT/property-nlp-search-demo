@@ -235,6 +235,10 @@
       gap: 18px;
     }
 
+    .article.showcase .content {
+      max-width: 1040px;
+    }
+
     .content p,
     .content li {
       color: var(--soft);
@@ -617,6 +621,43 @@
       margin-bottom: 6px;
     }
 
+    .app-embed {
+      margin-top: 8px;
+      display: grid;
+      gap: 12px;
+    }
+
+    .app-embed-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: end;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .app-embed-head h3 {
+      max-width: 420px;
+    }
+
+    .app-embed-head p {
+      max-width: 520px;
+      color: var(--soft);
+      font-size: 14px;
+    }
+
+    .app-frame {
+      width: 100%;
+      height: min(78vh, 760px);
+      border: 1px solid var(--ink);
+      background: var(--sheet);
+      display: block;
+    }
+
+    .app-frame.mobile-demo {
+      height: min(86vh, 880px);
+    }
+
     .demo-band {
       padding: 24px;
       border: 1px solid var(--ink);
@@ -678,6 +719,7 @@
       .number-grid,
       .research-row,
       .stack-row,
+      .app-embed-head,
       .demo-band {
         grid-template-columns: 1fr;
       }
@@ -842,7 +884,7 @@
       </div>
     </section>
 
-    <section id="solution" class="article">
+    <section id="solution" class="article showcase">
       <aside class="section-label">04 Solution</aside>
       <div class="content">
         <h2>The solution was an NLP-assisted search interface with visible intent control.</h2>
@@ -855,12 +897,15 @@
           <li><strong>Explain the result score</strong> so ranking feels inspectable rather than magical.</li>
           <li><strong>Offer recovery paths</strong> when the query is ambiguous or too strict.</li>
         </ul>
-        <div class="demo-band">
-          <div>
-            <h3>Final prototype</h3>
-            <p>The iPhone demo shows onboarding, natural-language search, editable intent chips, filters, result cards, and hosted Python backend responses.</p>
+        <div class="app-embed">
+          <div class="app-embed-head">
+            <div>
+              <h3>Final prototype</h3>
+              <p>The embedded iPhone demo shows onboarding, natural-language search, editable intent chips, filters, result cards, and hosted Python backend responses.</p>
+            </div>
+            <a class="button" href="demo/iphone-frame.html">Open full screen</a>
           </div>
-          <a class="button" href="demo/iphone-frame.html">Launch demo</a>
+          <iframe class="app-frame mobile-demo" src="demo/iphone-frame.html" title="Embedded iPhone property NLP prototype"></iframe>
         </div>
       </div>
     </section>
@@ -1038,18 +1083,21 @@
       </div>
     </section>
 
-    <section class="article">
+    <section class="article showcase">
       <aside class="section-label">08 Output</aside>
       <div class="content">
         <h2>The final output is a bundled product demo, not a static case-study mock.</h2>
         <p>The final repository includes an editorial case study, iPhone demo, onboarding flow, full web app, infrastructure whiteboard, Python backend, hosted API fallback, and structured JSON data.</p>
         <p>For interview use, the flow is simple: read the case study, open the iPhone demo, run a search, then inspect the infrastructure board if the discussion becomes technical.</p>
-        <div class="demo-band">
-          <div>
-            <h3>Review the working bundle</h3>
-            <p>The demo can run locally with Python or statically through the hosted backend fallback.</p>
+        <div class="app-embed">
+          <div class="app-embed-head">
+            <div>
+              <h3>Infrastructure view</h3>
+              <p>The embedded board shows the frontend, hosted API fallback, Python parsing logic, ranking behaviour, and JSON data structure in one reviewable surface.</p>
+            </div>
+            <a class="button" href="demo/dev_whiteboard.html">Open full screen</a>
           </div>
-          <a class="button" href="demo/dev_whiteboard.html">View infrastructure</a>
+          <iframe class="app-frame" src="demo/dev_whiteboard.html" title="Embedded property NLP infrastructure board"></iframe>
         </div>
       </div>
     </section>
