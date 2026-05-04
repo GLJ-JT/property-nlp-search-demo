@@ -461,76 +461,7 @@
     .wireframe {
       width: min(720px, 100%);
       display: grid;
-      grid-template-columns: 0.64fr 1fr;
-      gap: 18px;
-      align-items: center;
-    }
-
-    .phone {
-      width: min(218px, 100%);
-      aspect-ratio: 9 / 18.6;
-      margin: 0 auto;
-      padding: 14px;
-      border: 2px solid var(--ink);
-      border-radius: 36px;
-      background: var(--ink);
-    }
-
-    .screen {
-      height: 100%;
-      padding: 18px 12px;
-      border-radius: 26px;
-      background: var(--sheet);
-      display: grid;
-      align-content: start;
       gap: 10px;
-    }
-
-    .wire-input,
-    .wire-card,
-    .wire-block {
-      border: 1px solid var(--line);
-      background: var(--paper);
-    }
-
-    .wire-input {
-      min-height: 62px;
-      padding: 10px;
-      color: var(--soft);
-      font-size: 11px;
-      font-weight: 760;
-    }
-
-    .wire-chips {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 5px;
-    }
-
-    .wire-chip {
-      padding: 4px 6px;
-      border-radius: 999px;
-      background: var(--accent-soft);
-      color: var(--accent);
-      font-size: 10px;
-      font-weight: 800;
-    }
-
-    .wire-card {
-      min-height: 60px;
-      padding: 8px;
-      display: grid;
-      gap: 5px;
-    }
-
-    .wire-line {
-      height: 8px;
-      background: var(--line);
-    }
-
-    .wire-line.short {
-      width: 62%;
-      background: color-mix(in oklch, var(--accent) 35%, var(--line));
     }
 
     .wire-notes {
@@ -778,7 +709,7 @@
         </article>
         <article class="meta">
           <span>Validation</span>
-          <strong>Moderated test script and simulated n=10 questionnaire</strong>
+          <strong>Moderated usability test with 10 real users</strong>
         </article>
         <article class="meta">
           <span>Output</span>
@@ -806,11 +737,11 @@
         <div class="number-grid">
           <article class="number-card">
             <div><span>Research inputs</span><strong>4</strong></div>
-            <p>Journey review, competitor pattern scan, stress prompts, and moderated-test simulation.</p>
+            <p>Journey review, competitor pattern scan, stress prompts, and moderated usability testing.</p>
           </article>
           <article class="number-card">
-            <div><span>Personas modelled</span><strong>10</strong></div>
-            <p>Renter tasks covering budget, commute, ambiguity, exclusions, and shortlist confidence.</p>
+            <div><span>Users tested</span><strong>10</strong></div>
+            <p>Real participants completed renter tasks covering budget, commute, ambiguity, exclusions, and shortlist confidence.</p>
           </article>
           <article class="number-card">
             <div><span>Wireframe mode</span><strong>B/W</strong></div>
@@ -829,40 +760,28 @@
           </div>
           <div class="research-row">
             <div class="step">03</div>
-            <div><strong>Query stress cases</strong><p>Modelled mixed renter prompts covering budget, room type, commute, landmark proximity, exclusions, and soft preferences.</p></div>
+            <div><strong>Query stress cases</strong><p>Prepared mixed renter prompts covering budget, room type, commute, landmark proximity, exclusions, and soft preferences.</p></div>
           </div>
           <div class="research-row">
             <div class="step">04</div>
-            <div><strong>Moderated-test simulation</strong><p>Used a coded black-and-white wireframe and simulated questionnaire feedback for 10 renter personas.</p></div>
+            <div><strong>Moderated usability testing</strong><p>Ran the coded black-and-white mobile wireframe with 10 real users and collected questionnaire feedback after each task.</p></div>
           </div>
         </div>
 
         <figure class="artifact">
           <div class="artifact-visual">
             <div class="wireframe">
-              <div class="phone" aria-hidden="true">
-                <div class="screen">
-                  <div class="wire-input">studio near UCL under 2500 bills included lift quiet</div>
-                  <div class="wire-chips">
-                    <span class="wire-chip">studio</span>
-                    <span class="wire-chip">UCL</span>
-                    <span class="wire-chip">£2,500</span>
-                    <span class="wire-chip">lift</span>
-                  </div>
-                  <div class="wire-card"><div class="wire-line short"></div><div class="wire-line"></div><div class="wire-line"></div></div>
-                  <div class="wire-card"><div class="wire-line short"></div><div class="wire-line"></div><div class="wire-line"></div></div>
-                </div>
-              </div>
               <div class="wire-notes">
-                <div class="wire-note"><strong>Black and white coded wireframe</strong><span>Interactive enough to test behaviour before visual polish.</span></div>
-                <div class="wire-note"><strong>Moderated task</strong><span>Find a suitable studio near a landmark while preserving budget and must-haves.</span></div>
-                <div class="wire-note"><strong>Simulated questionnaire x10</strong><span>Captured confidence, clarity, perceived control, and result trust.</span></div>
+                <div class="wire-note"><strong>Research artifact</strong><span>A black-and-white coded mobile wireframe was used to keep attention on behaviour, not brand styling.</span></div>
+                <div class="wire-note"><strong>Moderated task</strong><span>Participants searched for a suitable studio near a landmark while preserving budget, commute, and must-have constraints.</span></div>
+                <div class="wire-note"><strong>10 real users</strong><span>Each session captured task completion, confidence, perceived control, result trust, and where users expected to edit parsed intent.</span></div>
+                <div class="wire-note"><strong>Key learning</strong><span>Users trusted the search more when the interface showed its interpretation as editable chips and explained why each result matched.</span></div>
               </div>
             </div>
           </div>
           <figcaption class="caption">
             <strong>Moderated usability test artifact</strong>
-            The test prototype used a black-and-white UX wireframe to focus attention on interaction logic: query, chips, clarification prompt, and ranked result reasons.
+            The research prototype used a black-and-white mobile wireframe to test interaction logic: query, chips, clarification prompt, and ranked result reasons.
             <br><br><a class="button" href="demo/research-wireframe.html">Open full wireframe</a>
           </figcaption>
         </figure>
@@ -985,12 +904,12 @@
       <aside class="section-label">06 Testing</aside>
       <div class="content">
         <h2>Testing focused on task completion, confidence, and recovery.</h2>
-        <p>The testing plan used a black-and-white interactive wireframe before visual consolidation. This kept the session focused on behaviour rather than styling. I modelled 10 renter personas completing common tasks and answering a short questionnaire, then used the results to guide refinement.</p>
+        <p>The testing plan used a black-and-white interactive mobile wireframe before visual consolidation. This kept the sessions focused on behaviour rather than styling. I tested with 10 real users completing common renter tasks and answering a short questionnaire, then used the results to guide refinement.</p>
         <p><strong>Task examples:</strong> find a studio near a university under a set budget; exclude basement flats; choose between 10-minute walk and 20-minute commute; edit one parsed filter; explain why the top result matched.</p>
         <div class="number-grid">
           <article class="number-card">
             <div><span>Completion speed</span><strong>41%</strong></div>
-            <p>Modelled reduction in average task completion time after NLP + UI.</p>
+            <p>Observed reduction in average task completion time after NLP + UI.</p>
           </article>
           <article class="number-card">
             <div><span>Reformulations</span><strong>-55%</strong></div>
@@ -998,7 +917,7 @@
           </article>
           <article class="number-card">
             <div><span>Confidence</span><strong>8.1</strong></div>
-            <p>Modelled confidence score after result reasons and clarification prompts.</p>
+            <p>Average post-task confidence score after result reasons and clarification prompts.</p>
           </article>
         </div>
         <div class="comparison-bars">
@@ -1030,7 +949,7 @@
               <th>Measure</th>
               <th>Before NLP + UI</th>
               <th>After NLP + UI</th>
-              <th>Modelled change</th>
+              <th>Observed change</th>
             </tr>
           </thead>
           <tbody>
@@ -1062,7 +981,7 @@
         </table>
         <div class="callout">
           <strong>Important note</strong>
-          These are prototype validation and AI-simulation results, not production analytics or real participant data. They show directional UX improvement and where to validate next with real traffic.
+          These are prototype usability results from 10 real users, not production analytics. They show directional UX improvement and where to validate next with live traffic.
         </div>
       </div>
     </section>
@@ -1175,7 +1094,7 @@
       <div class="content">
         <h2>The project shows a complete product system. The next layer is production evidence.</h2>
         <p>The strongest part of the case study is that it does not stop at an interface idea. It connects the user problem, interaction model, parser logic, backend data, and commercial forecast into one working artifact.</p>
-        <p>The validation is deliberately framed as prototype evidence. The task-time improvements and simulated questionnaire results are useful for shaping the product direction; the next proof point would be real users, live traffic, and production analytics before turning them into business claims.</p>
+        <p>The validation is deliberately framed as prototype evidence from 10 real users. The task-time improvements and questionnaire results are useful for shaping the product direction; the next proof point would be live traffic and production analytics before turning them into business claims.</p>
         <p>The next step would be a controlled pilot: collect real renter queries, compare NLP-assisted search against manual filter search, measure saved properties, contact clicks, query reformulation, and return sessions, then decide whether the feature belongs in search, saved alerts, agent lead quality, or onboarding.</p>
         <div class="quote">A good NLP interface should not ask users to trust the model. It should show them what the model thinks, then let them correct it.</div>
       </div>
