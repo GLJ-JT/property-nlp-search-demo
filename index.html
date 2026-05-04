@@ -294,6 +294,39 @@
       font-size: 14px;
     }
 
+    .research-prose {
+      display: grid;
+      gap: 16px;
+    }
+
+    .research-prose p {
+      font-size: 17px;
+      line-height: 1.62;
+    }
+
+    .research-facts {
+      margin: 4px 0 2px;
+      padding: 16px 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      display: grid;
+      gap: 10px;
+    }
+
+    .research-facts p {
+      font-size: 15px;
+      line-height: 1.52;
+    }
+
+    .research-facts strong {
+      color: var(--accent);
+      font-family: var(--mono);
+      font-size: 12px;
+      font-weight: 860;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
     .research-map,
     .stack-map,
     .forecast-grid {
@@ -470,31 +503,6 @@
       border: 1px solid var(--ink);
       background: var(--sheet);
       display: block;
-    }
-
-    .wire-notes {
-      display: grid;
-      gap: 10px;
-    }
-
-    .wire-note {
-      padding: 13px 0;
-      border-top: 1px solid var(--line);
-      background: transparent;
-    }
-
-    .wire-note:last-child {
-      border-bottom: 1px solid var(--line);
-    }
-
-    .wire-note strong {
-      display: block;
-      margin-bottom: 4px;
-    }
-
-    .wire-note span {
-      color: var(--soft);
-      font-size: 14px;
     }
 
     .caption {
@@ -741,38 +749,16 @@
       <aside class="section-label">02 Research</aside>
       <div class="content">
         <h2>Research reframed the work from one search box to a reusable intent system.</h2>
-        <p>I treated the project as a UX and development investigation rather than a visual redesign. The research question was simple: when users describe a property in natural language, where does confidence break?</p>
-        <div class="number-grid">
-          <article class="number-card">
-            <div><span>Research inputs</span><strong>4</strong></div>
-            <p>Journey review, competitor pattern scan, stress prompts, and moderated usability testing.</p>
-          </article>
-          <article class="number-card">
-            <div><span>Users tested</span><strong>10</strong></div>
-            <p>Real participants completed renter tasks covering budget, commute, ambiguity, exclusions, and shortlist confidence.</p>
-          </article>
-          <article class="number-card">
-            <div><span>Wireframe mode</span><strong>B/W</strong></div>
-            <p>Monochrome coded prototype to test behaviour before visual styling.</p>
-          </article>
-        </div>
-
-        <div class="research-map">
-          <div class="research-row">
-            <div class="step">01</div>
-            <div><strong>Journey review</strong><p>Mapped query entry, result scan, listing comparison, filter adjustment, save/share, and enquiry moments.</p></div>
-          </div>
-          <div class="research-row">
-            <div class="step">02</div>
-            <div><strong>Competitor pattern review</strong><p>Checked how major property portals handle map/list navigation, saved alerts, listing facts, and filter visibility.</p></div>
-          </div>
-          <div class="research-row">
-            <div class="step">03</div>
-            <div><strong>Query stress cases</strong><p>Prepared mixed renter prompts covering budget, room type, commute, landmark proximity, exclusions, and soft preferences.</p></div>
-          </div>
-          <div class="research-row">
-            <div class="step">04</div>
-            <div><strong>Moderated usability testing</strong><p>Ran the coded black-and-white mobile wireframe with 10 real users and collected questionnaire feedback after each task.</p></div>
+        <div class="research-prose">
+          <p>I treated the project as a UX and development investigation rather than a visual redesign. The research question was simple: when users describe a property in natural language, where does confidence break?</p>
+          <p>The first pass mapped the full renter journey from query entry to result scanning, filter adjustment, save/share behaviour, and enquiry intent. I then reviewed common property portal patterns to understand what users already expect: maps, filters, saved alerts, listing facts, and visible location context. That review made one thing clear: natural-language search cannot replace familiar controls unless it also shows how the sentence has been interpreted.</p>
+          <p>To test that assumption, I built a black-and-white mobile wireframe and used it in moderated usability sessions with 10 real users. The prototype deliberately avoided brand styling so the sessions stayed focused on comprehension, control, and trust. Participants were asked to complete realistic renter tasks, such as finding a studio near a landmark under budget, choosing between walk time and commute time, excluding unwanted listing types, and explaining why the top result matched.</p>
+          <p>The sessions showed that users were not asking for a more magical search box. They wanted visible evidence that the system had understood them. Confidence improved when the interface kept the original query visible, translated requirements into editable chips, asked clarification questions only when needed, and explained each result in plain language.</p>
+          <div class="research-facts">
+            <p><strong>Method</strong> Journey review, competitor pattern scan, stress prompts, and moderated usability testing.</p>
+            <p><strong>Participants</strong> 10 real users completed renter tasks covering budget, commute, ambiguity, exclusions, and shortlist confidence.</p>
+            <p><strong>Artifact</strong> A monochrome coded mobile wireframe tested behaviour before visual styling.</p>
+            <p><strong>Learning</strong> The product needed an explainable intent layer, not just an AI-flavoured search input.</p>
           </div>
         </div>
 
@@ -780,12 +766,6 @@
           <div class="artifact-visual">
             <div class="wireframe">
               <iframe class="wireframe-frame" src="demo/research-wireframe.html" title="Embedded mobile usability wireframe"></iframe>
-              <div class="wire-notes">
-                <div class="wire-note"><strong>Research artifact</strong><span>A black-and-white coded mobile wireframe was used to keep attention on behaviour, not brand styling.</span></div>
-                <div class="wire-note"><strong>Moderated task</strong><span>Participants searched for a suitable studio near a landmark while preserving budget, commute, and must-have constraints.</span></div>
-                <div class="wire-note"><strong>10 real users</strong><span>Each session captured task completion, confidence, perceived control, result trust, and where users expected to edit parsed intent.</span></div>
-                <div class="wire-note"><strong>Key learning</strong><span>Users trusted the search more when the interface showed its interpretation as editable chips and explained why each result matched.</span></div>
-              </div>
             </div>
           </div>
           <figcaption class="caption">
