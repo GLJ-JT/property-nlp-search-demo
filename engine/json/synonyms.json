@@ -1,0 +1,50 @@
+{
+  "room_type": {
+    "studio": ["studio", "bedsit", "single space", "open plan studio"],
+    "1 bed": ["1 bed", "one bed", "one bedroom", "1 bedroom", "single bedroom"],
+    "2 bed": ["2 bed", "two bed", "two bedroom", "2 bedroom"],
+    "3 bed": ["3 bed", "three bed", "three bedroom", "3 bedroom"],
+    "room in house share": ["room", "house share", "flatshare", "flat share", "shared house"]
+  },
+  "building_type": {
+    "apartment": ["apartment", "flat", "condo", "unit"],
+    "house": ["house", "townhouse", "terrace", "terraced", "semi detached", "detached"],
+    "maisonette": ["maisonette", "split level flat"],
+    "penthouse": ["penthouse", "top floor luxury"],
+    "duplex": ["duplex", "two level flat", "split level"],
+    "loft": ["loft", "warehouse", "warehouse conversion"]
+  },
+  "amenity": {
+    "balcony": ["balcony", "private balcony", "terrace", "outdoor balcony"],
+    "garden": ["garden", "private garden", "shared garden", "outdoor space"],
+    "gym": ["gym", "fitness", "fitness suite", "resident gym"],
+    "concierge": ["concierge", "porter", "24 hour concierge", "reception"],
+    "parking": ["parking", "car space", "secure parking", "off street parking"],
+    "lift": ["lift", "elevator"],
+    "step free": ["step free", "accessible", "wheelchair friendly", "no stairs", "level access"],
+    "bills included": ["bills included", "including bills", "utilities included", "all bills"],
+    "pet friendly": ["pet friendly", "pets allowed", "allows pets", "dog friendly", "cat friendly"],
+    "furnished": ["furnished", "fully furnished"],
+    "unfurnished": ["unfurnished", "bring furniture"],
+    "short let": ["short let", "short-let", "short tenancy", "flexible tenancy"],
+    "noisy": ["noisy", "nightlife", "above bar", "busy road"],
+    "quiet": ["quiet", "peaceful", "low noise"],
+    "family": ["family", "family friendly", "school", "spacious"],
+    "student": ["student", "student friendly", "university", "campus"],
+    "luxury": ["luxury", "premium", "high end", "high specification"],
+    "commuter": ["commuter", "commute", "transport links", "well connected"]
+  },
+  "build_age": {
+    "new_build": ["new build", "brand new", "newly built", "new development", "modern development"],
+    "old_build": ["period", "old build", "conversion", "victorian", "edwardian", "georgian", "character"]
+  },
+  "floor": {
+    "high_floor": ["high floor", "upper floor", "skyline", "views"],
+    "low_floor": ["low floor", "ground floor", "garden level"],
+    "not_basement": ["not basement", "no basement", "avoid basement"]
+  },
+  "location_words": {
+    "station": ["station", "tube", "underground", "rail", "dlr", "transport"],
+    "university": ["university", "uni", "campus", "college"]
+  }
+}

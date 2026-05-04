@@ -1,0 +1,66 @@
+[
+  {
+    "id": "LM001",
+    "name": "UCL",
+    "aliases": ["ucl", "university college london", "u c l", "ucl bloomsbury"],
+    "category": "university",
+    "lat": 51.5246,
+    "lng": -0.1340
+  },
+  {
+    "id": "LM002",
+    "name": "British Museum",
+    "aliases": ["british museum", "the british museum"],
+    "category": "museum",
+    "lat": 51.5194,
+    "lng": -0.1270
+  },
+  {
+    "id": "LM003",
+    "name": "King's College London",
+    "aliases": ["king's college london", "kcl", "king college london", "strand campus"],
+    "category": "university",
+    "lat": 51.5115,
+    "lng": -0.1160
+  },
+  {
+    "id": "LM004",
+    "name": "LSE",
+    "aliases": ["lse", "london school of economics"],
+    "category": "university",
+    "lat": 51.5144,
+    "lng": -0.1165
+  },
+  {
+    "id": "LM005",
+    "name": "Queen Mary University of London",
+    "aliases": ["queen mary", "qmul", "queen mary university", "queen mary university of london"],
+    "category": "university",
+    "lat": 51.5248,
+    "lng": -0.0406
+  },
+  {
+    "id": "LM006",
+    "name": "Imperial College London",
+    "aliases": ["imperial", "imperial college", "imperial college london"],
+    "category": "university",
+    "lat": 51.4988,
+    "lng": -0.1749
+  },
+  {
+    "id": "LM007",
+    "name": "Regent's University London",
+    "aliases": ["regent's university", "regents university", "regent university london"],
+    "category": "university",
+    "lat": 51.5262,
+    "lng": -0.1554
+  },
+  {
+    "id": "LM008",
+    "name": "City University",
+    "aliases": ["city university", "city university london", "city st george's"],
+    "category": "university",
+    "lat": 51.5279,
+    "lng": -0.1025
+  }
+]

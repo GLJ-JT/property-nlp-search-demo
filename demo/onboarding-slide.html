@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Onboarding Slide Demo</title>
+  <style>
+    * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      background: #111018;
+      color: #21182f;
+    }
+    .phone {
+      min-height: 860px;
+      background: linear-gradient(180deg, #fdfcff 0%, #f4eff9 100%);
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      overflow: hidden;
+    }
+    .topbar {
+      min-height: 58px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 18px;
+      border-bottom: 1px solid rgba(94,76,114,0.10);
+      background: rgba(255,255,255,0.78);
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .content {
+      padding: 24px 18px 20px;
+      display: grid;
+      align-content: center;
+      gap: 18px;
+    }
+    .badge {
+      width: fit-content;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: #f0e8ff;
+      color: #5e399f;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    h1 {
+      margin: 0;
+      font-size: 36px;
+      line-height: 0.98;
+      letter-spacing: -0.04em;
+      max-width: 12ch;
+    }
+    p {
+      margin: 0;
+      color: #5f556f;
+      line-height: 1.55;
+    }
+    .mock {
+      min-height: 430px;
+      border-radius: 24px;
+      border: 1px solid rgba(94,76,114,0.10);
+      background:
+        radial-gradient(circle at 22% 18%, rgba(124, 69, 242, 0.18), transparent 18%),
+        radial-gradient(circle at 78% 24%, rgba(8, 125, 115, 0.12), transparent 20%),
+        linear-gradient(180deg, #ffffff 0%, #fbf8fe 100%);
+      padding: 16px;
+      display: grid;
+      gap: 12px;
+    }
+    .query, .chip, .card {
+      border-radius: 16px;
+      border: 1px solid rgba(94,76,114,0.10);
+      background: rgba(255,255,255,0.84);
+    }
+    .query {
+      min-height: 50px;
+      padding: 0 14px;
+      display: flex;
+      align-items: center;
+      font-weight: 800;
+    }
+    .chip-row { display: flex; flex-wrap: wrap; gap: 8px; }
+    .chip {
+      padding: 8px 10px;
+      font-size: 12px;
+      font-weight: 700;
+      background: #f5f1fb;
+    }
+    .results {
+      display: grid;
+      gap: 10px;
+    }
+    .card {
+      padding: 12px;
+      display: grid;
+      gap: 6px;
+    }
+    .card strong { font-size: 14px; }
+    .card span { font-size: 12px; color: #6b6079; }
+    .footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      padding: 14px 18px 18px;
+    }
+    .btn {
+      min-height: 48px;
+      border-radius: 999px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+    }
+    .primary { background: #1f1a26; color: #fff; }
+    .secondary { border: 1px solid rgba(31,26,38,0.14); background: rgba(255,255,255,0.72); }
+  </style>
+</head>
+<body>
+  <div class="phone">
+    <div class="topbar"><span>Property NLP</span><span>Smarter search</span></div>
+    <div class="content">
+      <div class="badge">Launch story</div>
+      <h1>Find homes the way people think.</h1>
+      <p>Natural language becomes editable filters, then ranked results with clear reasons.</p>
+      <div class="mock">
+        <div class="query">studio near UCL under 2500 not basement</div>
+        <div class="chip-row">
+          <div class="chip">Studio</div>
+          <div class="chip">Near UCL</div>
+          <div class="chip">Max £2,500</div>
+          <div class="chip">Exclude basement</div>
+        </div>
+        <div class="results">
+          <div class="card">
+            <strong>Bloomsbury Accessible New Studio</strong>
+            <span>Strong location match, budget fit, and non-basement layout</span>
+          </div>
+          <div class="card">
+            <strong>Russell Square New-Build Studio</strong>
+            <span>Close to UCL and easy to explain to the renter</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="btn secondary">Skip</div>
+      <div class="btn primary">Start searching</div>
+    </div>
+  </div>
+</body>
+</html>

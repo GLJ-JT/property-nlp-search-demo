@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Property NLP Smart Search Demo</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+  <style>
+    :root {
+      --demo-bg: #f5f1e9;
+      --demo-surface: #fffaf2;
+      --demo-ink: #24201e;
+      --demo-muted: #776f66;
+      --demo-line: rgba(36, 32, 30, 0.11);
+      --demo-accent: #e85f2b;
+      --demo-good: #16866d;
+      --demo-blue: #356fb5;
+    }
+
+    body {
+      min-height: 100vh;
+      background: var(--demo-bg);
+      color: var(--demo-ink);
+    }
+
+    .demo-app {
+      width: min(980px, calc(100vw - 24px));
+      margin: 0 auto;
+      padding: 16px 0 36px;
+      display: grid;
+      gap: 16px;
+    }
+
+    .toolbar,
+    .panel,
+    .result-card,
+    .empty,
+    .engine-card {
+      border: 1px solid var(--demo-line);
+      border-radius: 8px;
+      background: rgba(255, 250, 242, 0.88);
+    }
+
+    .toolbar {
+      padding: 16px;
+      display: grid;
+      gap: 12px;
+      box-shadow: 0 16px 38px rgba(36, 32, 30, 0.08);
+    }
+
+    .toolbar h1 {
+      margin: 0;
+      max-width: 13ch;
+      font-size: clamp(2.15rem, 7vw, 4.2rem);
+      line-height: 0.93;
+      letter-spacing: 0;
+    }
+
+    .search-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 10px;
+    }
+
+    #query {
+      min-height: 48px;
+      min-width: 0;
+      border: 1px solid rgba(36, 32, 30, 0.14);
+      border-radius: 7px;
+      padding: 0 13px;
+      font: inherit;
+      background: #fffdf8;
+    }
+
+    .button.primary {
+      border: 0;
+      border-radius: 7px;
+      background: var(--demo-ink);
+      color: #fffaf2;
+    }
+
+    .example-row,
+    .chip-row,
+    .pipeline {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+
+    .example-row button,
+    .chip {
+      border: 1px solid rgba(36, 32, 30, 0.12);
+      border-radius: 999px;
+      padding: 7px 10px;
+      font: inherit;
+      font-size: 0.76rem;
+      font-weight: 700;
+      background: #fffdf8;
+      color: #4e4740;
+    }
+
+    .chip.hard {
+      background: var(--demo-ink);
+      color: #fffaf2;
+    }
+
+    .chip.soft {
+      background: rgba(53, 111, 181, 0.11);
+      color: #234f86;
+    }
+
+    .chip.exclude {
+      background: rgba(232, 95, 43, 0.13);
+      color: #9a3518;
+    }
+
+    .engine-card {
+      display: grid;
+      gap: 10px;
+      padding: 12px;
+      background: #24201e;
+      color: #fffaf2;
+    }
+
+    .engine-card strong,
+    .engine-card span {
+      display: block;
+    }
+
+    .engine-card span {
+      color: #d7cfc3;
+      font-size: 0.78rem;
+      line-height: 1.4;
+    }
+
+    .pipeline span {
+      padding: 6px 8px;
+      border-radius: 999px;
+      background: rgba(255, 250, 242, 0.12);
+      color: #fffaf2;
+      font-size: 0.72rem;
+      font-weight: 800;
+    }
+
+    .summary {
+      color: var(--demo-muted);
+      font-size: 0.88rem;
+      line-height: 1.45;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.16fr) minmax(300px, 0.84fr);
+      gap: 16px;
+    }
+
+    .panel {
+      padding: 14px;
+      display: grid;
+      gap: 14px;
+      align-content: start;
+    }
+
+    .stack {
+      display: grid;
+      gap: 12px;
+    }
+
+    .result-card {
+      display: grid;
+      grid-template-columns: 42px minmax(0, 1fr);
+      gap: 14px;
+      padding: 14px;
+    }
+
+    .rank {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: var(--demo-accent);
+      color: #fffaf2;
+      font-weight: 800;
+      font-size: 0.85rem;
+    }
+
+    .result-main {
+      display: grid;
+      gap: 8px;
+      min-width: 0;
+    }
+
+    .result-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .result-top strong {
+      font-size: 1.02rem;
+      line-height: 1.2;
+    }
+
+    .result-top span,
+    .reason-line,
+    .result-extra,
+    .result-meta,
+    .result-description {
+      color: var(--demo-muted);
+      font-size: 0.86rem;
+      line-height: 1.42;
+    }
+
+    .result-description,
+    .reason-line {
+      margin: 0;
+    }
+
+    .result-meta,
+    .result-extra {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .result-meta span,
+    .result-extra span {
+      padding: 4px 7px;
+      border-radius: 999px;
+      background: rgba(36, 32, 30, 0.055);
+    }
+
+    .score-row {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+    }
+
+    .score-row strong {
+      color: var(--demo-good);
+      font-size: 1.2rem;
+    }
+
+    pre {
+      max-height: 360px;
+      margin: 0;
+      padding: 12px;
+      overflow: auto;
+      border-radius: 7px;
+      background: #171412;
+      color: #f6eee3;
+      font-size: 0.78rem;
+      line-height: 1.5;
+    }
+
+    .check-grid,
+    .soft-list {
+      display: grid;
+      gap: 8px;
+    }
+
+    .check {
+      display: grid;
+      grid-template-columns: 52px 1fr;
+      gap: 8px;
+      padding: 9px;
+      border-radius: 7px;
+      background: rgba(36, 32, 30, 0.045);
+    }
+
+    .check strong {
+      color: var(--demo-good);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .check.fail strong {
+      color: var(--demo-accent);
+    }
+
+    .check span,
+    .soft-list span {
+      color: var(--demo-muted);
+      font-size: 0.78rem;
+      line-height: 1.35;
+    }
+
+    .empty {
+      padding: 16px;
+    }
+
+    @media (max-width: 900px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .demo-app {
+        width: min(100vw - 18px, 390px);
+        padding-top: 10px;
+      }
+
+      .toolbar {
+        padding: 14px;
+      }
+
+      .search-row {
+        grid-template-columns: 1fr;
+      }
+
+      .layout {
+        gap: 12px;
+      }
+
+      .result-card {
+        grid-template-columns: 36px minmax(0, 1fr);
+        padding: 12px;
+      }
+
+      .rank {
+        width: 36px;
+        height: 36px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="demo-app">
+    <section class="toolbar">
+      <div>
+        <p class="eyebrow">Property NLP demo</p>
+        <h1>Search the way renters actually ask.</h1>
+      </div>
+      <div class="search-row">
+        <input id="query" value="studio near ucl under 2500 not basement" aria-label="Search query">
+        <button id="run" class="button primary">Run</button>
+      </div>
+      <div class="example-row" aria-label="Example queries">
+        <button data-query="studio near ucl under 2500 not basement">UCL studio</button>
+        <button data-query="2 bed near Canary Wharf with balcony under 3800">Canary Wharf</button>
+        <button data-query="quiet flat near Russell Square no noisy nightlife">Quiet central</button>
+      </div>
+      <div id="chips" class="chip-row"></div>
+      <div id="summary" class="summary"></div>
+      <div class="engine-card">
+        <strong id="engine-mode">Connecting to Python backend...</strong>
+        <span id="engine-source">Run python3 engine/server.py for live parser and scorer output.</span>
+        <div id="pipeline" class="pipeline"></div>
+      </div>
+    </section>
+
+    <section class="layout">
+      <div id="results" class="stack"></div>
+      <aside class="panel">
+        <div>
+          <p class="eyebrow">Top result checks</p>
+          <div id="checks"></div>
+        </div>
+        <div>
+          <p class="eyebrow">Parsed intent</p>
+          <pre id="intent-json"></pre>
+        </div>
+      </aside>
+    </section>
+  </main>
+  <script src="../assets/search-demo.js"></script>
+</body>
+</html>

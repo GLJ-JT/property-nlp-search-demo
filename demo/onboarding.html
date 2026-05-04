@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Property NLP Smart Search Onboarding</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+  <style>
+    body {
+      background:
+        radial-gradient(circle at 20% 14%, rgba(124, 69, 242, 0.18), transparent 28%),
+        radial-gradient(circle at 80% 16%, rgba(8, 125, 115, 0.14), transparent 22%),
+        linear-gradient(180deg, #fbfafc 0%, #f2eef7 100%);
+    }
+    .wrap { width: min(1000px, calc(100vw - 24px)); margin: 0 auto; padding: 18px 0 28px; }
+    .board {
+      display: grid; grid-template-columns: 1fr minmax(310px, 390px); gap: 16px; align-items: start;
+    }
+    .copy, .phone-shell {
+      border-radius: 22px; border: 1px solid rgba(94, 76, 114, 0.12); background: rgba(255,255,255,0.75);
+      backdrop-filter: blur(12px); box-shadow: 0 16px 40px rgba(38,24,52,0.08);
+    }
+    .copy { padding: 28px; }
+    .copy h1 { margin: 0; font-size: clamp(2.5rem, 5vw, 4.8rem); line-height: 0.95; max-width: 12ch; }
+    .copy p { max-width: 60ch; color: #5f556f; line-height: 1.6; }
+    .slide-list { display: grid; gap: 10px; margin-top: 22px; }
+    .slide-note {
+      padding: 14px; border-radius: 16px; border: 1px solid rgba(94,76,114,0.10); background: rgba(255,255,255,0.82);
+    }
+    .slide-note strong, .slide-note span { display: block; }
+    .slide-note span { color: #675a76; margin-top: 4px; line-height: 1.5; }
+    .phone-shell { padding: 12px; position: sticky; top: 14px; }
+    .phone-shell iframe {
+      width: 100%; height: 860px; border: 0; border-radius: 20px; background: #fff;
+    }
+    @media (max-width: 900px) {
+      .board { grid-template-columns: 1fr; }
+      .phone-shell { position: static; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="board">
+      <div class="copy">
+        <p class="eyebrow">Launch sequence</p>
+        <h1>Smarter than ever, without sounding technical.</h1>
+        <p>
+          This onboarding introduces the feature as a calmer, clearer search experience. It explains the value in user language, then shows the product behavior with motion and intent chips.
+        </p>
+        <div class="slide-list">
+          <div class="slide-note">
+            <strong>1. Smarter search</strong>
+            <span>Lead with the benefit: renters can type how they speak and see useful matches faster.</span>
+          </div>
+          <div class="slide-note">
+            <strong>2. Editable intent</strong>
+            <span>Show the extracted filters so the experience feels transparent, not magical.</span>
+          </div>
+          <div class="slide-note">
+            <strong>3. Explainable results</strong>
+            <span>Help the user understand why a home ranked where it did, so the flow feels trustworthy.</span>
+          </div>
+          <div class="slide-note">
+            <strong>4. Actionable CTA</strong>
+            <span>Invite users into the live search rather than ending on a marketing screen.</span>
+          </div>
+        </div>
+      </div>
+      <div class="phone-shell">
+        <iframe src="onboarding-slide.html" title="Property NLP onboarding sequence"></iframe>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

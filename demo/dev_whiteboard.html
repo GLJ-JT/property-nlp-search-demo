@@ -1,0 +1,913 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Property NLP Engine Whiteboard</title>
+  <style>
+    :root {
+      --page: #f5f4f1;
+      --paper: #fffdf8;
+      --ink: #211b2c;
+      --soft: #5b5368;
+      --muted: #8a8394;
+      --line: #ddd7cc;
+      --line-strong: #bbb2a3;
+      --accent: #5d46c8;
+      --accent-soft: #ece8ff;
+      --green: #0d766e;
+      --green-soft: #e4f4ef;
+      --amber: #8f5b12;
+      --amber-soft: #fff1d8;
+      --red: #a54136;
+      --red-soft: #fff0ed;
+      --mono: "SF Mono", "JetBrains Mono", ui-monospace, monospace;
+      --sans: "Aptos", "SF Pro Display", "Helvetica Neue", Arial, system-ui, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background:
+        linear-gradient(rgba(33, 27, 44, 0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(33, 27, 44, 0.045) 1px, transparent 1px),
+        var(--page);
+      background-size: 24px 24px;
+      color: var(--ink);
+      font-family: var(--sans);
+      line-height: 1.42;
+      letter-spacing: 0;
+    }
+
+    button,
+    input,
+    textarea,
+    select {
+      font: inherit;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    .shell {
+      width: min(1720px, calc(100% - 36px));
+      margin: 20px auto 54px;
+    }
+
+    .topbar {
+      min-height: 62px;
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 18px;
+      border-bottom: 2px solid var(--ink);
+    }
+
+    .brand-logo {
+      width: 110px;
+      height: auto;
+      display: block;
+      fill: var(--accent);
+    }
+
+    .context {
+      color: var(--soft);
+      font-size: 14px;
+      font-weight: 720;
+    }
+
+    .status {
+      min-height: 32px;
+      padding: 0 12px;
+      border: 1px solid var(--line-strong);
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--paper);
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 780;
+      white-space: nowrap;
+    }
+
+    .status::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: currentColor;
+    }
+
+    .nav-link {
+      min-height: 32px;
+      padding: 0 12px;
+      border: 1px solid var(--line-strong);
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      background: var(--paper);
+      color: var(--ink);
+      font-size: 12px;
+      font-weight: 780;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .top-actions {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: flex-end;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(360px, 0.8fr);
+      gap: 22px;
+      align-items: end;
+      padding: 28px 0 24px;
+    }
+
+    h1 {
+      max-width: 920px;
+      margin: 0;
+      font-size: clamp(38px, 5vw, 82px);
+      line-height: 0.95;
+      letter-spacing: -0.045em;
+      font-weight: 820;
+    }
+
+    .hero p {
+      margin: 12px 0 0;
+      max-width: 680px;
+      color: var(--soft);
+      font-size: 17px;
+      font-weight: 520;
+    }
+
+    .meta-strip {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .metric {
+      min-height: 92px;
+      padding: 13px;
+      border: 1px solid var(--line-strong);
+      background: rgba(255, 253, 248, 0.76);
+      display: grid;
+      align-content: space-between;
+    }
+
+    .metric span {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 820;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .metric strong {
+      font-family: var(--mono);
+      font-size: 24px;
+      line-height: 1;
+    }
+
+    .board {
+      display: grid;
+      grid-template-columns: minmax(360px, 0.82fr) minmax(500px, 1.05fr) minmax(360px, 0.82fr);
+      gap: 16px;
+      align-items: start;
+    }
+
+    .panel {
+      border: 1px solid var(--line-strong);
+      background: rgba(255, 253, 248, 0.92);
+      box-shadow: 0 16px 44px rgba(33, 27, 44, 0.07);
+    }
+
+    .panel-head {
+      min-height: 50px;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .panel h2 {
+      margin: 0;
+      color: var(--ink);
+      font-size: 14px;
+      font-weight: 860;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    .panel-note {
+      color: var(--muted);
+      font-family: var(--mono);
+      font-size: 11px;
+      white-space: nowrap;
+    }
+
+    .panel-body {
+      padding: 14px;
+      display: grid;
+      gap: 14px;
+    }
+
+    .query-box {
+      display: grid;
+      gap: 10px;
+    }
+
+    label {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 850;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 122px;
+      resize: vertical;
+      padding: 14px;
+      border: 2px solid var(--ink);
+      border-radius: 0;
+      background: #ffffff;
+      color: var(--ink);
+      font-size: 18px;
+      line-height: 1.35;
+      font-weight: 650;
+    }
+
+    textarea:focus {
+      outline: 3px solid rgba(93, 70, 200, 0.18);
+      border-color: var(--accent);
+    }
+
+    .controls {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .field {
+      display: grid;
+      gap: 6px;
+    }
+
+    select,
+    input[type="number"] {
+      min-height: 40px;
+      padding: 0 10px;
+      border: 1px solid var(--line-strong);
+      background: #ffffff;
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    .run-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .run {
+      min-height: 46px;
+      padding: 0 18px;
+      border: 0;
+      background: var(--ink);
+      color: #ffffff;
+      font-weight: 820;
+      transition: transform 150ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .run:active {
+      transform: scale(0.98);
+    }
+
+    .small {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 680;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+
+    .chip {
+      min-height: 30px;
+      padding: 0 10px;
+      border: 1px solid var(--line-strong);
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #ffffff;
+      color: var(--ink);
+      font-size: 12px;
+      font-weight: 740;
+    }
+
+    .chip strong {
+      color: var(--accent);
+      font-weight: 860;
+    }
+
+    .chip.pref {
+      background: var(--green-soft);
+      border-color: rgba(13, 118, 110, 0.28);
+    }
+
+    .chip.exclude {
+      background: var(--red-soft);
+      border-color: rgba(165, 65, 54, 0.26);
+    }
+
+    .pipeline {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 11px;
+    }
+
+    .stage {
+      position: relative;
+      min-height: 82px;
+      padding: 12px;
+      border: 1px solid var(--line);
+      background: #fffefa;
+      display: grid;
+      grid-template-columns: 44px minmax(0, 1fr);
+      gap: 12px;
+      align-items: start;
+    }
+
+    .stage::after {
+      content: "";
+      position: absolute;
+      left: 33px;
+      bottom: -12px;
+      width: 2px;
+      height: 12px;
+      background: var(--line-strong);
+    }
+
+    .stage:last-child::after {
+      display: none;
+    }
+
+    .stage-id {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--ink);
+      background: var(--paper);
+      font-family: var(--mono);
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .stage h3 {
+      margin: 0;
+      color: var(--ink);
+      font-size: 15px;
+      font-weight: 820;
+    }
+
+    .stage p {
+      margin: 4px 0 0;
+      color: var(--soft);
+      font-size: 13px;
+    }
+
+    .stage-output {
+      margin-top: 8px;
+      color: var(--accent);
+      font-family: var(--mono);
+      font-size: 11px;
+      line-height: 1.35;
+      word-break: break-word;
+    }
+
+    .schema-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 9px;
+    }
+
+    .schema-node {
+      min-height: 82px;
+      padding: 11px;
+      border: 1px solid var(--line);
+      background: #fffefa;
+    }
+
+    .schema-node strong {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--ink);
+      font-size: 13px;
+    }
+
+    .schema-node span {
+      color: var(--soft);
+      font-size: 12px;
+    }
+
+    .results {
+      display: grid;
+      gap: 10px;
+    }
+
+    .result {
+      padding: 12px;
+      border: 1px solid var(--line);
+      background: #ffffff;
+      display: grid;
+      gap: 9px;
+    }
+
+    .result-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      gap: 10px;
+    }
+
+    .result h3 {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.15;
+    }
+
+    .score {
+      font-family: var(--mono);
+      color: var(--accent);
+      font-size: 18px;
+      font-weight: 900;
+    }
+
+    .bar {
+      height: 7px;
+      border: 1px solid var(--line);
+      background: #f0ece2;
+    }
+
+    .bar span {
+      display: block;
+      height: 100%;
+      width: var(--value, 0%);
+      background: var(--accent);
+    }
+
+    .reason-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .reason {
+      padding: 4px 7px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 11px;
+      font-weight: 740;
+    }
+
+    .mono-box {
+      max-height: 360px;
+      overflow: auto;
+      padding: 12px;
+      border: 1px solid #2e2838;
+      background: #211b2c;
+      color: #f7f1ff;
+      font-family: var(--mono);
+      font-size: 11px;
+      line-height: 1.55;
+      white-space: pre-wrap;
+    }
+
+    .clarifications {
+      display: grid;
+      gap: 8px;
+    }
+
+    .clarify {
+      padding: 10px;
+      border: 1px solid rgba(143, 91, 18, 0.25);
+      background: var(--amber-soft);
+    }
+
+    .clarify strong {
+      display: block;
+      color: var(--amber);
+      font-size: 12px;
+      margin-bottom: 6px;
+    }
+
+    .clarify-options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .clarify-options button {
+      min-height: 28px;
+      padding: 0 9px;
+      border: 1px solid rgba(143, 91, 18, 0.28);
+      border-radius: 999px;
+      background: #ffffff;
+      color: var(--amber);
+      font-size: 12px;
+      font-weight: 760;
+    }
+
+    .error {
+      display: none;
+      padding: 10px;
+      background: var(--red-soft);
+      color: var(--red);
+      border: 1px solid rgba(165, 65, 54, 0.24);
+      font-size: 13px;
+      font-weight: 760;
+    }
+
+    .error.visible {
+      display: block;
+    }
+
+    @media (max-width: 1180px) {
+      .hero,
+      .board {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .shell {
+        width: min(100% - 24px, 640px);
+      }
+
+      .topbar,
+      .run-row,
+      .controls,
+      .schema-grid,
+      .meta-strip {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div class="brand-logo" aria-label="Property NLP">Property NLP</div>
+      <div class="context">NLP backend matching IA and live data board</div>
+      <div class="top-actions">
+        <a class="nav-link" href="iphone-frame.html">Live demo</a>
+        <div class="status" id="api-status">connecting</div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1>Backend matching, explained live</h1>
+        <p>A presentation whiteboard for the natural-language property engine: parse the query, split intent into hard and soft filters, score the listings, and show the data model underneath.</p>
+      </div>
+      <div class="meta-strip">
+        <div class="metric"><span>Total matches</span><strong id="metric-matches">--</strong></div>
+        <div class="metric"><span>Filtered out</span><strong id="metric-filtered">--</strong></div>
+        <div class="metric"><span>Top score</span><strong id="metric-score">--</strong></div>
+      </div>
+    </section>
+
+    <section class="board">
+      <aside class="panel">
+        <div class="panel-head">
+          <h2>Live Query</h2>
+          <span class="panel-note">input layer</span>
+        </div>
+        <div class="panel-body">
+          <div class="query-box">
+            <label for="query">Renter language</label>
+            <textarea id="query">studio near UCL under 2500 bills included lift quiet</textarea>
+          </div>
+          <div class="controls">
+            <div class="field">
+              <label for="top-n">Results</label>
+              <select id="top-n">
+                <option value="5">5 results</option>
+                <option value="8" selected>8 results</option>
+                <option value="12">12 results</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="min-score">Min score</label>
+              <input id="min-score" type="number" value="35" min="-100" step="1">
+            </div>
+          </div>
+          <div class="run-row">
+            <span class="small">Enter also runs the backend parser.</span>
+            <button class="run" id="run" type="button">Run matcher</button>
+          </div>
+          <div class="error" id="error"></div>
+          <div>
+            <label>Matched filters</label>
+            <div class="chips" id="chips"></div>
+          </div>
+          <div>
+            <label>Clarification prompts</label>
+            <div class="clarifications" id="clarifications"></div>
+          </div>
+        </div>
+      </aside>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h2>Matching IA</h2>
+          <span class="panel-note">query to ranking</span>
+        </div>
+        <div class="panel-body">
+          <div class="pipeline" id="pipeline"></div>
+        </div>
+      </section>
+
+      <aside class="panel">
+        <div class="panel-head">
+          <h2>Data Structure</h2>
+          <span class="panel-note">light production shape</span>
+        </div>
+        <div class="panel-body">
+          <div class="schema-grid" id="schema-grid"></div>
+          <div>
+            <label>Parsed intent JSON</label>
+            <pre class="mono-box" id="parsed-json">{}</pre>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="panel" style="margin-top:16px;">
+      <div class="panel-head">
+        <h2>Explained Ranked Results</h2>
+        <span class="panel-note">hard filter pass plus soft score</span>
+      </div>
+      <div class="panel-body">
+        <div class="results" id="results"></div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const HOSTED_API_BASE = "";
+    const isLocalApiHost = ["127.0.0.1", "localhost"].includes(window.location.hostname);
+    const queryInput = document.getElementById("query");
+    const topInput = document.getElementById("top-n");
+    const minScoreInput = document.getElementById("min-score");
+    const runButton = document.getElementById("run");
+    const errorBox = document.getElementById("error");
+    const apiStatus = document.getElementById("api-status");
+    const chipsBox = document.getElementById("chips");
+    const pipelineBox = document.getElementById("pipeline");
+    const schemaGrid = document.getElementById("schema-grid");
+    const parsedJson = document.getElementById("parsed-json");
+    const resultsBox = document.getElementById("results");
+    const clarificationsBox = document.getElementById("clarifications");
+    const metricMatches = document.getElementById("metric-matches");
+    const metricFiltered = document.getElementById("metric-filtered");
+    const metricScore = document.getElementById("metric-score");
+
+    const schemaNodes = [
+      ["source", "portal, agent id, listing URL, last seen timestamp"],
+      ["price", "pcm, pw, deposit, bills included"],
+      ["property", "address, postcode, lat/lng, type, beds, baths, size, floor"],
+      ["availability", "available date, tenancy length, furnishing, pets, students"],
+      ["amenities", "garden, balcony, parking, gym, concierge, lift, step-free"],
+      ["proximity", "stations, landmarks, walk minutes, distance miles, commutes"],
+      ["nlp", "clean description, derived tags, negative tags, confidence"],
+      ["search", "text blob, vector id, indexed timestamp"]
+    ];
+
+    function localApiAvailable() {
+      return window.location.protocol.startsWith("http") && isLocalApiHost;
+    }
+
+    async function callSpaceApi(endpoint, data = []) {
+      if (!HOSTED_API_BASE) {
+        throw new Error("Start the local Python server to use the live API.");
+      }
+      const response = await fetch(`${HOSTED_API_BASE}/gradio_api/call/${endpoint}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ data })
+      });
+      if (!response.ok) throw new Error(`Hosted API failed with ${response.status}.`);
+      const event = await response.json();
+      const resultResponse = await fetch(`${HOSTED_API_BASE}/gradio_api/call/${endpoint}/${event.event_id}`);
+      if (!resultResponse.ok) throw new Error(`Hosted API result fetch failed with ${resultResponse.status}.`);
+      const text = await resultResponse.text();
+      const dataLine = text.split("\n").find((line) => line.startsWith("data: "));
+      if (!dataLine) throw new Error("Hosted API returned no data.");
+      const parsed = JSON.parse(dataLine.slice(6));
+      return Array.isArray(parsed) ? parsed[0] : parsed;
+    }
+
+    async function fetchSearchPayload(query, top, minScore) {
+      if (localApiAvailable()) {
+        const response = await fetch(`/api/search?q=${encodeURIComponent(query)}&top=${encodeURIComponent(top)}&min_score=${encodeURIComponent(minScore)}`);
+        const payload = await response.json();
+        if (!response.ok) throw new Error(payload.error || "Search failed.");
+        return payload;
+      }
+      const payload = await callSpaceApi("search_payload", [query, Number(top), Number(minScore)]);
+      if (payload.error) throw new Error(payload.error);
+      return payload;
+    }
+
+    function escapeHtml(value) {
+      return String(value ?? "").replace(/[&<>"']/g, (char) => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#039;"
+      }[char]));
+    }
+
+    function money(value) {
+      return new Intl.NumberFormat("en-GB", {
+        style: "currency",
+        currency: "GBP",
+        maximumFractionDigits: 0
+      }).format(Number(value || 0));
+    }
+
+    function chip(label, value, type = "") {
+      if (value === null || value === undefined || value === "" || (Array.isArray(value) && !value.length)) return "";
+      const display = Array.isArray(value) ? value.join(", ") : value;
+      return `<span class="chip ${type}"><strong>${escapeHtml(label)}</strong>${escapeHtml(display)}</span>`;
+    }
+
+    function renderChips(parsed) {
+      const hard = [
+        chip("room", parsed.rooms),
+        chip("beds", parsed.bedrooms),
+        chip("max rent", parsed.rent_max ? money(parsed.rent_max) : null),
+        chip("location", parsed.location),
+        chip("landmark", parsed.landmark),
+        chip("station", parsed.station),
+        chip("new build", parsed.new_build === true ? "yes" : null)
+      ].join("");
+      const pref = [
+        chip("building", parsed.building_type, "pref"),
+        ...(parsed.keywords || []).map((item) => chip("nice", item, "pref"))
+      ].join("");
+      const exclude = (parsed.exclude_keywords || []).map((item) => chip("exclude", item, "exclude")).join("");
+      chipsBox.innerHTML = hard + pref + exclude || `<span class="small">No structured filters extracted yet.</span>`;
+    }
+
+    function renderClarifications(items) {
+      if (!items || !items.length) {
+        clarificationsBox.innerHTML = `<span class="small">No clarification needed for this query.</span>`;
+        return;
+      }
+      clarificationsBox.innerHTML = items.map((item) => `
+        <div class="clarify">
+          <strong>${escapeHtml(item.message)}</strong>
+          <div class="clarify-options">
+            ${(item.options || []).map((option) => `
+              <button type="button" data-clarify="${escapeHtml(option.phrase || option.label)}">${escapeHtml(option.label || option.phrase)}</button>
+            `).join("")}
+          </div>
+        </div>
+      `).join("");
+    }
+
+    function renderPipeline(payload) {
+      const parsed = payload.parsed_query || {};
+      const repairs = payload.query_repair && payload.query_repair.repairs ? payload.query_repair.repairs : [];
+      const stages = [
+        ["01", "Listen", "Let renters type like humans first. This protects intent before UI filters narrow it.", parsed.raw || queryInput.value],
+        ["02", "Fix typos", "Clean small mistakes so the user feels understood, not punished.", repairs.length ? repairs.map((item) => `${item.from} -> ${item.to}`).join(", ") : "no repair needed"],
+        ["03", "Spot places", "Find real places before reading features. This keeps Tate Modern from becoming new build.", [parsed.landmark, parsed.location, parsed.station].filter(Boolean).join(" | ") || "no place found"],
+        ["04", "Pick facts", "Turn words into useful filter facts: budget, beds, type and distance.", JSON.stringify({ rent_max: parsed.rent_max, rooms: parsed.rooms, bedrooms: parsed.bedrooms, building_type: parsed.building_type })],
+        ["05", "Sort intent", "Split must-haves from nice-to-haves, so users stay in control.", `must: ${(parsed.hard_filters || []).join(", ") || "none"} / nice: ${(parsed.soft_preferences || []).join(", ") || "none"}`],
+        ["06", "Remove wrong homes", "Hide homes that break must-have rules. This builds trust fast.", `${payload.filtered_out || 0} removed`],
+        ["07", "Rank good homes", "Use nice-to-haves to order the remaining homes, not secretly block them.", `${payload.results ? payload.results.length : 0} shown`],
+        ["08", "Explain why", "Show the reason for each match so the search feels editable, not magic.", payload.results && payload.results[0] ? payload.results[0].reasons.slice(0, 3).join(" | ") : "no result"]
+      ];
+      pipelineBox.innerHTML = stages.map(([id, title, copy, output]) => `
+        <article class="stage">
+          <div class="stage-id">${id}</div>
+          <div>
+            <h3>${escapeHtml(title)}</h3>
+            <p>${escapeHtml(copy)}</p>
+            <div class="stage-output">${escapeHtml(output)}</div>
+          </div>
+        </article>
+      `).join("");
+    }
+
+    function renderSchema() {
+      schemaGrid.innerHTML = schemaNodes.map(([name, copy]) => `
+        <div class="schema-node">
+          <strong>${escapeHtml(name)}</strong>
+          <span>${escapeHtml(copy)}</span>
+        </div>
+      `).join("");
+    }
+
+    function renderResults(payload) {
+      const results = payload.results || [];
+      metricMatches.textContent = String(payload.total_matches ?? "--");
+      metricFiltered.textContent = String(payload.filtered_out ?? "--");
+      metricScore.textContent = results[0] ? String(results[0].score) : "--";
+      if (!results.length) {
+        resultsBox.innerHTML = `<div class="small">No results above the score threshold.</div>`;
+        return;
+      }
+      const topScore = Math.max(...results.map((item) => Number(item.score || 0)), 1);
+      resultsBox.innerHTML = results.map((item) => {
+        const property = item.property || {};
+        const width = Math.max(8, Math.min(100, Number(item.score || 0) / topScore * 100));
+        return `
+          <article class="result">
+            <div class="result-head">
+              <div>
+                <h3>${escapeHtml(property.name || "Unnamed property")}</h3>
+                <div class="small">${escapeHtml(property.location || "")} | ${money(property.monthly_rent_gbp)} pcm | ${escapeHtml(property.room_type || "")}</div>
+              </div>
+              <div class="score">${escapeHtml(item.score)}</div>
+            </div>
+            <div class="bar" aria-hidden="true"><span style="--value:${width}%"></span></div>
+            <div class="reason-list">
+              ${(item.reasons || []).slice(0, 7).map((reason) => `<span class="reason">${escapeHtml(reason)}</span>`).join("")}
+            </div>
+          </article>
+        `;
+      }).join("");
+    }
+
+    async function runSearch() {
+      const query = queryInput.value.trim();
+      if (!query) return;
+      runButton.disabled = true;
+      runButton.textContent = "Running";
+      errorBox.classList.remove("visible");
+      apiStatus.textContent = localApiAvailable() ? "local python api" : "local api needed";
+      try {
+        const payload = await fetchSearchPayload(query, topInput.value, minScoreInput.value);
+        renderChips(payload.parsed_query || {});
+        renderClarifications(payload.clarifications || []);
+        renderPipeline(payload);
+        renderResults(payload);
+        parsedJson.textContent = JSON.stringify(payload.parsed_query || {}, null, 2);
+      } catch (error) {
+        errorBox.textContent = error.message;
+        errorBox.classList.add("visible");
+        apiStatus.textContent = "api error";
+      } finally {
+        runButton.disabled = false;
+        runButton.textContent = "Run matcher";
+      }
+    }
+
+    clarificationsBox.addEventListener("click", (event) => {
+      const button = event.target.closest("[data-clarify]");
+      if (!button) return;
+      queryInput.value = `${queryInput.value.trim()} ${button.dataset.clarify}`;
+      runSearch();
+    });
+
+    queryInput.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" && (event.metaKey || event.ctrlKey)) {
+        event.preventDefault();
+        runSearch();
+      }
+    });
+
+    runButton.addEventListener("click", runSearch);
+    renderSchema();
+    runSearch();
+  </script>
+</body>
+</html>

@@ -1,0 +1,734 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>iPhone Frame · Property Search NLP Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #322744;
+      --muted: #574d66;
+      --paper: #f7f7f8;
+      --surface: #ffffff;
+      --line: rgba(50, 39, 68, 0.14);
+      --orange: #8046f1;
+      --green: #087d73;
+      --blue: #8046f1;
+      --charcoal: #322744;
+      --purple: #8046f1;
+      --purple-soft: #f0e9ff;
+      --phone-width: min(393px, calc(100vw - 44px));
+      color-scheme: light;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      overflow-x: hidden;
+      background:
+        radial-gradient(circle at 14% 16%, rgba(128, 70, 241, 0.24), transparent 30%),
+        radial-gradient(circle at 86% 72%, rgba(8, 125, 115, 0.16), transparent 32%),
+        linear-gradient(135deg, #f7f7f8 0%, #f0e9ff 48%, #ffffff 100%);
+      color: var(--ink);
+    }
+
+    .stage {
+      width: min(1180px, calc(100vw - 32px));
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: minmax(280px, 0.9fr) minmax(340px, 1.1fr);
+      align-items: center;
+      gap: clamp(28px, 6vw, 86px);
+      padding: clamp(28px, 6vw, 72px) 0;
+    }
+
+    .brief {
+      max-width: 520px;
+    }
+
+    .brief p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.02rem;
+      line-height: 1.65;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 18px;
+      color: var(--green);
+      font-size: 0.76rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: currentColor;
+    }
+
+    h1 {
+      max-width: 11ch;
+      margin: 0 0 22px;
+      font-size: clamp(3.1rem, 8vw, 6.4rem);
+      line-height: 0.88;
+      letter-spacing: 0;
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 32px;
+    }
+
+    .metric {
+      min-height: 86px;
+      padding: 13px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.76);
+      backdrop-filter: blur(16px);
+    }
+
+    .metric strong {
+      display: block;
+      font-size: 1.35rem;
+      line-height: 1;
+    }
+
+    .metric span {
+      display: block;
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 0.78rem;
+      line-height: 1.25;
+    }
+
+    .page-link {
+      width: fit-content;
+      min-height: 40px;
+      margin-top: 24px;
+      padding: 0 14px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.8);
+      color: var(--purple);
+      font-size: 0.9rem;
+      font-weight: 800;
+      text-decoration: none;
+      box-shadow: 0 10px 24px rgba(50, 39, 68, 0.08);
+    }
+
+    .device-wrap {
+      display: grid;
+      place-items: center;
+      perspective: 1600px;
+    }
+
+    .iphone {
+      position: relative;
+      width: calc(var(--phone-width) + 24px);
+      padding: 12px;
+      border-radius: 58px;
+      background:
+        linear-gradient(135deg, #31302e 0%, #080808 45%, #3c3934 100%);
+      box-shadow:
+        0 34px 80px rgba(36, 33, 32, 0.33),
+        inset 0 0 0 2px rgba(255, 255, 255, 0.08),
+        inset 0 0 0 5px rgba(0, 0, 0, 0.55);
+      transform-origin: center;
+    }
+
+    .iphone::before,
+    .iphone::after {
+      content: "";
+      position: absolute;
+      left: -3px;
+      width: 3px;
+      border-radius: 3px 0 0 3px;
+      background: #1f1d1b;
+    }
+
+    .iphone::before {
+      top: 152px;
+      height: 54px;
+    }
+
+    .iphone::after {
+      top: 224px;
+      height: 86px;
+    }
+
+    .power {
+      position: absolute;
+      right: -3px;
+      top: 205px;
+      width: 3px;
+      height: 96px;
+      border-radius: 0 3px 3px 0;
+      background: #1d1b1a;
+    }
+
+    .screen {
+      position: relative;
+      width: var(--phone-width);
+      aspect-ratio: 393 / 852;
+      overflow: hidden;
+      border-radius: 47px;
+      background: #f5f1e9;
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.16);
+    }
+
+    .phone-demo-frame {
+      position: absolute;
+      inset: 54px 0 18px;
+      width: 100%;
+      height: calc(100% - 72px);
+      border: 0;
+      background: #f5f1e9;
+    }
+
+    .onboarding-layer {
+      position: absolute;
+      inset: 54px 0 18px;
+      z-index: 7;
+      background: #f7f7f8;
+      transition: opacity 220ms cubic-bezier(0.23, 1, 0.32, 1), visibility 220ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .onboarding-layer.is-hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .onboarding-frame {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      background: #f7f7f8;
+    }
+
+    .island {
+      position: absolute;
+      top: 12px;
+      left: 50%;
+      z-index: 10;
+      width: 124px;
+      height: 36px;
+      transform: translateX(-50%);
+      border-radius: 999px;
+      background: #050505;
+      box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.08);
+    }
+
+    .status {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 9;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 30px;
+      font-size: 0.88rem;
+      font-weight: 800;
+      color: #171412;
+      pointer-events: none;
+    }
+
+    .icons {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .signal {
+      display: flex;
+      align-items: flex-end;
+      gap: 2px;
+      height: 13px;
+    }
+
+    .signal i {
+      width: 3px;
+      border-radius: 3px;
+      background: currentColor;
+    }
+
+    .signal i:nth-child(1) { height: 4px; }
+    .signal i:nth-child(2) { height: 7px; }
+    .signal i:nth-child(3) { height: 10px; }
+    .signal i:nth-child(4) { height: 12px; }
+
+    .battery {
+      position: relative;
+      width: 25px;
+      height: 12px;
+      padding: 1px;
+      border: 1.5px solid currentColor;
+      border-radius: 3px;
+    }
+
+    .battery::before {
+      content: "";
+      display: block;
+      width: 76%;
+      height: 100%;
+      border-radius: 2px;
+      background: currentColor;
+    }
+
+    .battery::after {
+      content: "";
+      position: absolute;
+      top: 3px;
+      right: -4px;
+      width: 2px;
+      height: 6px;
+      border-radius: 0 2px 2px 0;
+      background: currentColor;
+    }
+
+    .app {
+      height: 100%;
+      padding: 64px 18px 24px;
+      overflow: auto;
+      scrollbar-width: none;
+    }
+
+    .app::-webkit-scrollbar {
+      display: none;
+    }
+
+    .app-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 18px;
+    }
+
+    .avatar {
+      width: 36px;
+      height: 36px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--charcoal);
+      color: #fff7ea;
+      font-weight: 800;
+      font-size: 0.82rem;
+    }
+
+    .icon-btn {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      background: rgba(255, 250, 240, 0.72);
+    }
+
+    .icon-btn svg {
+      width: 18px;
+      height: 18px;
+      stroke-width: 2.2;
+    }
+
+    .app h2 {
+      margin: 0 0 16px;
+      font-size: 2.15rem;
+      line-height: 0.98;
+      letter-spacing: 0;
+    }
+
+    .search {
+      display: grid;
+      gap: 12px;
+      padding: 12px;
+      border: 1px solid rgba(36, 33, 32, 0.12);
+      border-radius: 8px;
+      background: var(--surface);
+      box-shadow: 0 12px 26px rgba(36, 33, 32, 0.08);
+    }
+
+    .query {
+      display: grid;
+      grid-template-columns: 30px 1fr;
+      align-items: center;
+      min-height: 52px;
+      padding: 0 12px;
+      border-radius: 7px;
+      background: #ffffff;
+      border: 1px solid rgba(36, 33, 32, 0.08);
+    }
+
+    .query span {
+      color: #393430;
+      font-size: 0.9rem;
+      font-weight: 650;
+      line-height: 1.25;
+    }
+
+    .chips {
+      display: flex;
+      gap: 7px;
+      flex-wrap: wrap;
+    }
+
+    .chip {
+      border: 1px solid rgba(36, 33, 32, 0.1);
+      border-radius: 999px;
+      padding: 7px 9px;
+      background: #fff;
+      color: #49433c;
+      font-size: 0.73rem;
+      font-weight: 700;
+    }
+
+    .chip.hot {
+      background: var(--charcoal);
+      color: #fffaf0;
+    }
+
+    .section-title {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      margin: 24px 0 12px;
+    }
+
+    .section-title strong {
+      font-size: 1.02rem;
+    }
+
+    .section-title span {
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+
+    .cards {
+      display: grid;
+      gap: 10px;
+    }
+
+    .listing {
+      display: grid;
+      grid-template-columns: 88px 1fr;
+      gap: 12px;
+      padding: 10px;
+      border: 1px solid rgba(36, 33, 32, 0.1);
+      border-radius: 8px;
+      background: rgba(255, 250, 240, 0.84);
+    }
+
+    .photo {
+      min-height: 100px;
+      border-radius: 7px;
+      background:
+        linear-gradient(135deg, rgba(36, 33, 32, 0.18), transparent),
+        linear-gradient(160deg, #c8d6cf 0%, #f2dfc6 44%, #9c8f81 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .photo::before,
+    .photo::after {
+      content: "";
+      position: absolute;
+      background: rgba(255, 250, 240, 0.65);
+    }
+
+    .photo::before {
+      left: 16px;
+      top: 22px;
+      width: 42px;
+      height: 64px;
+      border-radius: 4px 4px 0 0;
+    }
+
+    .photo::after {
+      right: 10px;
+      bottom: 12px;
+      width: 30px;
+      height: 42px;
+      border-radius: 4px 4px 0 0;
+    }
+
+    .listing h3 {
+      margin: 0;
+      font-size: 0.93rem;
+      line-height: 1.18;
+      letter-spacing: 0;
+    }
+
+    .listing p {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 0.75rem;
+      line-height: 1.35;
+    }
+
+    .score {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      margin-top: 9px;
+      color: var(--green);
+      font-size: 0.74rem;
+      font-weight: 800;
+    }
+
+    .score::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: currentColor;
+    }
+
+    .map-strip {
+      position: relative;
+      min-height: 148px;
+      overflow: hidden;
+      border: 1px solid rgba(36, 33, 32, 0.1);
+      border-radius: 8px;
+      background:
+        linear-gradient(90deg, transparent 48%, rgba(47, 111, 188, 0.28) 49%, rgba(47, 111, 188, 0.28) 51%, transparent 52%),
+        linear-gradient(24deg, transparent 40%, rgba(36, 33, 32, 0.1) 41%, rgba(36, 33, 32, 0.1) 43%, transparent 44%),
+        linear-gradient(130deg, #e9dfcf, #d8e2da);
+    }
+
+    .pin {
+      position: absolute;
+      width: 28px;
+      height: 28px;
+      display: grid;
+      place-items: center;
+      border-radius: 50% 50% 50% 4px;
+      transform: rotate(-45deg);
+      background: var(--orange);
+      box-shadow: 0 8px 18px rgba(233, 95, 42, 0.26);
+    }
+
+    .pin::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #fffaf0;
+    }
+
+    .pin.one { top: 30px; left: 70px; }
+    .pin.two { top: 80px; left: 185px; background: var(--green); }
+    .pin.three { top: 42px; right: 60px; background: var(--blue); }
+
+    .home-indicator {
+      position: absolute;
+      left: 50%;
+      bottom: 10px;
+      z-index: 8;
+      width: 140px;
+      height: 5px;
+      transform: translateX(-50%);
+      border-radius: 999px;
+      background: rgba(0, 0, 0, 0.28);
+    }
+
+    .tabs {
+      position: absolute;
+      left: 18px;
+      right: 18px;
+      bottom: 28px;
+      z-index: 7;
+      height: 54px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      align-items: center;
+      border: 1px solid rgba(36, 33, 32, 0.12);
+      border-radius: 8px;
+      background: rgba(255, 250, 240, 0.9);
+      backdrop-filter: blur(18px);
+      box-shadow: 0 12px 28px rgba(36, 33, 32, 0.13);
+    }
+
+    .tab {
+      height: 100%;
+      display: grid;
+      place-items: center;
+      border: 0;
+      background: transparent;
+      color: #625b52;
+      cursor: pointer;
+    }
+
+    .tab svg {
+      width: 20px;
+      height: 20px;
+      stroke-width: 2.1;
+    }
+
+    .tab.active {
+      color: var(--orange);
+    }
+
+    .toast {
+      position: absolute;
+      left: 32px;
+      right: 32px;
+      bottom: 92px;
+      z-index: 6;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 11px 12px;
+      border-radius: 8px;
+      background: #242120;
+      color: #fffaf0;
+      font-size: 0.78rem;
+      font-weight: 700;
+      box-shadow: 0 16px 30px rgba(36, 33, 32, 0.22);
+    }
+
+    .toast span:last-child {
+      color: #efbfa5;
+    }
+
+    @media (max-width: 900px) {
+      .stage {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 26px;
+        padding-top: 26px;
+      }
+
+      .brief {
+        width: min(560px, 100%);
+        text-align: center;
+      }
+
+      .eyebrow {
+        justify-content: center;
+      }
+
+      h1 {
+        max-width: 10ch;
+        margin-inline: auto;
+      }
+
+      .iphone {
+        transform: none;
+      }
+    }
+
+    @media (max-width: 520px) {
+      :root {
+        --phone-width: min(360px, calc(100vw - 42px));
+      }
+
+      body {
+        place-items: start center;
+      }
+
+      .stage {
+        width: min(100%, calc(100vw - 18px));
+      }
+
+      .metrics {
+        grid-template-columns: 1fr;
+      }
+
+      .brief p {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="stage">
+    <section class="brief" aria-label="Prototype context">
+      <span class="eyebrow">iPhone frame · live NLP demo</span>
+      <h1>Property search NLP for modern portals.</h1>
+      <p>
+        This frame now renders the actual property search NLP demo. Run the Python
+        server to see live parser output, ranked enriched listings, hard checks,
+        soft scores, and fallback behavior inside the iPhone viewport.
+      </p>
+      <div class="metrics" aria-label="Prototype metrics">
+        <div class="metric">
+          <strong>API</strong>
+          <span>Python search endpoint</span>
+        </div>
+        <div class="metric">
+          <strong>JSON</strong>
+          <span>enriched backend data</span>
+        </div>
+        <div class="metric">
+          <strong>UI</strong>
+          <span>rendered in iPhone frame</span>
+        </div>
+      </div>
+      <a class="page-link" href="dev_whiteboard.html">View infrastructure</a>
+    </section>
+
+    <section class="device-wrap" aria-label="iPhone device mockup">
+      <div class="iphone">
+        <span class="power" aria-hidden="true"></span>
+        <div class="screen">
+          <div class="status" aria-hidden="true">
+            <span>9:41</span>
+            <div class="icons">
+              <span class="signal"><i></i><i></i><i></i><i></i></span>
+              <svg width="17" height="13" viewBox="0 0 17 13" fill="none" aria-hidden="true">
+                <path d="M8.5 11.7a1.1 1.1 0 1 0 0-2.2 1.1 1.1 0 0 0 0 2.2Z" fill="currentColor"/>
+                <path d="M4.3 7.6a6.2 6.2 0 0 1 8.4 0M1.7 4.4a10 10 0 0 1 13.6 0" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+              </svg>
+              <span class="battery"></span>
+            </div>
+          </div>
+          <div class="island" aria-hidden="true"></div>
+          <iframe class="phone-demo-frame" src="live-demo.html" title="Build property search NLP demo"></iframe>
+          <div class="onboarding-layer" id="onboarding-layer">
+            <iframe class="onboarding-frame" src="property-nlp-onboarding.html" title="Property NLP smarter search onboarding"></iframe>
+          </div>
+          <div class="home-indicator" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const onboardingLayer = document.getElementById("onboarding-layer");
+
+    window.addEventListener("message", (event) => {
+      if (event.data && event.data.type === "property-nlp:onboarding-complete") {
+        onboardingLayer.classList.add("is-hidden");
+      }
+    });
+  </script>
+</body>
+</html>

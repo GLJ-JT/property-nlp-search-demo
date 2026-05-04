@@ -1,0 +1,5981 @@
+[
+  {
+    "id": "P1001",
+    "name": "Canary Wharf Dockside One-Bed",
+    "location": "Canary Wharf, E14",
+    "area": "London",
+    "postcode": "E14 9XX",
+    "station": "South Quay",
+    "station_line": "DLR",
+    "station_distance_miles": 0.09,
+    "station_walk_minutes": 2,
+    "station_ride_minutes": 18,
+    "building_type": "apartment",
+    "room_type": "1 bed",
+    "bedrooms": 1,
+    "monthly_rent_gbp": 2450,
+    "council_tax_band": "D",
+    "size_sqft": 540,
+    "floor_level": 12,
+    "floor_label": "high floor",
+    "new_build": true,
+    "keywords": [
+      "waterfront",
+      "balcony",
+      "concierge",
+      "gym",
+      "canary wharf"
+    ],
+    "description": "Modern one-bed apartment with a balcony, concierge and gym access in a new-build waterside tower.",
+    "lat": 51.5018,
+    "lng": -0.0179,
+    "nearby_stations": [
+      {
+        "name": "South Quay",
+        "distance_miles": 0.09,
+        "walk_minutes": 2,
+        "line": "DLR"
+      },
+      {
+        "name": "Canary Wharf",
+        "distance_miles": 0.14,
+        "walk_minutes": 3,
+        "line": "Jubilee / Elizabeth / DLR"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1002",
+    "name": "Angel Loft Studio",
+    "location": "Angel, N1",
+    "area": "London",
+    "postcode": "N1 1AA",
+    "station": "Angel",
+    "station_line": "Northern",
+    "station_distance_miles": 0.04,
+    "station_walk_minutes": 1,
+    "station_ride_minutes": 8,
+    "building_type": "studio",
+    "room_type": "studio",
+    "bedrooms": 0,
+    "monthly_rent_gbp": 1950,
+    "council_tax_band": "C",
+    "size_sqft": 380,
+    "floor_level": 2,
+    "floor_label": "low floor",
+    "new_build": false,
+    "keywords": [
+      "loft",
+      "converted",
+      "period",
+      "high ceilings"
+    ],
+    "description": "Character loft-style studio in a converted warehouse with high ceilings and wooden floors.",
+    "lat": 51.5327,
+    "lng": -0.1062,
+    "nearby_stations": [
+      {
+        "name": "Angel",
+        "distance_miles": 0.04,
+        "walk_minutes": 1,
+        "line": "Northern"
+      }
+    ],
+    "nearby_landmarks": [
+      {
+        "name": "City University",
+        "distance_miles": 0.37,
+        "walk_minutes": 7,
+        "category": "university"
+      }
+    ]
+  },
+  {
+    "id": "P1003",
+    "name": "Stratford Central Two-Bed",
+    "location": "Stratford, E15",
+    "area": "London",
+    "postcode": "E15 1FG",
+    "station": "Stratford",
+    "station_line": "Central / Jubilee / Elizabeth / DLR / Rail",
+    "station_distance_miles": 0.06,
+    "station_walk_minutes": 1,
+    "station_ride_minutes": 12,
+    "building_type": "apartment",
+    "room_type": "2 bed",
+    "bedrooms": 2,
+    "monthly_rent_gbp": 2750,
+    "council_tax_band": "E",
+    "size_sqft": 710,
+    "floor_level": 5,
+    "floor_label": "mid floor",
+    "new_build": true,
+    "keywords": [
+      "new build",
+      "balcony",
+      "station",
+      "commuter"
+    ],
+    "description": "Bright two-bed apartment in a new development with strong transport links and a private balcony.",
+    "lat": 51.541,
+    "lng": -0.0045,
+    "nearby_stations": [
+      {
+        "name": "Stratford",
+        "distance_miles": 0.06,
+        "walk_minutes": 1,
+        "line": "Central / Jubilee / Elizabeth / DLR / Rail"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1004",
+    "name": "Clapham House Share",
+    "location": "Clapham North, SW4",
+    "area": "London",
+    "postcode": "SW4 7QQ",
+    "station": "Clapham North",
+    "station_line": "Northern",
+    "station_distance_miles": 0.03,
+    "station_walk_minutes": 1,
+    "station_ride_minutes": 14,
+    "building_type": "house",
+    "room_type": "room in house share",
+    "bedrooms": 4,
+    "monthly_rent_gbp": 1150,
+    "council_tax_band": "D",
+    "size_sqft": 1450,
+    "floor_level": 1,
+    "floor_label": "lower ground and first",
+    "new_build": false,
+    "keywords": [
+      "house share",
+      "garden",
+      "flatmates",
+      "budget"
+    ],
+    "description": "Affordable room in a friendly house share with garden access, ideal for a short commute.",
+    "lat": 51.4648,
+    "lng": -0.129,
+    "nearby_stations": [
+      {
+        "name": "Clapham North",
+        "distance_miles": 0.03,
+        "walk_minutes": 1,
+        "line": "Northern"
+      },
+      {
+        "name": "Brixton",
+        "distance_miles": 0.63,
+        "walk_minutes": 13,
+        "line": "Victoria"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1005",
+    "name": "King's Cross Penthouse Flat",
+    "location": "King's Cross, N1C",
+    "area": "London",
+    "postcode": "N1C 4AB",
+    "station": "King's Cross St Pancras",
+    "station_line": "Piccadilly / Victoria / Northern / Circle / H&C / Metropolitan",
+    "station_distance_miles": 0.17,
+    "station_walk_minutes": 3,
+    "station_ride_minutes": 10,
+    "building_type": "penthouse",
+    "room_type": "2 bed",
+    "bedrooms": 2,
+    "monthly_rent_gbp": 4950,
+    "council_tax_band": "G",
+    "size_sqft": 1020,
+    "floor_level": 18,
+    "floor_label": "penthouse",
+    "new_build": true,
+    "keywords": [
+      "luxury",
+      "concierge",
+      "roof terrace",
+      "city views"
+    ],
+    "description": "Luxury penthouse flat with roof terrace, concierge and city views beside King's Cross.",
+    "lat": 51.533,
+    "lng": -0.1255,
+    "nearby_stations": [
+      {
+        "name": "King's Cross St Pancras",
+        "distance_miles": 0.17,
+        "walk_minutes": 3,
+        "line": "Piccadilly / Victoria / Northern / Circle / H&C / Metropolitan"
+      },
+      {
+        "name": "Euston Square",
+        "distance_miles": 0.66,
+        "walk_minutes": 13,
+        "line": "Circle / H&C / Metropolitan"
+      },
+      {
+        "name": "Russell Square",
+        "distance_miles": 0.69,
+        "walk_minutes": 14,
+        "line": "Piccadilly"
+      }
+    ],
+    "nearby_landmarks": [
+      {
+        "name": "UCL",
+        "distance_miles": 0.69,
+        "walk_minutes": 14,
+        "category": "university"
+      },
+      {
+        "name": "British Museum",
+        "distance_miles": 0.94,
+        "walk_minutes": 19,
+        "category": "museum"
+      },
+      {
+        "name": "City University",
+        "distance_miles": 1.05,
+        "walk_minutes": 21,
+        "category": "university"
+      }
+    ]
+  },
+  {
+    "id": "P1006",
+    "name": "Walthamstow Family Maisonette",
+    "location": "Walthamstow, E17",
+    "area": "London",
+    "postcode": "E17 6XY",
+    "station": "Walthamstow Central",
+    "station_line": "Victoria / Overground",
+    "station_distance_miles": 0.09,
+    "station_walk_minutes": 2,
+    "station_ride_minutes": 24,
+    "building_type": "maisonette",
+    "room_type": "3 bed",
+    "bedrooms": 3,
+    "monthly_rent_gbp": 2500,
+    "council_tax_band": "C",
+    "size_sqft": 930,
+    "floor_level": 1,
+    "floor_label": "first and second",
+    "new_build": false,
+    "keywords": [
+      "family",
+      "garden",
+      "period conversion",
+      "spacious"
+    ],
+    "description": "Spacious family maisonette in a period conversion with two floors and a private garden.",
+    "lat": 51.5841,
+    "lng": -0.0208,
+    "nearby_stations": [
+      {
+        "name": "Walthamstow Central",
+        "distance_miles": 0.09,
+        "walk_minutes": 2,
+        "line": "Victoria / Overground"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1007",
+    "name": "Greenwich Riverside Two-Bed",
+    "location": "Greenwich, SE10",
+    "area": "London",
+    "postcode": "SE10 9TZ",
+    "station": "Greenwich",
+    "station_line": "DLR / Rail",
+    "station_distance_miles": 0.11,
+    "station_walk_minutes": 2,
+    "station_ride_minutes": 20,
+    "building_type": "apartment",
+    "room_type": "2 bed",
+    "bedrooms": 2,
+    "monthly_rent_gbp": 2950,
+    "council_tax_band": "E",
+    "size_sqft": 780,
+    "floor_level": 6,
+    "floor_label": "mid floor",
+    "new_build": true,
+    "keywords": [
+      "riverside",
+      "balcony",
+      "parking",
+      "modern"
+    ],
+    "description": "Modern riverside apartment with open-plan living, balcony and secure parking.",
+    "lat": 51.479,
+    "lng": -0.0128,
+    "nearby_stations": [
+      {
+        "name": "Greenwich",
+        "distance_miles": 0.11,
+        "walk_minutes": 2,
+        "line": "DLR / Rail"
+      },
+      {
+        "name": "Deptford",
+        "distance_miles": 0.58,
+        "walk_minutes": 12,
+        "line": "Rail"
+      },
+      {
+        "name": "Maze Hill",
+        "distance_miles": 0.73,
+        "walk_minutes": 15,
+        "line": "Rail"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1008",
+    "name": "Brixton Compact One-Bed",
+    "location": "Brixton, SW9",
+    "area": "London",
+    "postcode": "SW9 8HX",
+    "station": "Brixton",
+    "station_line": "Victoria",
+    "station_distance_miles": 0.05,
+    "station_walk_minutes": 1,
+    "station_ride_minutes": 12,
+    "building_type": "flat",
+    "room_type": "1 bed",
+    "bedrooms": 1,
+    "monthly_rent_gbp": 2100,
+    "council_tax_band": "B",
+    "size_sqft": 460,
+    "floor_level": 3,
+    "floor_label": "upper floor",
+    "new_build": false,
+    "keywords": [
+      "compact",
+      "central",
+      "period",
+      "walk to station"
+    ],
+    "description": "Well-located one-bed flat close to Brixton station, suited to quick commuting.",
+    "lat": 51.462,
+    "lng": -0.1142,
+    "nearby_stations": [
+      {
+        "name": "Brixton",
+        "distance_miles": 0.05,
+        "walk_minutes": 1,
+        "line": "Victoria"
+      },
+      {
+        "name": "Clapham North",
+        "distance_miles": 0.69,
+        "walk_minutes": 14,
+        "line": "Northern"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1009",
+    "name": "Hammersmith Riverside Duplex",
+    "location": "Hammersmith, W6",
+    "area": "London",
+    "postcode": "W6 9ZZ",
+    "station": "Hammersmith",
+    "station_line": "District / Piccadilly / H&C",
+    "station_distance_miles": 0.18,
+    "station_walk_minutes": 4,
+    "station_ride_minutes": 16,
+    "building_type": "duplex",
+    "room_type": "2 bed",
+    "bedrooms": 2,
+    "monthly_rent_gbp": 3300,
+    "council_tax_band": "F",
+    "size_sqft": 860,
+    "floor_level": 4,
+    "floor_label": "duplex levels 4 and 5",
+    "new_build": false,
+    "keywords": [
+      "riverside",
+      "duplex",
+      "family",
+      "period conversion"
+    ],
+    "description": "Riverside duplex in a converted building with generous room sizes and a family-friendly layout.",
+    "lat": 51.4902,
+    "lng": -0.2255,
+    "nearby_stations": [
+      {
+        "name": "Hammersmith",
+        "distance_miles": 0.18,
+        "walk_minutes": 4,
+        "line": "District / Piccadilly / H&C"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1010",
+    "name": "Notting Hill Garden Flat",
+    "location": "Notting Hill, W11",
+    "area": "London",
+    "postcode": "W11 2QQ",
+    "station": "Notting Hill Gate",
+    "station_line": "Central / Circle / District",
+    "station_distance_miles": 0.03,
+    "station_walk_minutes": 1,
+    "station_ride_minutes": 9,
+    "building_type": "flat",
+    "room_type": "1 bed",
+    "bedrooms": 1,
+    "monthly_rent_gbp": 2850,
+    "council_tax_band": "E",
+    "size_sqft": 620,
+    "floor_level": 0,
+    "floor_label": "garden level",
+    "new_build": false,
+    "keywords": [
+      "garden",
+      "period",
+      "refurbished",
+      "quiet street"
+    ],
+    "description": "Refurbished garden flat in a classic period conversion with direct outdoor space.",
+    "lat": 51.5096,
+    "lng": -0.1972,
+    "nearby_stations": [
+      {
+        "name": "Notting Hill Gate",
+        "distance_miles": 0.03,
+        "walk_minutes": 1,
+        "line": "Central / Circle / District"
+      }
+    ],
+    "nearby_landmarks": [
+      {
+        "name": "Imperial College London",
+        "distance_miles": 1.22,
+        "walk_minutes": 24,
+        "category": "university"
+      }
+    ]
+  },
+  {
+    "id": "P1011",
+    "name": "Russell Square New-Build Studio",
+    "location": "Russell Square, WC1B",
+    "area": "London",
+    "postcode": "WC1B 5BE",
+    "station": "Russell Square",
+    "station_line": "Piccadilly",
+    "station_distance_miles": 0.15,
+    "station_walk_minutes": 3,
+    "station_ride_minutes": 7,
+    "building_type": "studio",
+    "room_type": "studio",
+    "bedrooms": 0,
+    "monthly_rent_gbp": 2250,
+    "council_tax_band": "D",
+    "size_sqft": 410,
+    "floor_level": 7,
+    "floor_label": "upper floor",
+    "new_build": true,
+    "nearby_landmarks": [
+      {
+        "name": "British Museum",
+        "distance_miles": 0.22,
+        "walk_minutes": 4,
+        "category": "museum"
+      },
+      {
+        "name": "UCL",
+        "distance_miles": 0.3,
+        "walk_minutes": 6,
+        "category": "university"
+      },
+      {
+        "name": "LSE",
+        "distance_miles": 0.75,
+        "walk_minutes": 15,
+        "category": "university"
+      },
+      {
+        "name": "King's College London",
+        "distance_miles": 0.92,
+        "walk_minutes": 18,
+        "category": "university"
+      },
+      {
+        "name": "City University",
+        "distance_miles": 1.15,
+        "walk_minutes": 23,
+        "category": "university"
+      },
+      {
+        "name": "Regent's University London",
+        "distance_miles": 1.21,
+        "walk_minutes": 24,
+        "category": "university"
+      }
+    ],
+    "nearby_stations": [
+      {
+        "name": "Russell Square",
+        "distance_miles": 0.15,
+        "walk_minutes": 3,
+        "line": "Piccadilly"
+      },
+      {
+        "name": "Goodge Street",
+        "distance_miles": 0.33,
+        "walk_minutes": 7,
+        "line": "Northern"
+      },
+      {
+        "name": "Euston Square",
+        "distance_miles": 0.41,
+        "walk_minutes": 8,
+        "line": "Circle / H&C / Metropolitan"
+      },
+      {
+        "name": "Tottenham Court Road",
+        "distance_miles": 0.46,
+        "walk_minutes": 9,
+        "line": "Central / Northern / Elizabeth"
+      },
+      {
+        "name": "Warren Street",
+        "distance_miles": 0.47,
+        "walk_minutes": 9,
+        "line": "Northern / Victoria"
+      }
+    ],
+    "keywords": [
+      "new build",
+      "studio",
+      "concierge",
+      "bloomsbury",
+      "close to station"
+    ],
+    "description": "New-build studio moments from Russell Square station with concierge, lift access and efficient storage.",
+    "lat": 51.5226,
+    "lng": -0.1278
+  },
+  {
+    "id": "P1012",
+    "name": "Shoreditch Warehouse Two-Bed",
+    "location": "Shoreditch, E1",
+    "area": "London",
+    "postcode": "E1 6AN",
+    "station": "Shoreditch High Street",
+    "station_line": "Overground",
+    "station_distance_miles": 0.07,
+    "station_walk_minutes": 1,
+    "station_ride_minutes": 13,
+    "building_type": "loft",
+    "room_type": "2 bed",
+    "bedrooms": 2,
+    "monthly_rent_gbp": 3650,
+    "council_tax_band": "E",
+    "size_sqft": 920,
+    "floor_level": 3,
+    "floor_label": "upper floor",
+    "new_build": false,
+    "keywords": [
+      "loft",
+      "converted",
+      "warehouse",
+      "high ceilings",
+      "period"
+    ],
+    "description": "Converted warehouse loft with exposed brick, generous ceiling heights and a short walk to Shoreditch High Street.",
+    "lat": 51.5232,
+    "lng": -0.077,
+    "nearby_stations": [
+      {
+        "name": "Shoreditch High Street",
+        "distance_miles": 0.07,
+        "walk_minutes": 1,
+        "line": "Overground"
+      },
+      {
+        "name": "Old Street",
+        "distance_miles": 0.49,
+        "walk_minutes": 10,
+        "line": "Northern / Rail"
+      },
+      {
+        "name": "Aldgate East",
+        "distance_miles": 0.61,
+        "walk_minutes": 12,
+        "line": "District / H&C"
+      }
+    ],
+    "nearby_landmarks": [
+      {
+        "name": "City University",
+        "distance_miles": 1.14,
+        "walk_minutes": 23,
+        "category": "university"
+      }
+    ]
+  },
+  {
+    "id": "P1013",
+    "name": "Nine Elms Skyline Studio",
+    "location": "Nine Elms, SW11",
+    "area": "London",
+    "postcode": "SW11 7US",
+    "station": "Nine Elms",
+    "station_line": "Northern",
+    "station_distance_miles": 0.12,
+    "station_walk_minutes": 2,
+    "station_ride_minutes": 15,
+    "building_type": "studio",
+    "room_type": "studio",
+    "bedrooms": 0,
+    "monthly_rent_gbp": 2150,
+    "council_tax_band": "D",
+    "size_sqft": 390,
+    "floor_level": 20,
+    "floor_label": "high floor",
+    "new_build": true,
+    "keywords": [
+      "new build",
+      "gym",
+      "concierge",
+      "river views",
+      "high floor"
+    ],
+    "description": "High-floor new-build studio with resident gym, concierge and long views towards the river.",
+    "lat": 51.4807,
+    "lng": -0.126,
+    "nearby_stations": [
+      {
+        "name": "Nine Elms",
+        "distance_miles": 0.12,
+        "walk_minutes": 2,
+        "line": "Northern"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1014",
+    "name": "Camden Lock One-Bed",
+    "location": "Camden Town, NW1",
+    "area": "London",
+    "postcode": "NW1 8AF",
+    "station": "Camden Town",
+    "station_line": "Northern",
+    "station_distance_miles": 0.09,
+    "station_walk_minutes": 2,
+    "station_ride_minutes": 11,
+    "building_type": "flat",
+    "room_type": "1 bed",
+    "bedrooms": 1,
+    "monthly_rent_gbp": 2350,
+    "council_tax_band": "C",
+    "size_sqft": 510,
+    "floor_level": 2,
+    "floor_label": "low floor",
+    "new_build": false,
+    "keywords": [
+      "canal",
+      "period",
+      "central",
+      "walk to station"
+    ],
+    "description": "Characterful one-bed flat near Camden Lock with period detail and a practical commute.",
+    "lat": 51.5405,
+    "lng": -0.143,
+    "nearby_stations": [
+      {
+        "name": "Camden Town",
+        "distance_miles": 0.09,
+        "walk_minutes": 2,
+        "line": "Northern"
+      }
+    ],
+    "nearby_landmarks": [
+      {
+        "name": "Regent's University London",
+        "distance_miles": 1.12,
+        "walk_minutes": 22,
+        "category": "university"
+      },
+      {
+        "name": "UCL",
+        "distance_miles": 1.16,
+        "walk_minutes": 23,
+        "category": "university"
+      }
+    ]
+  },
+  {
+    "id": "P1015",
+    "name": "Battersea Park Garden Maisonette",
+    "location": "Battersea, SW11",
+    "area": "London",
+    "postcode": "SW11 4NJ",
+    "station": "Battersea Park",
+    "station_line": "Rail",
+    "station_distance_miles": 0.07,
+    "station_walk_minutes": 1,
+    "station_ride_minutes": 18,
+    "building_type": "maisonette",
+    "room_type": "2 bed",
+    "bedrooms": 2,
+    "monthly_rent_gbp": 3100,
+    "council_tax_band": "E",
+    "size_sqft": 840,
+    "floor_level": 0,
+    "floor_label": "ground and first",
+    "new_build": false,
+    "keywords": [
+      "garden",
+      "family",
+      "period",
+      "park"
+    ],
+    "description": "Two-bed maisonette with direct garden access close to Battersea Park and neighbourhood cafes.",
+    "lat": 51.477,
+    "lng": -0.1495,
+    "nearby_stations": [
+      {
+        "name": "Battersea Park",
+        "distance_miles": 0.07,
+        "walk_minutes": 1,
+        "line": "Rail"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1016",
+    "name": "Ealing Broadway Family Flat",
+    "location": "Ealing Broadway, W5",
+    "area": "London",
+    "postcode": "W5 2NU",
+    "station": "Ealing Broadway",
+    "station_line": "Elizabeth / Central / District",
+    "station_distance_miles": 0.07,
+    "station_walk_minutes": 1,
+    "station_ride_minutes": 19,
+    "building_type": "apartment",
+    "room_type": "3 bed",
+    "bedrooms": 3,
+    "monthly_rent_gbp": 3400,
+    "council_tax_band": "F",
+    "size_sqft": 980,
+    "floor_level": 4,
+    "floor_label": "mid floor",
+    "new_build": true,
+    "keywords": [
+      "family",
+      "balcony",
+      "new build",
+      "parking",
+      "elizabeth line"
+    ],
+    "description": "Family-sized apartment with balcony and parking near Ealing Broadway and Elizabeth line connections.",
+    "lat": 51.515,
+    "lng": -0.3032,
+    "nearby_stations": [
+      {
+        "name": "Ealing Broadway",
+        "distance_miles": 0.07,
+        "walk_minutes": 1,
+        "line": "Elizabeth / Central / District"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1017",
+    "name": "Hackney Wick Canal Studio",
+    "location": "Hackney Wick, E9",
+    "area": "London",
+    "postcode": "E9 5EN",
+    "station": "Hackney Wick",
+    "station_line": "Overground",
+    "station_distance_miles": 0.06,
+    "station_walk_minutes": 1,
+    "station_ride_minutes": 21,
+    "building_type": "studio",
+    "room_type": "studio",
+    "bedrooms": 0,
+    "monthly_rent_gbp": 1750,
+    "council_tax_band": "B",
+    "size_sqft": 350,
+    "floor_level": 5,
+    "floor_label": "mid floor",
+    "new_build": false,
+    "keywords": [
+      "canal",
+      "converted",
+      "creative",
+      "budget"
+    ],
+    "description": "Compact canal-side studio in Hackney Wick with converted-building character and a lower monthly rent.",
+    "lat": 51.5439,
+    "lng": -0.0258,
+    "nearby_stations": [
+      {
+        "name": "Hackney Wick",
+        "distance_miles": 0.06,
+        "walk_minutes": 1,
+        "line": "Overground"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1018",
+    "name": "Marylebone Period Two-Bed",
+    "location": "Marylebone, W1U",
+    "area": "London",
+    "postcode": "W1U 6PZ",
+    "station": "Baker Street",
+    "station_line": "Bakerloo / Jubilee / Metropolitan / Circle / H&C",
+    "station_distance_miles": 0.14,
+    "station_walk_minutes": 3,
+    "station_ride_minutes": 8,
+    "building_type": "flat",
+    "room_type": "2 bed",
+    "bedrooms": 2,
+    "monthly_rent_gbp": 4200,
+    "council_tax_band": "G",
+    "size_sqft": 760,
+    "floor_level": 2,
+    "floor_label": "low floor",
+    "new_build": false,
+    "nearby_landmarks": [
+      {
+        "name": "Regent's University London",
+        "distance_miles": 0.31,
+        "walk_minutes": 6,
+        "category": "university"
+      },
+      {
+        "name": "UCL",
+        "distance_miles": 0.88,
+        "walk_minutes": 18,
+        "category": "university"
+      },
+      {
+        "name": "British Museum",
+        "distance_miles": 1.17,
+        "walk_minutes": 23,
+        "category": "museum"
+      }
+    ],
+    "nearby_stations": [
+      {
+        "name": "Baker Street",
+        "distance_miles": 0.14,
+        "walk_minutes": 3,
+        "line": "Bakerloo / Jubilee / Metropolitan / Circle / H&C"
+      },
+      {
+        "name": "Regent's Park",
+        "distance_miles": 0.34,
+        "walk_minutes": 7,
+        "line": "Bakerloo"
+      },
+      {
+        "name": "Warren Street",
+        "distance_miles": 0.7,
+        "walk_minutes": 14,
+        "line": "Northern / Victoria"
+      }
+    ],
+    "keywords": [
+      "period",
+      "refurbished",
+      "quiet street",
+      "central"
+    ],
+    "description": "Refurbished period two-bed on a quiet Marylebone street close to Baker Street station.",
+    "lat": 51.5218,
+    "lng": -0.154
+  },
+  {
+    "id": "P1019",
+    "name": "Elephant Park New-Build One-Bed",
+    "location": "Elephant and Castle, SE1",
+    "area": "London",
+    "postcode": "SE1 6TE",
+    "station": "Elephant and Castle",
+    "station_line": "Northern / Bakerloo / Rail",
+    "station_distance_miles": 0.06,
+    "station_walk_minutes": 1,
+    "station_ride_minutes": 9,
+    "building_type": "apartment",
+    "room_type": "1 bed",
+    "bedrooms": 1,
+    "monthly_rent_gbp": 2600,
+    "council_tax_band": "D",
+    "size_sqft": 560,
+    "floor_level": 9,
+    "floor_label": "high floor",
+    "new_build": true,
+    "keywords": [
+      "new build",
+      "balcony",
+      "gym",
+      "concierge",
+      "park"
+    ],
+    "description": "New-build high-floor one-bed with balcony, gym and concierge beside Elephant Park.",
+    "lat": 51.4937,
+    "lng": -0.0992,
+    "nearby_stations": [
+      {
+        "name": "Elephant and Castle",
+        "distance_miles": 0.06,
+        "walk_minutes": 1,
+        "line": "Northern / Bakerloo / Rail"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1020",
+    "name": "Fulham Broadway Garden Flat",
+    "location": "Fulham, SW6",
+    "area": "London",
+    "postcode": "SW6 1BY",
+    "station": "Fulham Broadway",
+    "station_line": "District",
+    "station_distance_miles": 0.05,
+    "station_walk_minutes": 1,
+    "station_ride_minutes": 18,
+    "building_type": "flat",
+    "room_type": "2 bed",
+    "bedrooms": 2,
+    "monthly_rent_gbp": 3250,
+    "council_tax_band": "E",
+    "size_sqft": 790,
+    "floor_level": 0,
+    "floor_label": "garden level",
+    "new_build": false,
+    "keywords": [
+      "garden",
+      "period",
+      "family",
+      "quiet"
+    ],
+    "description": "Garden-level period flat with two bedrooms and direct outdoor space near Fulham Broadway.",
+    "lat": 51.48,
+    "lng": -0.1965,
+    "nearby_stations": [
+      {
+        "name": "Fulham Broadway",
+        "distance_miles": 0.05,
+        "walk_minutes": 1,
+        "line": "District"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1021",
+    "name": "Southbank Riverside Two-Bed",
+    "location": "Southbank, SE1",
+    "area": "London",
+    "postcode": "SE1 9PX",
+    "station": "Waterloo",
+    "station_line": "Jubilee / Northern / Bakerloo / Waterloo & City / Rail",
+    "station_distance_miles": 0.2,
+    "station_walk_minutes": 4,
+    "station_ride_minutes": 6,
+    "building_type": "apartment",
+    "room_type": "2 bed",
+    "bedrooms": 2,
+    "monthly_rent_gbp": 4700,
+    "council_tax_band": "G",
+    "size_sqft": 950,
+    "floor_level": 14,
+    "floor_label": "high floor",
+    "new_build": true,
+    "keywords": [
+      "riverside",
+      "balcony",
+      "concierge",
+      "gym",
+      "views"
+    ],
+    "description": "High-floor riverside apartment with balcony, gym and concierge within walking distance of Waterloo.",
+    "lat": 51.506,
+    "lng": -0.1132,
+    "nearby_stations": [
+      {
+        "name": "Waterloo",
+        "distance_miles": 0.2,
+        "walk_minutes": 4,
+        "line": "Jubilee / Northern / Bakerloo / Waterloo & City / Rail"
+      },
+      {
+        "name": "Southwark",
+        "distance_miles": 0.34,
+        "walk_minutes": 7,
+        "line": "Jubilee"
+      },
+      {
+        "name": "Blackfriars",
+        "distance_miles": 0.58,
+        "walk_minutes": 12,
+        "line": "District / Circle / Rail"
+      }
+    ],
+    "nearby_landmarks": [
+      {
+        "name": "King's College London",
+        "distance_miles": 0.4,
+        "walk_minutes": 8,
+        "category": "university"
+      },
+      {
+        "name": "LSE",
+        "distance_miles": 0.6,
+        "walk_minutes": 12,
+        "category": "university"
+      },
+      {
+        "name": "British Museum",
+        "distance_miles": 1.1,
+        "walk_minutes": 22,
+        "category": "museum"
+      }
+    ]
+  },
+  {
+    "id": "P1022",
+    "name": "Finsbury Park Budget Studio",
+    "location": "Finsbury Park, N4",
+    "area": "London",
+    "postcode": "N4 2DE",
+    "station": "Finsbury Park",
+    "station_line": "Victoria / Piccadilly / Rail",
+    "station_distance_miles": 0.05,
+    "station_walk_minutes": 1,
+    "station_ride_minutes": 13,
+    "building_type": "studio",
+    "room_type": "studio",
+    "bedrooms": 0,
+    "monthly_rent_gbp": 1550,
+    "council_tax_band": "B",
+    "size_sqft": 320,
+    "floor_level": 1,
+    "floor_label": "low floor",
+    "new_build": false,
+    "keywords": [
+      "budget",
+      "walk to station",
+      "compact",
+      "converted"
+    ],
+    "description": "Budget studio in a converted building moments from Finsbury Park station.",
+    "lat": 51.5652,
+    "lng": -0.1052,
+    "nearby_stations": [
+      {
+        "name": "Finsbury Park",
+        "distance_miles": 0.05,
+        "walk_minutes": 1,
+        "line": "Victoria / Piccadilly / Rail"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1023",
+    "name": "Islington Upper Street One-Bed",
+    "location": "Islington, N1",
+    "area": "London",
+    "postcode": "N1 2TX",
+    "station": "Highbury and Islington",
+    "station_line": "Victoria / Overground",
+    "station_distance_miles": 0.06,
+    "station_walk_minutes": 1,
+    "station_ride_minutes": 12,
+    "building_type": "flat",
+    "room_type": "1 bed",
+    "bedrooms": 1,
+    "monthly_rent_gbp": 2400,
+    "council_tax_band": "D",
+    "size_sqft": 525,
+    "floor_level": 3,
+    "floor_label": "upper floor",
+    "new_build": false,
+    "nearby_landmarks": [],
+    "nearby_stations": [
+      {
+        "name": "Highbury and Islington",
+        "distance_miles": 0.06,
+        "walk_minutes": 1,
+        "line": "Victoria / Overground"
+      }
+    ],
+    "keywords": [
+      "period",
+      "central",
+      "quiet street",
+      "refurbished"
+    ],
+    "description": "Refurbished one-bed flat off Upper Street with period proportions and quick access to Highbury and Islington.",
+    "lat": 51.546,
+    "lng": -0.1048
+  },
+  {
+    "id": "P1024",
+    "name": "Whitechapel Elizabeth Line Studio",
+    "location": "Whitechapel, E1",
+    "area": "London",
+    "postcode": "E1 1BB",
+    "station": "Whitechapel",
+    "station_line": "Elizabeth / District / H&C / Overground",
+    "station_distance_miles": 0.06,
+    "station_walk_minutes": 1,
+    "station_ride_minutes": 10,
+    "building_type": "studio",
+    "room_type": "studio",
+    "bedrooms": 0,
+    "monthly_rent_gbp": 1850,
+    "council_tax_band": "C",
+    "size_sqft": 365,
+    "floor_level": 6,
+    "floor_label": "mid floor",
+    "new_build": true,
+    "nearby_landmarks": [
+      {
+        "name": "Queen Mary University of London",
+        "distance_miles": 0.96,
+        "walk_minutes": 19,
+        "category": "university"
+      }
+    ],
+    "nearby_stations": [
+      {
+        "name": "Whitechapel",
+        "distance_miles": 0.06,
+        "walk_minutes": 1,
+        "line": "Elizabeth / District / H&C / Overground"
+      },
+      {
+        "name": "Aldgate East",
+        "distance_miles": 0.54,
+        "walk_minutes": 11,
+        "line": "District / H&C"
+      },
+      {
+        "name": "Bethnal Green",
+        "distance_miles": 0.62,
+        "walk_minutes": 12,
+        "line": "Central"
+      },
+      {
+        "name": "Shoreditch High Street",
+        "distance_miles": 0.7,
+        "walk_minutes": 14,
+        "line": "Overground"
+      }
+    ],
+    "keywords": [
+      "new build",
+      "elizabeth line",
+      "concierge",
+      "gym"
+    ],
+    "description": "New-build studio close to Whitechapel station with concierge and gym access.",
+    "lat": 51.519,
+    "lng": -0.061
+  },
+  {
+    "id": "P1025",
+    "name": "Victoria Mansion Block Two-Bed",
+    "location": "Victoria, SW1",
+    "area": "London",
+    "postcode": "SW1V 1AA",
+    "station": "Victoria",
+    "station_line": "Victoria / District / Circle / Rail",
+    "station_distance_miles": 0.06,
+    "station_walk_minutes": 1,
+    "station_ride_minutes": 6,
+    "building_type": "flat",
+    "room_type": "2 bed",
+    "bedrooms": 2,
+    "monthly_rent_gbp": 3900,
+    "council_tax_band": "F",
+    "size_sqft": 820,
+    "floor_level": 4,
+    "floor_label": "upper floor",
+    "new_build": false,
+    "keywords": [
+      "mansion block",
+      "period",
+      "lift",
+      "central"
+    ],
+    "description": "Well-kept two-bed in a classic mansion block with lift access and a short walk to Victoria.",
+    "lat": 51.4961,
+    "lng": -0.1434,
+    "nearby_stations": [
+      {
+        "name": "Victoria",
+        "distance_miles": 0.06,
+        "walk_minutes": 1,
+        "line": "Victoria / District / Circle / Rail"
+      },
+      {
+        "name": "Sloane Square",
+        "distance_miles": 0.62,
+        "walk_minutes": 12,
+        "line": "District / Circle"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1026",
+    "name": "Canada Water Parkside Apartment",
+    "location": "Canada Water, SE16",
+    "area": "London",
+    "postcode": "SE16 7AR",
+    "station": "Canada Water",
+    "station_line": "Jubilee / Overground",
+    "station_distance_miles": 0.07,
+    "station_walk_minutes": 1,
+    "station_ride_minutes": 14,
+    "building_type": "apartment",
+    "room_type": "2 bed",
+    "bedrooms": 2,
+    "monthly_rent_gbp": 2850,
+    "council_tax_band": "D",
+    "size_sqft": 760,
+    "floor_level": 8,
+    "floor_label": "high floor",
+    "new_build": true,
+    "keywords": [
+      "new build",
+      "balcony",
+      "parking",
+      "park",
+      "commuter"
+    ],
+    "description": "High-floor two-bed apartment with balcony and parking near Canada Water.",
+    "lat": 51.4988,
+    "lng": -0.0508,
+    "nearby_stations": [
+      {
+        "name": "Canada Water",
+        "distance_miles": 0.07,
+        "walk_minutes": 1,
+        "line": "Jubilee / Overground"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1027",
+    "name": "Putney Bridge Riverside One-Bed",
+    "location": "Putney, SW15",
+    "area": "London",
+    "postcode": "SW15 1LB",
+    "station": "Putney Bridge",
+    "station_line": "District",
+    "station_distance_miles": 0.07,
+    "station_walk_minutes": 1,
+    "station_ride_minutes": 22,
+    "building_type": "flat",
+    "room_type": "1 bed",
+    "bedrooms": 1,
+    "monthly_rent_gbp": 2200,
+    "council_tax_band": "D",
+    "size_sqft": 545,
+    "floor_level": 1,
+    "floor_label": "low floor",
+    "new_build": false,
+    "keywords": [
+      "riverside",
+      "period",
+      "quiet",
+      "garden"
+    ],
+    "description": "Quiet one-bed period flat near the river with access to a shared garden.",
+    "lat": 51.4689,
+    "lng": -0.2102,
+    "nearby_stations": [
+      {
+        "name": "Putney Bridge",
+        "distance_miles": 0.07,
+        "walk_minutes": 1,
+        "line": "District"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1028",
+    "name": "Mile End Student-Friendly Studio",
+    "location": "Mile End, E3",
+    "area": "London",
+    "postcode": "E3 4DH",
+    "station": "Mile End",
+    "station_line": "Central / District / H&C",
+    "station_distance_miles": 0.05,
+    "station_walk_minutes": 1,
+    "station_ride_minutes": 14,
+    "building_type": "studio",
+    "room_type": "studio",
+    "bedrooms": 0,
+    "monthly_rent_gbp": 1650,
+    "council_tax_band": "B",
+    "size_sqft": 335,
+    "floor_level": 3,
+    "floor_label": "upper floor",
+    "new_build": false,
+    "keywords": [
+      "student",
+      "budget",
+      "walk to station",
+      "compact"
+    ],
+    "description": "Student-friendly studio within a two-minute walk of Mile End station.",
+    "lat": 51.5248,
+    "lng": -0.0345,
+    "nearby_stations": [
+      {
+        "name": "Mile End",
+        "distance_miles": 0.05,
+        "walk_minutes": 1,
+        "line": "Central / District / H&C"
+      }
+    ],
+    "nearby_landmarks": [
+      {
+        "name": "Queen Mary University of London",
+        "distance_miles": 0.26,
+        "walk_minutes": 5,
+        "category": "university"
+      }
+    ]
+  },
+  {
+    "id": "P1029",
+    "name": "Chelsea Embankment Luxury Three-Bed",
+    "location": "Chelsea, SW3",
+    "area": "London",
+    "postcode": "SW3 4LA",
+    "station": "Sloane Square",
+    "station_line": "District / Circle",
+    "station_distance_miles": 0.28,
+    "station_walk_minutes": 6,
+    "station_ride_minutes": 18,
+    "building_type": "apartment",
+    "room_type": "3 bed",
+    "bedrooms": 3,
+    "monthly_rent_gbp": 7800,
+    "council_tax_band": "H",
+    "size_sqft": 1480,
+    "floor_level": 9,
+    "floor_label": "high floor",
+    "new_build": false,
+    "keywords": [
+      "luxury",
+      "riverside",
+      "balcony",
+      "concierge",
+      "views"
+    ],
+    "description": "Luxury three-bed apartment near Chelsea Embankment with balcony, river views and concierge.",
+    "lat": 51.4898,
+    "lng": -0.1615,
+    "nearby_stations": [
+      {
+        "name": "Sloane Square",
+        "distance_miles": 0.28,
+        "walk_minutes": 6,
+        "line": "District / Circle"
+      },
+      {
+        "name": "South Kensington",
+        "distance_miles": 0.61,
+        "walk_minutes": 12,
+        "line": "District / Circle / Piccadilly"
+      }
+    ],
+    "nearby_landmarks": [
+      {
+        "name": "Imperial College London",
+        "distance_miles": 0.85,
+        "walk_minutes": 17,
+        "category": "university"
+      }
+    ]
+  },
+  {
+    "id": "P1030",
+    "name": "Tottenham Hale New-Build Two-Bed",
+    "location": "Tottenham Hale, N17",
+    "area": "London",
+    "postcode": "N17 9LN",
+    "station": "Tottenham Hale",
+    "station_line": "Victoria / Rail",
+    "station_distance_miles": 0.07,
+    "station_walk_minutes": 1,
+    "station_ride_minutes": 19,
+    "building_type": "apartment",
+    "room_type": "2 bed",
+    "bedrooms": 2,
+    "monthly_rent_gbp": 2350,
+    "council_tax_band": "C",
+    "size_sqft": 720,
+    "floor_level": 11,
+    "floor_label": "high floor",
+    "new_build": true,
+    "keywords": [
+      "new build",
+      "balcony",
+      "gym",
+      "commuter",
+      "high floor"
+    ],
+    "description": "Good-value new-build two-bed with balcony and gym access close to Tottenham Hale station.",
+    "lat": 51.5888,
+    "lng": -0.0615,
+    "nearby_stations": [
+      {
+        "name": "Tottenham Hale",
+        "distance_miles": 0.07,
+        "walk_minutes": 1,
+        "line": "Victoria / Rail"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1031",
+    "name": "Bloomsbury Basement Studio",
+    "location": "Bloomsbury, WC1E",
+    "area": "London",
+    "postcode": "WC1E 6BT",
+    "lat": 51.5235,
+    "lng": -0.1324,
+    "station": "Euston Square",
+    "station_line": "Circle / H&C / Metropolitan",
+    "station_distance_miles": 0.21,
+    "station_walk_minutes": 4,
+    "station_ride_minutes": 8,
+    "building_type": "studio",
+    "room_type": "studio",
+    "bedrooms": 0,
+    "monthly_rent_gbp": 1750,
+    "council_tax_band": "C",
+    "size_sqft": 300,
+    "floor_level": -1,
+    "floor_label": "basement",
+    "new_build": false,
+    "furnished": "furnished",
+    "available_from": "2026-06-01",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": false,
+    "accessibility": [
+      "stairs only"
+    ],
+    "keywords": [
+      "budget",
+      "student",
+      "basement",
+      "near ucl",
+      "compact"
+    ],
+    "description": "Budget furnished basement studio close to UCL and Goodge Street, compact but very central.",
+    "nearby_stations": [
+      {
+        "name": "Euston Square",
+        "distance_miles": 0.21,
+        "walk_minutes": 4,
+        "line": "Circle / H&C / Metropolitan"
+      },
+      {
+        "name": "Goodge Street",
+        "distance_miles": 0.23,
+        "walk_minutes": 5,
+        "line": "Northern"
+      },
+      {
+        "name": "Warren Street",
+        "distance_miles": 0.26,
+        "walk_minutes": 5,
+        "line": "Northern / Victoria"
+      },
+      {
+        "name": "Russell Square",
+        "distance_miles": 0.35,
+        "walk_minutes": 7,
+        "line": "Piccadilly"
+      },
+      {
+        "name": "Tottenham Court Road",
+        "distance_miles": 0.51,
+        "walk_minutes": 10,
+        "line": "Central / Northern / Elizabeth"
+      }
+    ],
+    "nearby_landmarks": [
+      {
+        "name": "UCL",
+        "distance_miles": 0.1,
+        "walk_minutes": 2,
+        "category": "university"
+      },
+      {
+        "name": "British Museum",
+        "distance_miles": 0.37,
+        "walk_minutes": 7,
+        "category": "museum"
+      },
+      {
+        "name": "LSE",
+        "distance_miles": 0.93,
+        "walk_minutes": 19,
+        "category": "university"
+      },
+      {
+        "name": "Regent's University London",
+        "distance_miles": 1.01,
+        "walk_minutes": 20,
+        "category": "university"
+      },
+      {
+        "name": "King's College London",
+        "distance_miles": 1.09,
+        "walk_minutes": 22,
+        "category": "university"
+      }
+    ]
+  },
+  {
+    "id": "P1032",
+    "name": "Bloomsbury Accessible New Studio",
+    "location": "Bloomsbury, WC1H",
+    "area": "London",
+    "postcode": "WC1H 9JP",
+    "lat": 51.526,
+    "lng": -0.1268,
+    "station": "Russell Square",
+    "station_line": "Piccadilly",
+    "station_distance_miles": 0.23,
+    "station_walk_minutes": 5,
+    "station_ride_minutes": 8,
+    "building_type": "studio",
+    "room_type": "studio",
+    "bedrooms": 0,
+    "monthly_rent_gbp": 2480,
+    "council_tax_band": "D",
+    "size_sqft": 455,
+    "floor_level": 4,
+    "floor_label": "mid floor",
+    "new_build": true,
+    "furnished": "part furnished",
+    "available_from": "2026-05-20",
+    "tenancy_min_months": 6,
+    "bills_included": true,
+    "pets_allowed": false,
+    "accessibility": [
+      "lift",
+      "step free"
+    ],
+    "keywords": [
+      "new build",
+      "lift",
+      "step free",
+      "concierge",
+      "student",
+      "bills included"
+    ],
+    "description": "Step-free new-build studio with lift, concierge and bills included, positioned between UCL and Russell Square.",
+    "nearby_stations": [
+      {
+        "name": "Russell Square",
+        "distance_miles": 0.23,
+        "walk_minutes": 5,
+        "line": "Piccadilly"
+      },
+      {
+        "name": "King's Cross St Pancras",
+        "distance_miles": 0.36,
+        "walk_minutes": 7,
+        "line": "Piccadilly / Victoria / Northern / Circle / H&C / Metropolitan"
+      },
+      {
+        "name": "Euston Square",
+        "distance_miles": 0.38,
+        "walk_minutes": 8,
+        "line": "Circle / H&C / Metropolitan"
+      },
+      {
+        "name": "Warren Street",
+        "distance_miles": 0.5,
+        "walk_minutes": 10,
+        "line": "Northern / Victoria"
+      },
+      {
+        "name": "Goodge Street",
+        "distance_miles": 0.51,
+        "walk_minutes": 10,
+        "line": "Northern"
+      }
+    ],
+    "nearby_landmarks": [
+      {
+        "name": "UCL",
+        "distance_miles": 0.32,
+        "walk_minutes": 6,
+        "category": "university"
+      },
+      {
+        "name": "British Museum",
+        "distance_miles": 0.46,
+        "walk_minutes": 9,
+        "category": "museum"
+      },
+      {
+        "name": "LSE",
+        "distance_miles": 0.92,
+        "walk_minutes": 18,
+        "category": "university"
+      },
+      {
+        "name": "City University",
+        "distance_miles": 1.05,
+        "walk_minutes": 21,
+        "category": "university"
+      },
+      {
+        "name": "King's College London",
+        "distance_miles": 1.1,
+        "walk_minutes": 22,
+        "category": "university"
+      },
+      {
+        "name": "Regent's University London",
+        "distance_miles": 1.23,
+        "walk_minutes": 25,
+        "category": "university"
+      }
+    ]
+  },
+  {
+    "id": "P1033",
+    "name": "Euston Student Bills-Included Room",
+    "location": "Euston, NW1",
+    "area": "London",
+    "postcode": "NW1 2RT",
+    "lat": 51.5285,
+    "lng": -0.1338,
+    "station": "Euston Square",
+    "station_line": "Circle / H&C / Metropolitan",
+    "station_distance_miles": 0.2,
+    "station_walk_minutes": 4,
+    "station_ride_minutes": 6,
+    "building_type": "house",
+    "room_type": "room in house share",
+    "bedrooms": 5,
+    "monthly_rent_gbp": 1250,
+    "council_tax_band": "D",
+    "size_sqft": 120,
+    "floor_level": 2,
+    "floor_label": "upper floor",
+    "new_build": false,
+    "furnished": "furnished",
+    "available_from": "2026-09-01",
+    "tenancy_min_months": 9,
+    "bills_included": true,
+    "pets_allowed": false,
+    "accessibility": [
+      "stairs only"
+    ],
+    "keywords": [
+      "student",
+      "bills included",
+      "house share",
+      "budget",
+      "near ucl"
+    ],
+    "description": "Furnished student room in a house share near UCL and Euston Square, with bills included.",
+    "nearby_stations": [
+      {
+        "name": "Euston Square",
+        "distance_miles": 0.2,
+        "walk_minutes": 4,
+        "line": "Circle / H&C / Metropolitan"
+      },
+      {
+        "name": "Warren Street",
+        "distance_miles": 0.33,
+        "walk_minutes": 7,
+        "line": "Northern / Victoria"
+      },
+      {
+        "name": "King's Cross St Pancras",
+        "distance_miles": 0.46,
+        "walk_minutes": 9,
+        "line": "Piccadilly / Victoria / Northern / Circle / H&C / Metropolitan"
+      },
+      {
+        "name": "Goodge Street",
+        "distance_miles": 0.55,
+        "walk_minutes": 11,
+        "line": "Northern"
+      },
+      {
+        "name": "Russell Square",
+        "distance_miles": 0.55,
+        "walk_minutes": 11,
+        "line": "Piccadilly"
+      }
+    ],
+    "nearby_landmarks": [
+      {
+        "name": "UCL",
+        "distance_miles": 0.27,
+        "walk_minutes": 5,
+        "category": "university"
+      },
+      {
+        "name": "British Museum",
+        "distance_miles": 0.69,
+        "walk_minutes": 14,
+        "category": "museum"
+      },
+      {
+        "name": "Regent's University London",
+        "distance_miles": 0.94,
+        "walk_minutes": 19,
+        "category": "university"
+      },
+      {
+        "name": "LSE",
+        "distance_miles": 1.23,
+        "walk_minutes": 25,
+        "category": "university"
+      }
+    ]
+  },
+  {
+    "id": "P1034",
+    "name": "Holborn Mansion Studio",
+    "location": "Holborn, WC1V",
+    "area": "London",
+    "postcode": "WC1V 6DR",
+    "lat": 51.5176,
+    "lng": -0.1193,
+    "station": "Holborn",
+    "station_line": "Central / Piccadilly",
+    "station_distance_miles": 0.03,
+    "station_walk_minutes": 1,
+    "station_ride_minutes": 6,
+    "building_type": "studio",
+    "room_type": "studio",
+    "bedrooms": 0,
+    "monthly_rent_gbp": 2300,
+    "council_tax_band": "D",
+    "size_sqft": 370,
+    "floor_level": 1,
+    "floor_label": "low floor",
+    "new_build": false,
+    "furnished": "furnished",
+    "available_from": "2026-06-15",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": false,
+    "accessibility": [
+      "lift"
+    ],
+    "keywords": [
+      "period",
+      "mansion block",
+      "lift",
+      "central",
+      "quiet"
+    ],
+    "description": "Quiet furnished studio in a period mansion block near Holborn, within walking distance of UCL and LSE.",
+    "nearby_stations": [
+      {
+        "name": "Holborn",
+        "distance_miles": 0.03,
+        "walk_minutes": 1,
+        "line": "Central / Piccadilly"
+      },
+      {
+        "name": "Russell Square",
+        "distance_miles": 0.43,
+        "walk_minutes": 9,
+        "line": "Piccadilly"
+      },
+      {
+        "name": "Tottenham Court Road",
+        "distance_miles": 0.51,
+        "walk_minutes": 10,
+        "line": "Central / Northern / Elizabeth"
+      },
+      {
+        "name": "Goodge Street",
+        "distance_miles": 0.69,
+        "walk_minutes": 14,
+        "line": "Northern"
+      }
+    ],
+    "nearby_landmarks": [
+      {
+        "name": "LSE",
+        "distance_miles": 0.25,
+        "walk_minutes": 5,
+        "category": "university"
+      },
+      {
+        "name": "British Museum",
+        "distance_miles": 0.35,
+        "walk_minutes": 7,
+        "category": "museum"
+      },
+      {
+        "name": "King's College London",
+        "distance_miles": 0.44,
+        "walk_minutes": 9,
+        "category": "university"
+      },
+      {
+        "name": "UCL",
+        "distance_miles": 0.8,
+        "walk_minutes": 16,
+        "category": "university"
+      },
+      {
+        "name": "City University",
+        "distance_miles": 1.01,
+        "walk_minutes": 20,
+        "category": "university"
+      }
+    ]
+  },
+  {
+    "id": "P1035",
+    "name": "Fitzrovia Premium Studio",
+    "location": "Fitzrovia, W1T",
+    "area": "London",
+    "postcode": "W1T 4BL",
+    "lat": 51.5213,
+    "lng": -0.1361,
+    "station": "Goodge Street",
+    "station_line": "Northern",
+    "station_distance_miles": 0.08,
+    "station_walk_minutes": 2,
+    "station_ride_minutes": 6,
+    "building_type": "studio",
+    "room_type": "studio",
+    "bedrooms": 0,
+    "monthly_rent_gbp": 2850,
+    "council_tax_band": "E",
+    "size_sqft": 430,
+    "floor_level": 6,
+    "floor_label": "mid floor",
+    "new_build": true,
+    "furnished": "furnished",
+    "available_from": "2026-05-10",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": true,
+    "accessibility": [
+      "lift",
+      "step free"
+    ],
+    "keywords": [
+      "new build",
+      "gym",
+      "concierge",
+      "pet friendly",
+      "lift",
+      "near ucl"
+    ],
+    "description": "Premium pet-friendly studio with gym and concierge close to UCL, Goodge Street and Warren Street.",
+    "nearby_stations": [
+      {
+        "name": "Goodge Street",
+        "distance_miles": 0.08,
+        "walk_minutes": 2,
+        "line": "Northern"
+      },
+      {
+        "name": "Warren Street",
+        "distance_miles": 0.25,
+        "walk_minutes": 5,
+        "line": "Northern / Victoria"
+      },
+      {
+        "name": "Euston Square",
+        "distance_miles": 0.31,
+        "walk_minutes": 6,
+        "line": "Circle / H&C / Metropolitan"
+      },
+      {
+        "name": "Tottenham Court Road",
+        "distance_miles": 0.42,
+        "walk_minutes": 8,
+        "line": "Central / Northern / Elizabeth"
+      },
+      {
+        "name": "Regent's Park",
+        "distance_miles": 0.47,
+        "walk_minutes": 9,
+        "line": "Bakerloo"
+      }
+    ],
+    "nearby_landmarks": [
+      {
+        "name": "UCL",
+        "distance_miles": 0.25,
+        "walk_minutes": 5,
+        "category": "university"
+      },
+      {
+        "name": "British Museum",
+        "distance_miles": 0.41,
+        "walk_minutes": 8,
+        "category": "museum"
+      },
+      {
+        "name": "Regent's University London",
+        "distance_miles": 0.9,
+        "walk_minutes": 18,
+        "category": "university"
+      },
+      {
+        "name": "LSE",
+        "distance_miles": 0.97,
+        "walk_minutes": 19,
+        "category": "university"
+      },
+      {
+        "name": "King's College London",
+        "distance_miles": 1.1,
+        "walk_minutes": 22,
+        "category": "university"
+      }
+    ]
+  },
+  {
+    "id": "P1036",
+    "name": "Camden Student Micro Studio",
+    "location": "Camden, NW1",
+    "area": "London",
+    "postcode": "NW1 0NE",
+    "lat": 51.5378,
+    "lng": -0.1389,
+    "station": "Camden Town",
+    "station_line": "Northern",
+    "station_distance_miles": 0.19,
+    "station_walk_minutes": 4,
+    "station_ride_minutes": 10,
+    "building_type": "studio",
+    "room_type": "studio",
+    "bedrooms": 0,
+    "monthly_rent_gbp": 1450,
+    "council_tax_band": "B",
+    "size_sqft": 260,
+    "floor_level": 5,
+    "floor_label": "upper floor",
+    "new_build": false,
+    "furnished": "furnished",
+    "available_from": "2026-08-25",
+    "tenancy_min_months": 10,
+    "bills_included": true,
+    "pets_allowed": false,
+    "accessibility": [
+      "lift"
+    ],
+    "keywords": [
+      "student",
+      "micro studio",
+      "budget",
+      "bills included",
+      "lift"
+    ],
+    "description": "Very compact student studio with bills included near Camden Town, better for budget than space.",
+    "nearby_stations": [
+      {
+        "name": "Camden Town",
+        "distance_miles": 0.19,
+        "walk_minutes": 4,
+        "line": "Northern"
+      }
+    ],
+    "nearby_landmarks": [
+      {
+        "name": "UCL",
+        "distance_miles": 0.94,
+        "walk_minutes": 19,
+        "category": "university"
+      },
+      {
+        "name": "Regent's University London",
+        "distance_miles": 1.07,
+        "walk_minutes": 21,
+        "category": "university"
+      }
+    ]
+  },
+  {
+    "id": "P1037",
+    "name": "Soho Noisy Top-Floor Studio",
+    "location": "Soho, W1D",
+    "area": "London",
+    "postcode": "W1D 3QU",
+    "lat": 51.5137,
+    "lng": -0.1328,
+    "station": "Tottenham Court Road",
+    "station_line": "Central / Northern / Elizabeth",
+    "station_distance_miles": 0.19,
+    "station_walk_minutes": 4,
+    "station_ride_minutes": 6,
+    "building_type": "studio",
+    "room_type": "studio",
+    "bedrooms": 0,
+    "monthly_rent_gbp": 2600,
+    "council_tax_band": "D",
+    "size_sqft": 340,
+    "floor_level": 5,
+    "floor_label": "top floor",
+    "new_build": false,
+    "furnished": "furnished",
+    "available_from": "2026-05-05",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": false,
+    "accessibility": [
+      "stairs only",
+      "no lift"
+    ],
+    "keywords": [
+      "central",
+      "top floor",
+      "noisy",
+      "nightlife",
+      "stairs only"
+    ],
+    "description": "Top-floor Soho studio above nightlife; central and bright, but not suitable for quiet-search users.",
+    "nearby_stations": [
+      {
+        "name": "Tottenham Court Road",
+        "distance_miles": 0.19,
+        "walk_minutes": 4,
+        "line": "Central / Northern / Elizabeth"
+      },
+      {
+        "name": "Goodge Street",
+        "distance_miles": 0.48,
+        "walk_minutes": 10,
+        "line": "Northern"
+      },
+      {
+        "name": "Holborn",
+        "distance_miles": 0.61,
+        "walk_minutes": 12,
+        "line": "Central / Piccadilly"
+      },
+      {
+        "name": "Russell Square",
+        "distance_miles": 0.74,
+        "walk_minutes": 15,
+        "line": "Piccadilly"
+      }
+    ],
+    "nearby_landmarks": [
+      {
+        "name": "British Museum",
+        "distance_miles": 0.47,
+        "walk_minutes": 9,
+        "category": "museum"
+      },
+      {
+        "name": "LSE",
+        "distance_miles": 0.7,
+        "walk_minutes": 14,
+        "category": "university"
+      },
+      {
+        "name": "King's College London",
+        "distance_miles": 0.74,
+        "walk_minutes": 15,
+        "category": "university"
+      },
+      {
+        "name": "UCL",
+        "distance_miles": 0.75,
+        "walk_minutes": 15,
+        "category": "university"
+      }
+    ]
+  },
+  {
+    "id": "P1038",
+    "name": "Bethnal Green Pet-Friendly Garden Flat",
+    "location": "Bethnal Green, E2",
+    "area": "London",
+    "postcode": "E2 0ET",
+    "lat": 51.5275,
+    "lng": -0.0559,
+    "station": "Bethnal Green",
+    "station_line": "Central",
+    "station_distance_miles": 0.03,
+    "station_walk_minutes": 1,
+    "station_ride_minutes": 13,
+    "building_type": "flat",
+    "room_type": "1 bed",
+    "bedrooms": 1,
+    "monthly_rent_gbp": 2050,
+    "council_tax_band": "C",
+    "size_sqft": 585,
+    "floor_level": 0,
+    "floor_label": "garden level",
+    "new_build": false,
+    "furnished": "unfurnished",
+    "available_from": "2026-07-01",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": true,
+    "accessibility": [
+      "step free"
+    ],
+    "keywords": [
+      "pet friendly",
+      "garden",
+      "period",
+      "quiet",
+      "unfurnished"
+    ],
+    "description": "Pet-friendly garden flat in a period terrace with step-free access from street level.",
+    "nearby_stations": [
+      {
+        "name": "Bethnal Green",
+        "distance_miles": 0.03,
+        "walk_minutes": 1,
+        "line": "Central"
+      },
+      {
+        "name": "Whitechapel",
+        "distance_miles": 0.58,
+        "walk_minutes": 12,
+        "line": "Elizabeth / District / H&C / Overground"
+      }
+    ],
+    "nearby_landmarks": [
+      {
+        "name": "Queen Mary University of London",
+        "distance_miles": 0.68,
+        "walk_minutes": 14,
+        "category": "university"
+      }
+    ]
+  },
+  {
+    "id": "P1039",
+    "name": "Old Street Live-Work Loft",
+    "location": "Old Street, EC1V",
+    "area": "London",
+    "postcode": "EC1V 9LT",
+    "lat": 51.5253,
+    "lng": -0.0871,
+    "station": "Old Street",
+    "station_line": "Northern / Rail",
+    "station_distance_miles": 0.04,
+    "station_walk_minutes": 1,
+    "station_ride_minutes": 10,
+    "building_type": "loft",
+    "room_type": "1 bed",
+    "bedrooms": 1,
+    "monthly_rent_gbp": 3200,
+    "council_tax_band": "E",
+    "size_sqft": 760,
+    "floor_level": 2,
+    "floor_label": "low floor",
+    "new_build": false,
+    "furnished": "part furnished",
+    "available_from": "2026-06-20",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": true,
+    "accessibility": [
+      "lift"
+    ],
+    "keywords": [
+      "loft",
+      "live work",
+      "warehouse",
+      "pet friendly",
+      "high ceilings"
+    ],
+    "description": "Live-work loft with warehouse character, lift access and flexible part-furnished setup.",
+    "nearby_stations": [
+      {
+        "name": "Old Street",
+        "distance_miles": 0.04,
+        "walk_minutes": 1,
+        "line": "Northern / Rail"
+      },
+      {
+        "name": "Shoreditch High Street",
+        "distance_miles": 0.51,
+        "walk_minutes": 10,
+        "line": "Overground"
+      }
+    ],
+    "nearby_landmarks": [
+      {
+        "name": "City University",
+        "distance_miles": 0.69,
+        "walk_minutes": 14,
+        "category": "university"
+      }
+    ]
+  },
+  {
+    "id": "P1040",
+    "name": "Deptford Affordable Two-Bed",
+    "location": "Deptford, SE8",
+    "area": "London",
+    "postcode": "SE8 4HH",
+    "lat": 51.4767,
+    "lng": -0.0265,
+    "station": "Deptford",
+    "station_line": "Rail",
+    "station_distance_miles": 0.15,
+    "station_walk_minutes": 3,
+    "station_ride_minutes": 19,
+    "building_type": "flat",
+    "room_type": "2 bed",
+    "bedrooms": 2,
+    "monthly_rent_gbp": 1950,
+    "council_tax_band": "B",
+    "size_sqft": 650,
+    "floor_level": 2,
+    "floor_label": "low floor",
+    "new_build": false,
+    "furnished": "unfurnished",
+    "available_from": "2026-05-30",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": false,
+    "accessibility": [
+      "stairs only"
+    ],
+    "keywords": [
+      "budget",
+      "family",
+      "unfurnished",
+      "rail",
+      "market"
+    ],
+    "description": "Affordable unfurnished two-bed close to Deptford station and market.",
+    "nearby_stations": [
+      {
+        "name": "Deptford",
+        "distance_miles": 0.15,
+        "walk_minutes": 3,
+        "line": "Rail"
+      },
+      {
+        "name": "Greenwich",
+        "distance_miles": 0.51,
+        "walk_minutes": 10,
+        "line": "DLR / Rail"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1041",
+    "name": "Lewisham New-Build Family Three-Bed",
+    "location": "Lewisham, SE13",
+    "area": "London",
+    "postcode": "SE13 7RY",
+    "lat": 51.4657,
+    "lng": -0.014,
+    "station": "Lewisham",
+    "station_line": "DLR / Rail",
+    "station_distance_miles": 0.01,
+    "station_walk_minutes": 1,
+    "station_ride_minutes": 21,
+    "building_type": "apartment",
+    "room_type": "3 bed",
+    "bedrooms": 3,
+    "monthly_rent_gbp": 2850,
+    "council_tax_band": "D",
+    "size_sqft": 980,
+    "floor_level": 10,
+    "floor_label": "high floor",
+    "new_build": true,
+    "furnished": "unfurnished",
+    "available_from": "2026-07-15",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": true,
+    "accessibility": [
+      "lift",
+      "step free"
+    ],
+    "keywords": [
+      "family",
+      "new build",
+      "balcony",
+      "pet friendly",
+      "parking"
+    ],
+    "description": "Step-free family apartment with three bedrooms, balcony and parking near Lewisham station.",
+    "nearby_stations": [
+      {
+        "name": "Lewisham",
+        "distance_miles": 0.01,
+        "walk_minutes": 1,
+        "line": "DLR / Rail"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1042",
+    "name": "Peckham Period Maisonette",
+    "location": "Peckham, SE15",
+    "area": "London",
+    "postcode": "SE15 4ST",
+    "lat": 51.4721,
+    "lng": -0.0699,
+    "station": "Peckham Rye",
+    "station_line": "Overground / Rail",
+    "station_distance_miles": 0.15,
+    "station_walk_minutes": 3,
+    "station_ride_minutes": 18,
+    "building_type": "maisonette",
+    "room_type": "2 bed",
+    "bedrooms": 2,
+    "monthly_rent_gbp": 2550,
+    "council_tax_band": "C",
+    "size_sqft": 820,
+    "floor_level": 1,
+    "floor_label": "first and second",
+    "new_build": false,
+    "furnished": "part furnished",
+    "available_from": "2026-06-10",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": true,
+    "accessibility": [
+      "stairs only"
+    ],
+    "keywords": [
+      "period",
+      "maisonette",
+      "garden",
+      "pet friendly",
+      "family"
+    ],
+    "description": "Period maisonette with garden access in Peckham, suited to a small family with a pet.",
+    "nearby_stations": [
+      {
+        "name": "Peckham Rye",
+        "distance_miles": 0.15,
+        "walk_minutes": 3,
+        "line": "Overground / Rail"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1043",
+    "name": "Acton Elizabeth Line One-Bed",
+    "location": "Acton, W3",
+    "area": "London",
+    "postcode": "W3 6UU",
+    "lat": 51.5084,
+    "lng": -0.263,
+    "station": "Acton Main Line",
+    "station_line": "Elizabeth",
+    "station_distance_miles": 0.62,
+    "station_walk_minutes": 12,
+    "station_ride_minutes": 24,
+    "building_type": "apartment",
+    "room_type": "1 bed",
+    "bedrooms": 1,
+    "monthly_rent_gbp": 2050,
+    "council_tax_band": "C",
+    "size_sqft": 560,
+    "floor_level": 8,
+    "floor_label": "high floor",
+    "new_build": true,
+    "furnished": "furnished",
+    "available_from": "2026-05-18",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": false,
+    "accessibility": [
+      "lift",
+      "step free"
+    ],
+    "keywords": [
+      "new build",
+      "elizabeth line",
+      "balcony",
+      "commuter",
+      "lift"
+    ],
+    "description": "High-floor new-build one-bed near the Elizabeth line, useful for west London commuters.",
+    "nearby_stations": [
+      {
+        "name": "Acton Main Line",
+        "distance_miles": 0.62,
+        "walk_minutes": 12,
+        "line": "Elizabeth"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1044",
+    "name": "Kensington Imperial Studio",
+    "location": "South Kensington, SW7",
+    "area": "London",
+    "postcode": "SW7 2AZ",
+    "lat": 51.4989,
+    "lng": -0.174,
+    "station": "South Kensington",
+    "station_line": "District / Circle / Piccadilly",
+    "station_distance_miles": 0.33,
+    "station_walk_minutes": 7,
+    "station_ride_minutes": 12,
+    "building_type": "studio",
+    "room_type": "studio",
+    "bedrooms": 0,
+    "monthly_rent_gbp": 2400,
+    "council_tax_band": "E",
+    "size_sqft": 360,
+    "floor_level": 3,
+    "floor_label": "upper floor",
+    "new_build": false,
+    "furnished": "furnished",
+    "available_from": "2026-09-10",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": false,
+    "accessibility": [
+      "lift"
+    ],
+    "keywords": [
+      "student",
+      "imperial",
+      "period",
+      "lift",
+      "central"
+    ],
+    "description": "Furnished studio close to Imperial College and South Kensington museums, with lift access.",
+    "nearby_stations": [
+      {
+        "name": "South Kensington",
+        "distance_miles": 0.33,
+        "walk_minutes": 7,
+        "line": "District / Circle / Piccadilly"
+      }
+    ],
+    "nearby_landmarks": [
+      {
+        "name": "Imperial College London",
+        "distance_miles": 0.04,
+        "walk_minutes": 1,
+        "category": "university"
+      }
+    ]
+  },
+  {
+    "id": "P1045",
+    "name": "Aldgate High-Floor Studio",
+    "location": "Aldgate, E1",
+    "area": "London",
+    "postcode": "E1 8FA",
+    "lat": 51.5148,
+    "lng": -0.0735,
+    "station": "Aldgate East",
+    "station_line": "District / H&C",
+    "station_distance_miles": 0.07,
+    "station_walk_minutes": 1,
+    "station_ride_minutes": 9,
+    "building_type": "studio",
+    "room_type": "studio",
+    "bedrooms": 0,
+    "monthly_rent_gbp": 2100,
+    "council_tax_band": "C",
+    "size_sqft": 385,
+    "floor_level": 16,
+    "floor_label": "high floor",
+    "new_build": true,
+    "furnished": "furnished",
+    "available_from": "2026-05-25",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": false,
+    "accessibility": [
+      "lift",
+      "step free"
+    ],
+    "keywords": [
+      "new build",
+      "gym",
+      "concierge",
+      "high floor",
+      "views"
+    ],
+    "description": "High-floor studio with gym and concierge by Aldgate East, strong city commute but not near UCL.",
+    "nearby_stations": [
+      {
+        "name": "Aldgate East",
+        "distance_miles": 0.07,
+        "walk_minutes": 1,
+        "line": "District / H&C"
+      },
+      {
+        "name": "Shoreditch High Street",
+        "distance_miles": 0.61,
+        "walk_minutes": 12,
+        "line": "Overground"
+      },
+      {
+        "name": "Whitechapel",
+        "distance_miles": 0.67,
+        "walk_minutes": 13,
+        "line": "Elizabeth / District / H&C / Overground"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1046",
+    "name": "Greenwich Parking Townhouse",
+    "location": "Greenwich, SE10",
+    "area": "London",
+    "postcode": "SE10 8JL",
+    "lat": 51.48,
+    "lng": -0.007,
+    "station": "Greenwich",
+    "station_line": "DLR / Rail",
+    "station_distance_miles": 0.36,
+    "station_walk_minutes": 7,
+    "station_ride_minutes": 22,
+    "building_type": "house",
+    "room_type": "3 bed",
+    "bedrooms": 3,
+    "monthly_rent_gbp": 3600,
+    "council_tax_band": "F",
+    "size_sqft": 1250,
+    "floor_level": 0,
+    "floor_label": "house",
+    "new_build": false,
+    "furnished": "unfurnished",
+    "available_from": "2026-08-01",
+    "tenancy_min_months": 24,
+    "bills_included": false,
+    "pets_allowed": true,
+    "accessibility": [
+      "step free ground floor"
+    ],
+    "keywords": [
+      "townhouse",
+      "parking",
+      "garden",
+      "family",
+      "pet friendly"
+    ],
+    "description": "Greenwich townhouse with parking, garden and a step-free ground floor.",
+    "nearby_stations": [
+      {
+        "name": "Greenwich",
+        "distance_miles": 0.36,
+        "walk_minutes": 7,
+        "line": "DLR / Rail"
+      },
+      {
+        "name": "Maze Hill",
+        "distance_miles": 0.47,
+        "walk_minutes": 9,
+        "line": "Rail"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1047",
+    "name": "Canary Wharf Luxury Penthouse",
+    "location": "Canary Wharf, E14",
+    "area": "London",
+    "postcode": "E14 5AB",
+    "lat": 51.5052,
+    "lng": -0.0221,
+    "station": "Canary Wharf",
+    "station_line": "Jubilee / Elizabeth / DLR",
+    "station_distance_miles": 0.16,
+    "station_walk_minutes": 3,
+    "station_ride_minutes": 12,
+    "building_type": "penthouse",
+    "room_type": "3 bed",
+    "bedrooms": 3,
+    "monthly_rent_gbp": 8500,
+    "council_tax_band": "H",
+    "size_sqft": 1700,
+    "floor_level": 39,
+    "floor_label": "penthouse",
+    "new_build": true,
+    "furnished": "furnished",
+    "available_from": "2026-05-12",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": true,
+    "accessibility": [
+      "lift",
+      "step free"
+    ],
+    "keywords": [
+      "luxury",
+      "penthouse",
+      "gym",
+      "concierge",
+      "balcony",
+      "river views"
+    ],
+    "description": "Large Canary Wharf penthouse with river views, concierge, gym and wraparound balcony.",
+    "nearby_stations": [
+      {
+        "name": "Canary Wharf",
+        "distance_miles": 0.16,
+        "walk_minutes": 3,
+        "line": "Jubilee / Elizabeth / DLR"
+      },
+      {
+        "name": "South Quay",
+        "distance_miles": 0.38,
+        "walk_minutes": 8,
+        "line": "DLR"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1048",
+    "name": "Canary Wharf Corporate Studio",
+    "location": "Canary Wharf, E14",
+    "area": "London",
+    "postcode": "E14 4QQ",
+    "lat": 51.5038,
+    "lng": -0.019,
+    "station": "Canary Wharf",
+    "station_line": "Jubilee / Elizabeth / DLR",
+    "station_distance_miles": 0.03,
+    "station_walk_minutes": 1,
+    "station_ride_minutes": 12,
+    "building_type": "studio",
+    "room_type": "studio",
+    "bedrooms": 0,
+    "monthly_rent_gbp": 2550,
+    "council_tax_band": "E",
+    "size_sqft": 420,
+    "floor_level": 21,
+    "floor_label": "high floor",
+    "new_build": true,
+    "furnished": "furnished",
+    "available_from": "2026-06-05",
+    "tenancy_min_months": 3,
+    "bills_included": true,
+    "pets_allowed": false,
+    "accessibility": [
+      "lift",
+      "step free"
+    ],
+    "keywords": [
+      "corporate let",
+      "short let",
+      "bills included",
+      "gym",
+      "concierge",
+      "high floor"
+    ],
+    "description": "Corporate high-floor studio in Canary Wharf with bills included, short-let option and resident gym.",
+    "nearby_stations": [
+      {
+        "name": "Canary Wharf",
+        "distance_miles": 0.03,
+        "walk_minutes": 1,
+        "line": "Jubilee / Elizabeth / DLR"
+      },
+      {
+        "name": "South Quay",
+        "distance_miles": 0.24,
+        "walk_minutes": 5,
+        "line": "DLR"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1049",
+    "name": "Canary Wharf Budget No-Gym Studio",
+    "location": "Canary Wharf, E14",
+    "area": "London",
+    "postcode": "E14 8PX",
+    "lat": 51.5009,
+    "lng": -0.0148,
+    "station": "South Quay",
+    "station_line": "DLR",
+    "station_distance_miles": 0.11,
+    "station_walk_minutes": 2,
+    "station_ride_minutes": 15,
+    "building_type": "studio",
+    "room_type": "studio",
+    "bedrooms": 0,
+    "monthly_rent_gbp": 1850,
+    "council_tax_band": "C",
+    "size_sqft": 330,
+    "floor_level": 2,
+    "floor_label": "low floor",
+    "new_build": false,
+    "furnished": "furnished",
+    "available_from": "2026-05-22",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": false,
+    "accessibility": [
+      "lift"
+    ],
+    "keywords": [
+      "budget",
+      "no gym",
+      "compact",
+      "walk to station"
+    ],
+    "description": "Budget Canary Wharf studio close to South Quay, but without gym, balcony or high-floor views.",
+    "nearby_stations": [
+      {
+        "name": "South Quay",
+        "distance_miles": 0.11,
+        "walk_minutes": 2,
+        "line": "DLR"
+      },
+      {
+        "name": "Canary Wharf",
+        "distance_miles": 0.28,
+        "walk_minutes": 6,
+        "line": "Jubilee / Elizabeth / DLR"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1050",
+    "name": "Richmond Riverside Family House",
+    "location": "Richmond, TW9",
+    "area": "London",
+    "postcode": "TW9 1TH",
+    "lat": 51.4613,
+    "lng": -0.3036,
+    "station": "Richmond",
+    "station_line": "District / Overground / Rail",
+    "station_distance_miles": 0.15,
+    "station_walk_minutes": 3,
+    "station_ride_minutes": 34,
+    "building_type": "house",
+    "room_type": "4 bed",
+    "bedrooms": 4,
+    "monthly_rent_gbp": 5200,
+    "council_tax_band": "G",
+    "size_sqft": 1800,
+    "floor_level": 0,
+    "floor_label": "house",
+    "new_build": false,
+    "furnished": "unfurnished",
+    "available_from": "2026-08-15",
+    "tenancy_min_months": 24,
+    "bills_included": false,
+    "pets_allowed": true,
+    "accessibility": [
+      "step free ground floor"
+    ],
+    "keywords": [
+      "family",
+      "riverside",
+      "garden",
+      "parking",
+      "pet friendly",
+      "quiet"
+    ],
+    "description": "Quiet riverside family house in Richmond with garden, parking and pet-friendly terms.",
+    "nearby_stations": [
+      {
+        "name": "Richmond",
+        "distance_miles": 0.15,
+        "walk_minutes": 3,
+        "line": "District / Overground / Rail"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1051",
+    "name": "Wembley Park New-Build Two-Bed",
+    "location": "Wembley Park, HA9",
+    "area": "London",
+    "postcode": "HA9 0FA",
+    "lat": 51.5636,
+    "lng": -0.2796,
+    "station": "Wembley Park",
+    "station_line": "Jubilee / Metropolitan",
+    "station_distance_miles": 0.01,
+    "station_walk_minutes": 1,
+    "station_ride_minutes": 28,
+    "building_type": "apartment",
+    "room_type": "2 bed",
+    "bedrooms": 2,
+    "monthly_rent_gbp": 2400,
+    "council_tax_band": "D",
+    "size_sqft": 760,
+    "floor_level": 17,
+    "floor_label": "high floor",
+    "new_build": true,
+    "furnished": "part furnished",
+    "available_from": "2026-07-05",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": true,
+    "accessibility": [
+      "lift",
+      "step free"
+    ],
+    "keywords": [
+      "new build",
+      "gym",
+      "balcony",
+      "pet friendly",
+      "high floor"
+    ],
+    "description": "New-build high-floor two-bed in Wembley Park with gym, balcony and pet-friendly lease.",
+    "nearby_stations": [
+      {
+        "name": "Wembley Park",
+        "distance_miles": 0.01,
+        "walk_minutes": 1,
+        "line": "Jubilee / Metropolitan"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1052",
+    "name": "Croydon East Affordable Studio",
+    "location": "East Croydon, CR0",
+    "area": "London",
+    "postcode": "CR0 1LF",
+    "lat": 51.3756,
+    "lng": -0.0922,
+    "station": "East Croydon",
+    "station_line": "Rail / Tram",
+    "station_distance_miles": 0.01,
+    "station_walk_minutes": 1,
+    "station_ride_minutes": 35,
+    "building_type": "studio",
+    "room_type": "studio",
+    "bedrooms": 0,
+    "monthly_rent_gbp": 1150,
+    "council_tax_band": "B",
+    "size_sqft": 310,
+    "floor_level": 12,
+    "floor_label": "high floor",
+    "new_build": true,
+    "furnished": "furnished",
+    "available_from": "2026-05-28",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": false,
+    "accessibility": [
+      "lift"
+    ],
+    "keywords": [
+      "budget",
+      "new build",
+      "commuter",
+      "high floor",
+      "rail"
+    ],
+    "description": "Affordable high-floor studio near East Croydon for commuters prioritising budget over centrality.",
+    "nearby_stations": [
+      {
+        "name": "East Croydon",
+        "distance_miles": 0.01,
+        "walk_minutes": 1,
+        "line": "Rail / Tram"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1053",
+    "name": "Hounslow Bills-Included Studio",
+    "location": "Hounslow, TW3",
+    "area": "London",
+    "postcode": "TW3 1JG",
+    "lat": 51.4709,
+    "lng": -0.3657,
+    "station": "Hounslow Central",
+    "station_line": "Piccadilly",
+    "station_distance_miles": 0.04,
+    "station_walk_minutes": 1,
+    "station_ride_minutes": 39,
+    "building_type": "studio",
+    "room_type": "studio",
+    "bedrooms": 0,
+    "monthly_rent_gbp": 1250,
+    "council_tax_band": "B",
+    "size_sqft": 340,
+    "floor_level": 1,
+    "floor_label": "low floor",
+    "new_build": false,
+    "furnished": "furnished",
+    "available_from": "2026-06-01",
+    "tenancy_min_months": 6,
+    "bills_included": true,
+    "pets_allowed": false,
+    "accessibility": [
+      "stairs only"
+    ],
+    "keywords": [
+      "budget",
+      "bills included",
+      "piccadilly line",
+      "short tenancy"
+    ],
+    "description": "Budget studio with bills included near Hounslow Central, useful for short tenancy searches.",
+    "nearby_stations": [
+      {
+        "name": "Hounslow Central",
+        "distance_miles": 0.04,
+        "walk_minutes": 1,
+        "line": "Piccadilly"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1054",
+    "name": "Enfield Quiet Family Maisonette",
+    "location": "Enfield, EN2",
+    "area": "London",
+    "postcode": "EN2 6SN",
+    "lat": 51.6523,
+    "lng": -0.089,
+    "station": "Enfield Chase",
+    "station_line": "Rail",
+    "station_distance_miles": 0.09,
+    "station_walk_minutes": 2,
+    "station_ride_minutes": 35,
+    "building_type": "maisonette",
+    "room_type": "3 bed",
+    "bedrooms": 3,
+    "monthly_rent_gbp": 2100,
+    "council_tax_band": "D",
+    "size_sqft": 900,
+    "floor_level": 1,
+    "floor_label": "first and second",
+    "new_build": false,
+    "furnished": "unfurnished",
+    "available_from": "2026-07-20",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": true,
+    "accessibility": [
+      "stairs only"
+    ],
+    "keywords": [
+      "quiet",
+      "family",
+      "garden",
+      "pet friendly",
+      "schools"
+    ],
+    "description": "Quiet family maisonette in Enfield with garden access, good for school-led searches.",
+    "nearby_stations": [
+      {
+        "name": "Enfield Chase",
+        "distance_miles": 0.09,
+        "walk_minutes": 2,
+        "line": "Rail"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1055",
+    "name": "Rotherhithe Step-Free Riverside One-Bed",
+    "location": "Rotherhithe, SE16",
+    "area": "London",
+    "postcode": "SE16 5QU",
+    "lat": 51.5008,
+    "lng": -0.0522,
+    "station": "Canada Water",
+    "station_line": "Jubilee / Overground",
+    "station_distance_miles": 0.22,
+    "station_walk_minutes": 4,
+    "station_ride_minutes": 13,
+    "building_type": "apartment",
+    "room_type": "1 bed",
+    "bedrooms": 1,
+    "monthly_rent_gbp": 2250,
+    "council_tax_band": "D",
+    "size_sqft": 600,
+    "floor_level": 6,
+    "floor_label": "mid floor",
+    "new_build": true,
+    "furnished": "part furnished",
+    "available_from": "2026-06-18",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": false,
+    "accessibility": [
+      "lift",
+      "step free",
+      "wheelchair friendly"
+    ],
+    "keywords": [
+      "riverside",
+      "step free",
+      "wheelchair friendly",
+      "balcony",
+      "lift"
+    ],
+    "description": "Step-free riverside one-bed with lift, balcony and wheelchair-friendly access near Canada Water.",
+    "nearby_stations": [
+      {
+        "name": "Canada Water",
+        "distance_miles": 0.22,
+        "walk_minutes": 4,
+        "line": "Jubilee / Overground"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1056",
+    "name": "Southwark LSE Walk-Up Studio",
+    "location": "Southwark, SE1",
+    "area": "London",
+    "postcode": "SE1 0AA",
+    "lat": 51.5045,
+    "lng": -0.1058,
+    "station": "Southwark",
+    "station_line": "Jubilee",
+    "station_distance_miles": 0.01,
+    "station_walk_minutes": 1,
+    "station_ride_minutes": 6,
+    "building_type": "studio",
+    "room_type": "studio",
+    "bedrooms": 0,
+    "monthly_rent_gbp": 2050,
+    "council_tax_band": "C",
+    "size_sqft": 350,
+    "floor_level": 4,
+    "floor_label": "upper floor",
+    "new_build": false,
+    "furnished": "furnished",
+    "available_from": "2026-09-01",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": false,
+    "accessibility": [
+      "stairs only",
+      "no lift"
+    ],
+    "keywords": [
+      "student",
+      "lse",
+      "walk up",
+      "central",
+      "no lift"
+    ],
+    "description": "Walk-up studio near Southwark, useful for LSE access but unsuitable for step-free requirements.",
+    "nearby_stations": [
+      {
+        "name": "Southwark",
+        "distance_miles": 0.01,
+        "walk_minutes": 1,
+        "line": "Jubilee"
+      },
+      {
+        "name": "Waterloo",
+        "distance_miles": 0.39,
+        "walk_minutes": 8,
+        "line": "Jubilee / Northern / Bakerloo / Waterloo & City / Rail"
+      },
+      {
+        "name": "Blackfriars",
+        "distance_miles": 0.51,
+        "walk_minutes": 10,
+        "line": "District / Circle / Rail"
+      },
+      {
+        "name": "Elephant and Castle",
+        "distance_miles": 0.75,
+        "walk_minutes": 15,
+        "line": "Northern / Bakerloo / Rail"
+      }
+    ],
+    "nearby_landmarks": [
+      {
+        "name": "King's College London",
+        "distance_miles": 0.65,
+        "walk_minutes": 13,
+        "category": "university"
+      },
+      {
+        "name": "LSE",
+        "distance_miles": 0.82,
+        "walk_minutes": 16,
+        "category": "university"
+      }
+    ]
+  },
+  {
+    "id": "P1057",
+    "name": "Blackfriars KCL Riverside Studio",
+    "location": "Blackfriars, EC4V",
+    "area": "London",
+    "postcode": "EC4V 4DY",
+    "lat": 51.5118,
+    "lng": -0.1025,
+    "station": "Blackfriars",
+    "station_line": "District / Circle / Rail",
+    "station_distance_miles": 0.03,
+    "station_walk_minutes": 1,
+    "station_ride_minutes": 5,
+    "building_type": "studio",
+    "room_type": "studio",
+    "bedrooms": 0,
+    "monthly_rent_gbp": 2750,
+    "council_tax_band": "E",
+    "size_sqft": 410,
+    "floor_level": 9,
+    "floor_label": "high floor",
+    "new_build": true,
+    "furnished": "furnished",
+    "available_from": "2026-06-25",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": false,
+    "accessibility": [
+      "lift",
+      "step free"
+    ],
+    "keywords": [
+      "kcl",
+      "riverside",
+      "new build",
+      "gym",
+      "high floor"
+    ],
+    "description": "High-floor studio near King's College London and Blackfriars, with gym and river outlook.",
+    "nearby_stations": [
+      {
+        "name": "Blackfriars",
+        "distance_miles": 0.03,
+        "walk_minutes": 1,
+        "line": "District / Circle / Rail"
+      },
+      {
+        "name": "Southwark",
+        "distance_miles": 0.54,
+        "walk_minutes": 11,
+        "line": "Jubilee"
+      }
+    ],
+    "nearby_landmarks": [
+      {
+        "name": "King's College London",
+        "distance_miles": 0.58,
+        "walk_minutes": 12,
+        "category": "university"
+      },
+      {
+        "name": "LSE",
+        "distance_miles": 0.63,
+        "walk_minutes": 13,
+        "category": "university"
+      },
+      {
+        "name": "City University",
+        "distance_miles": 1.11,
+        "walk_minutes": 22,
+        "category": "university"
+      },
+      {
+        "name": "British Museum",
+        "distance_miles": 1.18,
+        "walk_minutes": 24,
+        "category": "museum"
+      }
+    ]
+  },
+  {
+    "id": "P1058",
+    "name": "Hackney Downs Artist Flat",
+    "location": "Hackney Downs, E5",
+    "area": "London",
+    "postcode": "E5 8NP",
+    "lat": 51.5526,
+    "lng": -0.0609,
+    "station": "Hackney Downs",
+    "station_line": "Overground / Rail",
+    "station_distance_miles": 0.26,
+    "station_walk_minutes": 5,
+    "station_ride_minutes": 22,
+    "building_type": "flat",
+    "room_type": "2 bed",
+    "bedrooms": 2,
+    "monthly_rent_gbp": 2400,
+    "council_tax_band": "C",
+    "size_sqft": 700,
+    "floor_level": 2,
+    "floor_label": "low floor",
+    "new_build": false,
+    "furnished": "part furnished",
+    "available_from": "2026-07-01",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": true,
+    "accessibility": [
+      "stairs only"
+    ],
+    "keywords": [
+      "creative",
+      "pet friendly",
+      "period",
+      "quiet",
+      "workspace"
+    ],
+    "description": "Artist-friendly two-bed near Hackney Downs with workspace feel and pet-friendly terms.",
+    "nearby_stations": [
+      {
+        "name": "Hackney Downs",
+        "distance_miles": 0.26,
+        "walk_minutes": 5,
+        "line": "Overground / Rail"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1059",
+    "name": "Paddington Short-Let One-Bed",
+    "location": "Paddington, W2",
+    "area": "London",
+    "postcode": "W2 1HB",
+    "lat": 51.5162,
+    "lng": -0.1755,
+    "station": "Paddington",
+    "station_line": "Elizabeth / Bakerloo / Circle / District / H&C / Rail",
+    "station_distance_miles": 0.06,
+    "station_walk_minutes": 1,
+    "station_ride_minutes": 11,
+    "building_type": "apartment",
+    "room_type": "1 bed",
+    "bedrooms": 1,
+    "monthly_rent_gbp": 3400,
+    "council_tax_band": "F",
+    "size_sqft": 590,
+    "floor_level": 7,
+    "floor_label": "upper floor",
+    "new_build": true,
+    "furnished": "furnished",
+    "available_from": "2026-05-03",
+    "tenancy_min_months": 1,
+    "bills_included": true,
+    "pets_allowed": false,
+    "accessibility": [
+      "lift",
+      "step free"
+    ],
+    "keywords": [
+      "short let",
+      "bills included",
+      "elizabeth line",
+      "lift",
+      "concierge"
+    ],
+    "description": "Short-let furnished one-bed with bills included near Paddington and the Elizabeth line.",
+    "nearby_stations": [
+      {
+        "name": "Paddington",
+        "distance_miles": 0.06,
+        "walk_minutes": 1,
+        "line": "Elizabeth / Bakerloo / Circle / District / H&C / Rail"
+      }
+    ],
+    "nearby_landmarks": [
+      {
+        "name": "Regent's University London",
+        "distance_miles": 1.11,
+        "walk_minutes": 22,
+        "category": "university"
+      },
+      {
+        "name": "Imperial College London",
+        "distance_miles": 1.2,
+        "walk_minutes": 24,
+        "category": "university"
+      }
+    ]
+  },
+  {
+    "id": "P1060",
+    "name": "Forest Gate Quiet Two-Bed",
+    "location": "Forest Gate, E7",
+    "area": "London",
+    "postcode": "E7 0QH",
+    "lat": 51.5496,
+    "lng": 0.0243,
+    "station": "Forest Gate",
+    "station_line": "Elizabeth",
+    "station_distance_miles": 0.01,
+    "station_walk_minutes": 1,
+    "station_ride_minutes": 24,
+    "building_type": "flat",
+    "room_type": "2 bed",
+    "bedrooms": 2,
+    "monthly_rent_gbp": 1900,
+    "council_tax_band": "C",
+    "size_sqft": 720,
+    "floor_level": 1,
+    "floor_label": "low floor",
+    "new_build": false,
+    "furnished": "unfurnished",
+    "available_from": "2026-06-30",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": true,
+    "accessibility": [
+      "stairs only"
+    ],
+    "keywords": [
+      "quiet",
+      "elizabeth line",
+      "pet friendly",
+      "budget",
+      "family"
+    ],
+    "description": "Quiet and affordable two-bed near Forest Gate for renters who prioritise value and Elizabeth line access.",
+    "nearby_stations": [
+      {
+        "name": "Forest Gate",
+        "distance_miles": 0.01,
+        "walk_minutes": 1,
+        "line": "Elizabeth"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1061",
+    "name": "Somers Town UCL Terraced House",
+    "location": "Somers Town, NW1",
+    "area": "London",
+    "postcode": "NW1 1RX",
+    "lat": 51.5302,
+    "lng": -0.1322,
+    "station": "Euston Square",
+    "station_line": "Circle / H&C / Metropolitan",
+    "station_distance_miles": 0.34,
+    "station_walk_minutes": 7,
+    "station_ride_minutes": 6,
+    "building_type": "house",
+    "room_type": "2 bed",
+    "bedrooms": 2,
+    "monthly_rent_gbp": 3200,
+    "council_tax_band": "E",
+    "size_sqft": 880,
+    "floor_level": 0,
+    "floor_label": "whole house",
+    "new_build": false,
+    "furnished": "part furnished",
+    "available_from": "2026-07-10",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": true,
+    "accessibility": [
+      "step free ground floor"
+    ],
+    "keywords": [
+      "house",
+      "terraced",
+      "near ucl",
+      "garden",
+      "pet friendly",
+      "family"
+    ],
+    "description": "Whole terraced house in Somers Town within walking distance of UCL, with a small garden and pet-friendly terms.",
+    "nearby_stations": [
+      {
+        "name": "Euston Square",
+        "distance_miles": 0.34,
+        "walk_minutes": 7,
+        "line": "Circle / H&C / Metropolitan"
+      },
+      {
+        "name": "King's Cross St Pancras",
+        "distance_miles": 0.36,
+        "walk_minutes": 7,
+        "line": "Piccadilly / Victoria / Northern / Circle / H&C / Metropolitan"
+      },
+      {
+        "name": "Warren Street",
+        "distance_miles": 0.47,
+        "walk_minutes": 9,
+        "line": "Northern / Victoria"
+      },
+      {
+        "name": "Russell Square",
+        "distance_miles": 0.6,
+        "walk_minutes": 12,
+        "line": "Piccadilly"
+      },
+      {
+        "name": "Goodge Street",
+        "distance_miles": 0.68,
+        "walk_minutes": 14,
+        "line": "Northern"
+      }
+    ],
+    "nearby_landmarks": [
+      {
+        "name": "UCL",
+        "distance_miles": 0.39,
+        "walk_minutes": 8,
+        "category": "university"
+      },
+      {
+        "name": "British Museum",
+        "distance_miles": 0.78,
+        "walk_minutes": 16,
+        "category": "museum"
+      },
+      {
+        "name": "Regent's University London",
+        "distance_miles": 1.03,
+        "walk_minutes": 21,
+        "category": "university"
+      }
+    ]
+  },
+  {
+    "id": "P1062",
+    "name": "Bloomsbury Basement Studio",
+    "location": "Bloomsbury, WC1N",
+    "area": "London",
+    "postcode": "WC1N 1ZZ",
+    "lat": 51.5204,
+    "lng": -0.1274,
+    "station": "Russell Square",
+    "station_line": "Piccadilly",
+    "station_distance_miles": 0.22,
+    "station_walk_minutes": 4,
+    "station_ride_minutes": 15,
+    "building_type": "studio",
+    "room_type": "studio",
+    "bedrooms": 0,
+    "monthly_rent_gbp": 1350,
+    "council_tax_band": "B",
+    "size_sqft": 310,
+    "floor_level": -1,
+    "floor_label": "basement",
+    "new_build": true,
+    "furnished": "furnished",
+    "available_from": "2026-07-01",
+    "tenancy_min_months": 12,
+    "bills_included": true,
+    "pets_allowed": true,
+    "accessibility": [
+      "stairs only"
+    ],
+    "keywords": [
+      "basement",
+      "budget",
+      "stairs only",
+      "bloomsbury",
+      "negative-test",
+      "basement budget stairs only"
+    ],
+    "description": "Basement listing with limited natural light. This synthetic edge-case listing is in Bloomsbury near Russell Square.",
+    "nearby_stations": [
+      {
+        "name": "Russell Square",
+        "distance_miles": 0.22,
+        "walk_minutes": 4,
+        "line": "Piccadilly"
+      },
+      {
+        "name": "Goodge Street",
+        "distance_miles": 0.31,
+        "walk_minutes": 6,
+        "line": "Northern"
+      },
+      {
+        "name": "Tottenham Court Road",
+        "distance_miles": 0.33,
+        "walk_minutes": 7,
+        "line": "Central / Northern / Elizabeth"
+      },
+      {
+        "name": "Holborn",
+        "distance_miles": 0.38,
+        "walk_minutes": 8,
+        "line": "Central / Piccadilly"
+      },
+      {
+        "name": "Euston Square",
+        "distance_miles": 0.52,
+        "walk_minutes": 10,
+        "line": "Circle / H&C / Metropolitan"
+      }
+    ],
+    "nearby_landmarks": [
+      {
+        "name": "British Museum",
+        "distance_miles": 0.07,
+        "walk_minutes": 1,
+        "category": "museum"
+      },
+      {
+        "name": "UCL",
+        "distance_miles": 0.41,
+        "walk_minutes": 8,
+        "category": "university"
+      },
+      {
+        "name": "LSE",
+        "distance_miles": 0.63,
+        "walk_minutes": 13,
+        "category": "university"
+      },
+      {
+        "name": "King's College London",
+        "distance_miles": 0.79,
+        "walk_minutes": 16,
+        "category": "university"
+      },
+      {
+        "name": "City University",
+        "distance_miles": 1.19,
+        "walk_minutes": 24,
+        "category": "university"
+      }
+    ]
+  },
+  {
+    "id": "P1063",
+    "name": "Fitzrovia Noisy Nightlife 1 Bed",
+    "location": "Fitzrovia, W1T",
+    "area": "London",
+    "postcode": "W1T 2ZZ",
+    "lat": 51.5201,
+    "lng": -0.1385,
+    "station": "Goodge Street",
+    "station_line": "Northern",
+    "station_distance_miles": 0.17,
+    "station_walk_minutes": 3,
+    "station_ride_minutes": 16,
+    "building_type": "flat",
+    "room_type": "1 bed",
+    "bedrooms": 1,
+    "monthly_rent_gbp": 1790,
+    "council_tax_band": "C",
+    "size_sqft": 439,
+    "floor_level": 3,
+    "floor_label": "upper floor",
+    "new_build": false,
+    "furnished": "part furnished",
+    "available_from": "2026-07-01",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": false,
+    "accessibility": [],
+    "keywords": [
+      "noisy",
+      "nightlife",
+      "central",
+      "fitzrovia",
+      "negative-test",
+      "noisy nightlife central"
+    ],
+    "description": "Apartment above nightlife and a busy road. This synthetic edge-case listing is in Fitzrovia near Goodge Street.",
+    "nearby_stations": [
+      {
+        "name": "Goodge Street",
+        "distance_miles": 0.17,
+        "walk_minutes": 3,
+        "line": "Northern"
+      },
+      {
+        "name": "Warren Street",
+        "distance_miles": 0.31,
+        "walk_minutes": 6,
+        "line": "Northern / Victoria"
+      },
+      {
+        "name": "Euston Square",
+        "distance_miles": 0.41,
+        "walk_minutes": 8,
+        "line": "Circle / H&C / Metropolitan"
+      },
+      {
+        "name": "Regent's Park",
+        "distance_miles": 0.41,
+        "walk_minutes": 8,
+        "line": "Bakerloo"
+      },
+      {
+        "name": "Tottenham Court Road",
+        "distance_miles": 0.42,
+        "walk_minutes": 8,
+        "line": "Central / Northern / Elizabeth"
+      }
+    ],
+    "nearby_landmarks": [
+      {
+        "name": "UCL",
+        "distance_miles": 0.37,
+        "walk_minutes": 7,
+        "category": "university"
+      },
+      {
+        "name": "British Museum",
+        "distance_miles": 0.5,
+        "walk_minutes": 10,
+        "category": "museum"
+      },
+      {
+        "name": "Regent's University London",
+        "distance_miles": 0.84,
+        "walk_minutes": 17,
+        "category": "university"
+      },
+      {
+        "name": "LSE",
+        "distance_miles": 1.02,
+        "walk_minutes": 20,
+        "category": "university"
+      },
+      {
+        "name": "King's College London",
+        "distance_miles": 1.14,
+        "walk_minutes": 23,
+        "category": "university"
+      }
+    ]
+  },
+  {
+    "id": "P1064",
+    "name": "Camden Walk-Up No Lift 2 Bed",
+    "location": "Camden, NW1",
+    "area": "London",
+    "postcode": "NW1 3ZZ",
+    "lat": 51.5378,
+    "lng": -0.1401,
+    "station": "Camden Town",
+    "station_line": "Northern",
+    "station_distance_miles": 0.14,
+    "station_walk_minutes": 3,
+    "station_ride_minutes": 17,
+    "building_type": "flat",
+    "room_type": "2 bed",
+    "bedrooms": 2,
+    "monthly_rent_gbp": 2230,
+    "council_tax_band": "D",
+    "size_sqft": 568,
+    "floor_level": 4,
+    "floor_label": "upper floor",
+    "new_build": false,
+    "furnished": "unfurnished",
+    "available_from": "2026-07-01",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": false,
+    "accessibility": [
+      "stairs only"
+    ],
+    "keywords": [
+      "no lift",
+      "walk up",
+      "stairs only",
+      "camden",
+      "negative-test",
+      "no lift walk up stairs only"
+    ],
+    "description": "Walk-up flat with stairs only and no lift. This synthetic edge-case listing is in Camden near Camden Town.",
+    "nearby_stations": [
+      {
+        "name": "Camden Town",
+        "distance_miles": 0.14,
+        "walk_minutes": 3,
+        "line": "Northern"
+      }
+    ],
+    "nearby_landmarks": [
+      {
+        "name": "UCL",
+        "distance_miles": 0.95,
+        "walk_minutes": 19,
+        "category": "university"
+      },
+      {
+        "name": "Regent's University London",
+        "distance_miles": 1.04,
+        "walk_minutes": 21,
+        "category": "university"
+      }
+    ]
+  },
+  {
+    "id": "P1065",
+    "name": "Bethnal Green House Share 3 Bed",
+    "location": "Bethnal Green, E2",
+    "area": "London",
+    "postcode": "E2 4ZZ",
+    "lat": 51.5287,
+    "lng": -0.0559,
+    "station": "Bethnal Green",
+    "station_line": "Central",
+    "station_distance_miles": 0.11,
+    "station_walk_minutes": 2,
+    "station_ride_minutes": 18,
+    "building_type": "house",
+    "room_type": "room in house share",
+    "bedrooms": 4,
+    "monthly_rent_gbp": 2670,
+    "council_tax_band": "E",
+    "size_sqft": 697,
+    "floor_level": 2,
+    "floor_label": "upper floor",
+    "new_build": true,
+    "furnished": "furnished",
+    "available_from": "2026-07-01",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": false,
+    "accessibility": [],
+    "keywords": [
+      "house share",
+      "flatmates",
+      "shared house",
+      "bethnal green",
+      "negative-test",
+      "house share flatmates shared house"
+    ],
+    "description": "Room in a shared house with multiple flatmates. This synthetic edge-case listing is in Bethnal Green near Bethnal Green.",
+    "nearby_stations": [
+      {
+        "name": "Bethnal Green",
+        "distance_miles": 0.11,
+        "walk_minutes": 2,
+        "line": "Central"
+      },
+      {
+        "name": "Whitechapel",
+        "distance_miles": 0.66,
+        "walk_minutes": 13,
+        "line": "Elizabeth / District / H&C / Overground"
+      }
+    ],
+    "nearby_landmarks": [
+      {
+        "name": "Queen Mary University of London",
+        "distance_miles": 0.71,
+        "walk_minutes": 14,
+        "category": "university"
+      }
+    ]
+  },
+  {
+    "id": "P1066",
+    "name": "Canary Wharf No Pets Studio",
+    "location": "Canary Wharf, E14",
+    "area": "London",
+    "postcode": "E14 5ZZ",
+    "lat": 51.5062,
+    "lng": -0.0178,
+    "station": "Canary Wharf",
+    "station_line": "Jubilee / Elizabeth / DLR",
+    "station_distance_miles": 0.19,
+    "station_walk_minutes": 4,
+    "station_ride_minutes": 19,
+    "building_type": "studio",
+    "room_type": "studio",
+    "bedrooms": 0,
+    "monthly_rent_gbp": 2070,
+    "council_tax_band": "B",
+    "size_sqft": 346,
+    "floor_level": 2,
+    "floor_label": "low floor",
+    "new_build": false,
+    "furnished": "part furnished",
+    "available_from": "2026-07-01",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": false,
+    "accessibility": [
+      "lift"
+    ],
+    "keywords": [
+      "no pets",
+      "not pet friendly",
+      "canary wharf",
+      "negative-test",
+      "no pets not pet friendly"
+    ],
+    "description": "Well-presented flat where pets are not permitted. This synthetic edge-case listing is in Canary Wharf near Canary Wharf.",
+    "nearby_stations": [
+      {
+        "name": "Canary Wharf",
+        "distance_miles": 0.19,
+        "walk_minutes": 4,
+        "line": "Jubilee / Elizabeth / DLR"
+      },
+      {
+        "name": "South Quay",
+        "distance_miles": 0.39,
+        "walk_minutes": 8,
+        "line": "DLR"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1067",
+    "name": "Canada Water No Bills 1 Bed",
+    "location": "Canada Water, SE16",
+    "area": "London",
+    "postcode": "SE16 6ZZ",
+    "lat": 51.4964,
+    "lng": -0.0484,
+    "station": "Canada Water",
+    "station_line": "Jubilee / Overground",
+    "station_distance_miles": 0.12,
+    "station_walk_minutes": 2,
+    "station_ride_minutes": 20,
+    "building_type": "flat",
+    "room_type": "1 bed",
+    "bedrooms": 1,
+    "monthly_rent_gbp": 2510,
+    "council_tax_band": "C",
+    "size_sqft": 475,
+    "floor_level": 5,
+    "floor_label": "mid floor",
+    "new_build": false,
+    "furnished": "unfurnished",
+    "available_from": "2026-07-01",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": true,
+    "accessibility": [],
+    "keywords": [
+      "no bills included",
+      "bills excluded",
+      "canada water",
+      "negative-test",
+      "no bills included bills excluded"
+    ],
+    "description": "Modern apartment where bills are excluded. This synthetic edge-case listing is in Canada Water near Canada Water.",
+    "nearby_stations": [
+      {
+        "name": "Canada Water",
+        "distance_miles": 0.12,
+        "walk_minutes": 2,
+        "line": "Jubilee / Overground"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1068",
+    "name": "Paddington No Parking 2 Bed",
+    "location": "Paddington, W2",
+    "area": "London",
+    "postcode": "W2 7ZZ",
+    "lat": 51.515,
+    "lng": -0.1719,
+    "station": "Paddington",
+    "station_line": "Elizabeth / Bakerloo / Circle / District / H&C / Rail",
+    "station_distance_miles": 0.16,
+    "station_walk_minutes": 3,
+    "station_ride_minutes": 21,
+    "building_type": "flat",
+    "room_type": "2 bed",
+    "bedrooms": 2,
+    "monthly_rent_gbp": 2950,
+    "council_tax_band": "D",
+    "size_sqft": 604,
+    "floor_level": 6,
+    "floor_label": "mid floor",
+    "new_build": true,
+    "furnished": "furnished",
+    "available_from": "2026-07-01",
+    "tenancy_min_months": 12,
+    "bills_included": true,
+    "pets_allowed": false,
+    "accessibility": [
+      "lift"
+    ],
+    "keywords": [
+      "no parking",
+      "street parking only",
+      "paddington",
+      "negative-test",
+      "no parking street parking only"
+    ],
+    "description": "Good transport links but no parking space. This synthetic edge-case listing is in Paddington near Paddington.",
+    "nearby_stations": [
+      {
+        "name": "Paddington",
+        "distance_miles": 0.16,
+        "walk_minutes": 3,
+        "line": "Elizabeth / Bakerloo / Circle / District / H&C / Rail"
+      }
+    ],
+    "nearby_landmarks": [
+      {
+        "name": "Regent's University London",
+        "distance_miles": 1.05,
+        "walk_minutes": 21,
+        "category": "university"
+      },
+      {
+        "name": "Imperial College London",
+        "distance_miles": 1.13,
+        "walk_minutes": 23,
+        "category": "university"
+      }
+    ]
+  },
+  {
+    "id": "P1069",
+    "name": "Acton No Garden 3 Bed",
+    "location": "Acton, W3",
+    "area": "London",
+    "postcode": "W3 8ZZ",
+    "lat": 51.5084,
+    "lng": -0.2666,
+    "station": "Acton Main Line",
+    "station_line": "Elizabeth",
+    "station_distance_miles": 0.59,
+    "station_walk_minutes": 12,
+    "station_ride_minutes": 22,
+    "building_type": "flat",
+    "room_type": "3 bed",
+    "bedrooms": 3,
+    "monthly_rent_gbp": 3390,
+    "council_tax_band": "E",
+    "size_sqft": 733,
+    "floor_level": 1,
+    "floor_label": "low floor",
+    "new_build": false,
+    "furnished": "part furnished",
+    "available_from": "2026-07-01",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": false,
+    "accessibility": [],
+    "keywords": [
+      "no garden",
+      "no outdoor space",
+      "acton",
+      "negative-test",
+      "no garden no outdoor space"
+    ],
+    "description": "Compact flat with no garden or outdoor space. This synthetic edge-case listing is in Acton near Acton Main Line.",
+    "nearby_stations": [
+      {
+        "name": "Acton Main Line",
+        "distance_miles": 0.59,
+        "walk_minutes": 12,
+        "line": "Elizabeth"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1070",
+    "name": "Forest Gate Short Let Only Studio",
+    "location": "Forest Gate, E7",
+    "area": "London",
+    "postcode": "E7 9ZZ",
+    "lat": 51.5508,
+    "lng": 0.0219,
+    "station": "Forest Gate",
+    "station_line": "Elizabeth",
+    "station_distance_miles": 0.14,
+    "station_walk_minutes": 3,
+    "station_ride_minutes": 23,
+    "building_type": "studio",
+    "room_type": "studio",
+    "bedrooms": 0,
+    "monthly_rent_gbp": 2790,
+    "council_tax_band": "B",
+    "size_sqft": 382,
+    "floor_level": 8,
+    "floor_label": "high floor",
+    "new_build": false,
+    "furnished": "unfurnished",
+    "available_from": "2026-07-01",
+    "tenancy_min_months": 3,
+    "bills_included": false,
+    "pets_allowed": false,
+    "accessibility": [
+      "lift"
+    ],
+    "keywords": [
+      "short let only",
+      "corporate let",
+      "forest gate",
+      "negative-test",
+      "short let only corporate let"
+    ],
+    "description": "Short-let only apartment unsuitable for long tenancy. This synthetic edge-case listing is in Forest Gate near Forest Gate.",
+    "nearby_stations": [
+      {
+        "name": "Forest Gate",
+        "distance_miles": 0.14,
+        "walk_minutes": 3,
+        "line": "Elizabeth"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1071",
+    "name": "Lewisham Student Restricted 1 Bed",
+    "location": "Lewisham, SE13",
+    "area": "London",
+    "postcode": "SE13 1ZZ",
+    "lat": 51.4681,
+    "lng": -0.0152,
+    "station": "Lewisham",
+    "station_line": "DLR / Rail",
+    "station_distance_miles": 0.17,
+    "station_walk_minutes": 3,
+    "station_ride_minutes": 24,
+    "building_type": "flat",
+    "room_type": "1 bed",
+    "bedrooms": 1,
+    "monthly_rent_gbp": 3230,
+    "council_tax_band": "C",
+    "size_sqft": 511,
+    "floor_level": 2,
+    "floor_label": "low floor",
+    "new_build": true,
+    "furnished": "furnished",
+    "available_from": "2026-07-01",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": false,
+    "accessibility": [],
+    "keywords": [
+      "no students",
+      "professionals only",
+      "lewisham",
+      "negative-test",
+      "no students professionals only"
+    ],
+    "description": "Professionals-only listing that does not accept students. This synthetic edge-case listing is in Lewisham near Lewisham.",
+    "nearby_stations": [
+      {
+        "name": "Lewisham",
+        "distance_miles": 0.17,
+        "walk_minutes": 3,
+        "line": "DLR / Rail"
+      },
+      {
+        "name": "Greenwich",
+        "distance_miles": 0.69,
+        "walk_minutes": 14,
+        "line": "DLR / Rail"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1072",
+    "name": "Bloomsbury Basement 2 Bed",
+    "location": "Bloomsbury, WC1N",
+    "area": "London",
+    "postcode": "WC1N 2ZZ",
+    "lat": 51.5204,
+    "lng": -0.1238,
+    "station": "Russell Square",
+    "station_line": "Piccadilly",
+    "station_distance_miles": 0.18,
+    "station_walk_minutes": 4,
+    "station_ride_minutes": 25,
+    "building_type": "flat",
+    "room_type": "2 bed",
+    "bedrooms": 2,
+    "monthly_rent_gbp": 1870,
+    "council_tax_band": "D",
+    "size_sqft": 640,
+    "floor_level": -1,
+    "floor_label": "basement",
+    "new_build": false,
+    "furnished": "part furnished",
+    "available_from": "2026-07-01",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": true,
+    "accessibility": [
+      "stairs only"
+    ],
+    "keywords": [
+      "basement",
+      "budget",
+      "stairs only",
+      "bloomsbury",
+      "negative-test",
+      "basement budget stairs only"
+    ],
+    "description": "Basement listing with limited natural light. This synthetic edge-case listing is in Bloomsbury near Russell Square.",
+    "nearby_stations": [
+      {
+        "name": "Russell Square",
+        "distance_miles": 0.18,
+        "walk_minutes": 4,
+        "line": "Piccadilly"
+      },
+      {
+        "name": "Holborn",
+        "distance_miles": 0.26,
+        "walk_minutes": 5,
+        "line": "Central / Piccadilly"
+      },
+      {
+        "name": "Tottenham Court Road",
+        "distance_miles": 0.42,
+        "walk_minutes": 8,
+        "line": "Central / Northern / Elizabeth"
+      },
+      {
+        "name": "Goodge Street",
+        "distance_miles": 0.47,
+        "walk_minutes": 9,
+        "line": "Northern"
+      },
+      {
+        "name": "Euston Square",
+        "distance_miles": 0.63,
+        "walk_minutes": 13,
+        "line": "Circle / H&C / Metropolitan"
+      }
+    ],
+    "nearby_landmarks": [
+      {
+        "name": "British Museum",
+        "distance_miles": 0.15,
+        "walk_minutes": 3,
+        "category": "museum"
+      },
+      {
+        "name": "LSE",
+        "distance_miles": 0.52,
+        "walk_minutes": 10,
+        "category": "university"
+      },
+      {
+        "name": "UCL",
+        "distance_miles": 0.53,
+        "walk_minutes": 11,
+        "category": "university"
+      },
+      {
+        "name": "King's College London",
+        "distance_miles": 0.7,
+        "walk_minutes": 14,
+        "category": "university"
+      },
+      {
+        "name": "City University",
+        "distance_miles": 1.05,
+        "walk_minutes": 21,
+        "category": "university"
+      }
+    ]
+  },
+  {
+    "id": "P1073",
+    "name": "Fitzrovia Noisy Nightlife 3 Bed",
+    "location": "Fitzrovia, W1T",
+    "area": "London",
+    "postcode": "W1T 3ZZ",
+    "lat": 51.5201,
+    "lng": -0.1349,
+    "station": "Goodge Street",
+    "station_line": "Northern",
+    "station_distance_miles": 0.03,
+    "station_walk_minutes": 1,
+    "station_ride_minutes": 26,
+    "building_type": "flat",
+    "room_type": "3 bed",
+    "bedrooms": 3,
+    "monthly_rent_gbp": 2310,
+    "council_tax_band": "E",
+    "size_sqft": 769,
+    "floor_level": 3,
+    "floor_label": "upper floor",
+    "new_build": false,
+    "furnished": "unfurnished",
+    "available_from": "2026-07-01",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": false,
+    "accessibility": [],
+    "keywords": [
+      "noisy",
+      "nightlife",
+      "central",
+      "fitzrovia",
+      "negative-test",
+      "noisy nightlife central"
+    ],
+    "description": "Apartment above nightlife and a busy road. This synthetic edge-case listing is in Fitzrovia near Goodge Street.",
+    "nearby_stations": [
+      {
+        "name": "Goodge Street",
+        "distance_miles": 0.03,
+        "walk_minutes": 1,
+        "line": "Northern"
+      },
+      {
+        "name": "Tottenham Court Road",
+        "distance_miles": 0.32,
+        "walk_minutes": 6,
+        "line": "Central / Northern / Elizabeth"
+      },
+      {
+        "name": "Warren Street",
+        "distance_miles": 0.34,
+        "walk_minutes": 7,
+        "line": "Northern / Victoria"
+      },
+      {
+        "name": "Euston Square",
+        "distance_miles": 0.4,
+        "walk_minutes": 8,
+        "line": "Circle / H&C / Metropolitan"
+      },
+      {
+        "name": "Russell Square",
+        "distance_miles": 0.49,
+        "walk_minutes": 10,
+        "line": "Piccadilly"
+      }
+    ],
+    "nearby_landmarks": [
+      {
+        "name": "UCL",
+        "distance_miles": 0.31,
+        "walk_minutes": 6,
+        "category": "university"
+      },
+      {
+        "name": "British Museum",
+        "distance_miles": 0.34,
+        "walk_minutes": 7,
+        "category": "museum"
+      },
+      {
+        "name": "LSE",
+        "distance_miles": 0.88,
+        "walk_minutes": 18,
+        "category": "university"
+      },
+      {
+        "name": "Regent's University London",
+        "distance_miles": 0.98,
+        "walk_minutes": 20,
+        "category": "university"
+      },
+      {
+        "name": "King's College London",
+        "distance_miles": 1.01,
+        "walk_minutes": 20,
+        "category": "university"
+      }
+    ]
+  },
+  {
+    "id": "P1074",
+    "name": "Camden Walk-Up No Lift Studio",
+    "location": "Camden, NW1",
+    "area": "London",
+    "postcode": "NW1 4ZZ",
+    "lat": 51.5378,
+    "lng": -0.1365,
+    "station": "Camden Town",
+    "station_line": "Northern",
+    "station_distance_miles": 0.28,
+    "station_walk_minutes": 6,
+    "station_ride_minutes": 27,
+    "building_type": "studio",
+    "room_type": "studio",
+    "bedrooms": 0,
+    "monthly_rent_gbp": 1710,
+    "council_tax_band": "B",
+    "size_sqft": 418,
+    "floor_level": 4,
+    "floor_label": "upper floor",
+    "new_build": true,
+    "furnished": "furnished",
+    "available_from": "2026-07-01",
+    "tenancy_min_months": 12,
+    "bills_included": true,
+    "pets_allowed": false,
+    "accessibility": [
+      "stairs only"
+    ],
+    "keywords": [
+      "no lift",
+      "walk up",
+      "stairs only",
+      "camden",
+      "negative-test",
+      "no lift walk up stairs only"
+    ],
+    "description": "Walk-up flat with stairs only and no lift. This synthetic edge-case listing is in Camden near Camden Town.",
+    "nearby_stations": [
+      {
+        "name": "Camden Town",
+        "distance_miles": 0.28,
+        "walk_minutes": 6,
+        "line": "Northern"
+      },
+      {
+        "name": "King's Cross St Pancras",
+        "distance_miles": 0.73,
+        "walk_minutes": 15,
+        "line": "Piccadilly / Victoria / Northern / Circle / H&C / Metropolitan"
+      }
+    ],
+    "nearby_landmarks": [
+      {
+        "name": "UCL",
+        "distance_miles": 0.92,
+        "walk_minutes": 18,
+        "category": "university"
+      },
+      {
+        "name": "Regent's University London",
+        "distance_miles": 1.14,
+        "walk_minutes": 23,
+        "category": "university"
+      }
+    ]
+  },
+  {
+    "id": "P1075",
+    "name": "Bethnal Green House Share 1 Bed",
+    "location": "Bethnal Green, E2",
+    "area": "London",
+    "postcode": "E2 5ZZ",
+    "lat": 51.5287,
+    "lng": -0.0523,
+    "station": "Bethnal Green",
+    "station_line": "Central",
+    "station_distance_miles": 0.17,
+    "station_walk_minutes": 3,
+    "station_ride_minutes": 28,
+    "building_type": "house",
+    "room_type": "room in house share",
+    "bedrooms": 4,
+    "monthly_rent_gbp": 2150,
+    "council_tax_band": "C",
+    "size_sqft": 547,
+    "floor_level": 2,
+    "floor_label": "upper floor",
+    "new_build": false,
+    "furnished": "part furnished",
+    "available_from": "2026-07-01",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": false,
+    "accessibility": [],
+    "keywords": [
+      "house share",
+      "flatmates",
+      "shared house",
+      "bethnal green",
+      "negative-test",
+      "house share flatmates shared house"
+    ],
+    "description": "Room in a shared house with multiple flatmates. This synthetic edge-case listing is in Bethnal Green near Bethnal Green.",
+    "nearby_stations": [
+      {
+        "name": "Bethnal Green",
+        "distance_miles": 0.17,
+        "walk_minutes": 3,
+        "line": "Central"
+      },
+      {
+        "name": "Whitechapel",
+        "distance_miles": 0.71,
+        "walk_minutes": 14,
+        "line": "Elizabeth / District / H&C / Overground"
+      }
+    ],
+    "nearby_landmarks": [
+      {
+        "name": "Queen Mary University of London",
+        "distance_miles": 0.57,
+        "walk_minutes": 11,
+        "category": "university"
+      }
+    ]
+  },
+  {
+    "id": "P1076",
+    "name": "Canary Wharf No Pets 2 Bed",
+    "location": "Canary Wharf, E14",
+    "area": "London",
+    "postcode": "E14 6ZZ",
+    "lat": 51.5062,
+    "lng": -0.0226,
+    "station": "Canary Wharf",
+    "station_line": "Jubilee / Elizabeth / DLR",
+    "station_distance_miles": 0.22,
+    "station_walk_minutes": 4,
+    "station_ride_minutes": 29,
+    "building_type": "flat",
+    "room_type": "2 bed",
+    "bedrooms": 2,
+    "monthly_rent_gbp": 2590,
+    "council_tax_band": "D",
+    "size_sqft": 676,
+    "floor_level": 2,
+    "floor_label": "low floor",
+    "new_build": false,
+    "furnished": "unfurnished",
+    "available_from": "2026-07-01",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": false,
+    "accessibility": [
+      "lift"
+    ],
+    "keywords": [
+      "no pets",
+      "not pet friendly",
+      "canary wharf",
+      "negative-test",
+      "no pets not pet friendly"
+    ],
+    "description": "Well-presented flat where pets are not permitted. This synthetic edge-case listing is in Canary Wharf near Canary Wharf.",
+    "nearby_stations": [
+      {
+        "name": "Canary Wharf",
+        "distance_miles": 0.22,
+        "walk_minutes": 4,
+        "line": "Jubilee / Elizabeth / DLR"
+      },
+      {
+        "name": "South Quay",
+        "distance_miles": 0.46,
+        "walk_minutes": 9,
+        "line": "DLR"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1077",
+    "name": "Canada Water No Bills 3 Bed",
+    "location": "Canada Water, SE16",
+    "area": "London",
+    "postcode": "SE16 7ZZ",
+    "lat": 51.4964,
+    "lng": -0.0532,
+    "station": "Canada Water",
+    "station_line": "Jubilee / Overground",
+    "station_distance_miles": 0.19,
+    "station_walk_minutes": 4,
+    "station_ride_minutes": 30,
+    "building_type": "flat",
+    "room_type": "3 bed",
+    "bedrooms": 3,
+    "monthly_rent_gbp": 3030,
+    "council_tax_band": "E",
+    "size_sqft": 805,
+    "floor_level": 5,
+    "floor_label": "mid floor",
+    "new_build": true,
+    "furnished": "furnished",
+    "available_from": "2026-07-01",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": true,
+    "accessibility": [],
+    "keywords": [
+      "no bills included",
+      "bills excluded",
+      "canada water",
+      "negative-test",
+      "no bills included bills excluded"
+    ],
+    "description": "Modern apartment where bills are excluded. This synthetic edge-case listing is in Canada Water near Canada Water.",
+    "nearby_stations": [
+      {
+        "name": "Canada Water",
+        "distance_miles": 0.19,
+        "walk_minutes": 4,
+        "line": "Jubilee / Overground"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1078",
+    "name": "Paddington No Parking Studio",
+    "location": "Paddington, W2",
+    "area": "London",
+    "postcode": "W2 8ZZ",
+    "lat": 51.515,
+    "lng": -0.1767,
+    "station": "Paddington",
+    "station_line": "Elizabeth / Bakerloo / Circle / District / H&C / Rail",
+    "station_distance_miles": 0.06,
+    "station_walk_minutes": 1,
+    "station_ride_minutes": 31,
+    "building_type": "studio",
+    "room_type": "studio",
+    "bedrooms": 0,
+    "monthly_rent_gbp": 2430,
+    "council_tax_band": "B",
+    "size_sqft": 454,
+    "floor_level": 6,
+    "floor_label": "mid floor",
+    "new_build": false,
+    "furnished": "part furnished",
+    "available_from": "2026-07-01",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": false,
+    "accessibility": [
+      "lift"
+    ],
+    "keywords": [
+      "no parking",
+      "street parking only",
+      "paddington",
+      "negative-test",
+      "no parking street parking only"
+    ],
+    "description": "Good transport links but no parking space. This synthetic edge-case listing is in Paddington near Paddington.",
+    "nearby_stations": [
+      {
+        "name": "Paddington",
+        "distance_miles": 0.06,
+        "walk_minutes": 1,
+        "line": "Elizabeth / Bakerloo / Circle / District / H&C / Rail"
+      }
+    ],
+    "nearby_landmarks": [
+      {
+        "name": "Imperial College London",
+        "distance_miles": 1.12,
+        "walk_minutes": 22,
+        "category": "university"
+      },
+      {
+        "name": "Regent's University London",
+        "distance_miles": 1.2,
+        "walk_minutes": 24,
+        "category": "university"
+      }
+    ]
+  },
+  {
+    "id": "P1079",
+    "name": "Acton No Garden 1 Bed",
+    "location": "Acton, W3",
+    "area": "London",
+    "postcode": "W3 9ZZ",
+    "lat": 51.5084,
+    "lng": -0.263,
+    "station": "Acton Main Line",
+    "station_line": "Elizabeth",
+    "station_distance_miles": 0.62,
+    "station_walk_minutes": 12,
+    "station_ride_minutes": 32,
+    "building_type": "flat",
+    "room_type": "1 bed",
+    "bedrooms": 1,
+    "monthly_rent_gbp": 2870,
+    "council_tax_band": "C",
+    "size_sqft": 583,
+    "floor_level": 1,
+    "floor_label": "low floor",
+    "new_build": false,
+    "furnished": "unfurnished",
+    "available_from": "2026-07-01",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": false,
+    "accessibility": [],
+    "keywords": [
+      "no garden",
+      "no outdoor space",
+      "acton",
+      "negative-test",
+      "no garden no outdoor space"
+    ],
+    "description": "Compact flat with no garden or outdoor space. This synthetic edge-case listing is in Acton near Acton Main Line.",
+    "nearby_stations": [
+      {
+        "name": "Acton Main Line",
+        "distance_miles": 0.62,
+        "walk_minutes": 12,
+        "line": "Elizabeth"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1080",
+    "name": "Forest Gate Short Let Only 2 Bed",
+    "location": "Forest Gate, E7",
+    "area": "London",
+    "postcode": "E7 1ZZ",
+    "lat": 51.5508,
+    "lng": 0.0255,
+    "station": "Forest Gate",
+    "station_line": "Elizabeth",
+    "station_distance_miles": 0.11,
+    "station_walk_minutes": 2,
+    "station_ride_minutes": 33,
+    "building_type": "flat",
+    "room_type": "2 bed",
+    "bedrooms": 2,
+    "monthly_rent_gbp": 3310,
+    "council_tax_band": "D",
+    "size_sqft": 712,
+    "floor_level": 8,
+    "floor_label": "high floor",
+    "new_build": true,
+    "furnished": "furnished",
+    "available_from": "2026-07-01",
+    "tenancy_min_months": 3,
+    "bills_included": true,
+    "pets_allowed": false,
+    "accessibility": [
+      "lift"
+    ],
+    "keywords": [
+      "short let only",
+      "corporate let",
+      "forest gate",
+      "negative-test",
+      "short let only corporate let"
+    ],
+    "description": "Short-let only apartment unsuitable for long tenancy. This synthetic edge-case listing is in Forest Gate near Forest Gate.",
+    "nearby_stations": [
+      {
+        "name": "Forest Gate",
+        "distance_miles": 0.11,
+        "walk_minutes": 2,
+        "line": "Elizabeth"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1081",
+    "name": "Lewisham Student Restricted 3 Bed",
+    "location": "Lewisham, SE13",
+    "area": "London",
+    "postcode": "SE13 2ZZ",
+    "lat": 51.4681,
+    "lng": -0.0116,
+    "station": "Lewisham",
+    "station_line": "DLR / Rail",
+    "station_distance_miles": 0.2,
+    "station_walk_minutes": 4,
+    "station_ride_minutes": 34,
+    "building_type": "flat",
+    "room_type": "3 bed",
+    "bedrooms": 3,
+    "monthly_rent_gbp": 3750,
+    "council_tax_band": "E",
+    "size_sqft": 841,
+    "floor_level": 2,
+    "floor_label": "low floor",
+    "new_build": false,
+    "furnished": "part furnished",
+    "available_from": "2026-07-01",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": false,
+    "accessibility": [],
+    "keywords": [
+      "no students",
+      "professionals only",
+      "lewisham",
+      "negative-test",
+      "no students professionals only"
+    ],
+    "description": "Professionals-only listing that does not accept students. This synthetic edge-case listing is in Lewisham near Lewisham.",
+    "nearby_stations": [
+      {
+        "name": "Lewisham",
+        "distance_miles": 0.2,
+        "walk_minutes": 4,
+        "line": "DLR / Rail"
+      },
+      {
+        "name": "Greenwich",
+        "distance_miles": 0.71,
+        "walk_minutes": 14,
+        "line": "DLR / Rail"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1082",
+    "name": "Bloomsbury Basement Studio",
+    "location": "Bloomsbury, WC1N",
+    "area": "London",
+    "postcode": "WC1N 3ZZ",
+    "lat": 51.5204,
+    "lng": -0.1202,
+    "station": "Holborn",
+    "station_line": "Central / Piccadilly",
+    "station_distance_miles": 0.21,
+    "station_walk_minutes": 4,
+    "station_ride_minutes": 15,
+    "building_type": "studio",
+    "room_type": "studio",
+    "bedrooms": 0,
+    "monthly_rent_gbp": 1350,
+    "council_tax_band": "B",
+    "size_sqft": 490,
+    "floor_level": -1,
+    "floor_label": "basement",
+    "new_build": false,
+    "furnished": "unfurnished",
+    "available_from": "2026-07-01",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": true,
+    "accessibility": [
+      "stairs only"
+    ],
+    "keywords": [
+      "basement",
+      "budget",
+      "stairs only",
+      "bloomsbury",
+      "negative-test",
+      "basement budget stairs only"
+    ],
+    "description": "Basement listing with limited natural light. This synthetic edge-case listing is in Bloomsbury near Russell Square.",
+    "nearby_stations": [
+      {
+        "name": "Holborn",
+        "distance_miles": 0.21,
+        "walk_minutes": 4,
+        "line": "Central / Piccadilly"
+      },
+      {
+        "name": "Russell Square",
+        "distance_miles": 0.25,
+        "walk_minutes": 5,
+        "line": "Piccadilly"
+      },
+      {
+        "name": "Tottenham Court Road",
+        "distance_miles": 0.54,
+        "walk_minutes": 11,
+        "line": "Central / Northern / Elizabeth"
+      },
+      {
+        "name": "Goodge Street",
+        "distance_miles": 0.62,
+        "walk_minutes": 12,
+        "line": "Northern"
+      },
+      {
+        "name": "King's Cross St Pancras",
+        "distance_miles": 0.74,
+        "walk_minutes": 15,
+        "line": "Piccadilly / Victoria / Northern / Circle / H&C / Metropolitan"
+      }
+    ],
+    "nearby_landmarks": [
+      {
+        "name": "British Museum",
+        "distance_miles": 0.3,
+        "walk_minutes": 6,
+        "category": "museum"
+      },
+      {
+        "name": "LSE",
+        "distance_miles": 0.44,
+        "walk_minutes": 9,
+        "category": "university"
+      },
+      {
+        "name": "King's College London",
+        "distance_miles": 0.64,
+        "walk_minutes": 13,
+        "category": "university"
+      },
+      {
+        "name": "UCL",
+        "distance_miles": 0.66,
+        "walk_minutes": 13,
+        "category": "university"
+      },
+      {
+        "name": "City University",
+        "distance_miles": 0.92,
+        "walk_minutes": 18,
+        "category": "university"
+      }
+    ]
+  },
+  {
+    "id": "P1083",
+    "name": "Fitzrovia Noisy Nightlife 1 Bed",
+    "location": "Fitzrovia, W1T",
+    "area": "London",
+    "postcode": "W1T 4ZZ",
+    "lat": 51.5201,
+    "lng": -0.1397,
+    "station": "Goodge Street",
+    "station_line": "Northern",
+    "station_distance_miles": 0.22,
+    "station_walk_minutes": 4,
+    "station_ride_minutes": 16,
+    "building_type": "flat",
+    "room_type": "1 bed",
+    "bedrooms": 1,
+    "monthly_rent_gbp": 1790,
+    "council_tax_band": "C",
+    "size_sqft": 619,
+    "floor_level": 3,
+    "floor_label": "upper floor",
+    "new_build": true,
+    "furnished": "furnished",
+    "available_from": "2026-07-01",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": false,
+    "accessibility": [],
+    "keywords": [
+      "noisy",
+      "nightlife",
+      "central",
+      "fitzrovia",
+      "negative-test",
+      "noisy nightlife central"
+    ],
+    "description": "Apartment above nightlife and a busy road. This synthetic edge-case listing is in Fitzrovia near Goodge Street.",
+    "nearby_stations": [
+      {
+        "name": "Goodge Street",
+        "distance_miles": 0.22,
+        "walk_minutes": 4,
+        "line": "Northern"
+      },
+      {
+        "name": "Warren Street",
+        "distance_miles": 0.32,
+        "walk_minutes": 6,
+        "line": "Northern / Victoria"
+      },
+      {
+        "name": "Regent's Park",
+        "distance_miles": 0.37,
+        "walk_minutes": 7,
+        "line": "Bakerloo"
+      },
+      {
+        "name": "Euston Square",
+        "distance_miles": 0.43,
+        "walk_minutes": 9,
+        "line": "Circle / H&C / Metropolitan"
+      },
+      {
+        "name": "Tottenham Court Road",
+        "distance_miles": 0.46,
+        "walk_minutes": 9,
+        "line": "Central / Northern / Elizabeth"
+      }
+    ],
+    "nearby_landmarks": [
+      {
+        "name": "UCL",
+        "distance_miles": 0.4,
+        "walk_minutes": 8,
+        "category": "university"
+      },
+      {
+        "name": "British Museum",
+        "distance_miles": 0.55,
+        "walk_minutes": 11,
+        "category": "museum"
+      },
+      {
+        "name": "Regent's University London",
+        "distance_miles": 0.8,
+        "walk_minutes": 16,
+        "category": "university"
+      },
+      {
+        "name": "LSE",
+        "distance_miles": 1.07,
+        "walk_minutes": 21,
+        "category": "university"
+      },
+      {
+        "name": "King's College London",
+        "distance_miles": 1.18,
+        "walk_minutes": 24,
+        "category": "university"
+      }
+    ]
+  },
+  {
+    "id": "P1084",
+    "name": "Camden Walk-Up No Lift 2 Bed",
+    "location": "Camden, NW1",
+    "area": "London",
+    "postcode": "NW1 5ZZ",
+    "lat": 51.5378,
+    "lng": -0.1413,
+    "station": "Camden Town",
+    "station_line": "Northern",
+    "station_distance_miles": 0.11,
+    "station_walk_minutes": 2,
+    "station_ride_minutes": 17,
+    "building_type": "flat",
+    "room_type": "2 bed",
+    "bedrooms": 2,
+    "monthly_rent_gbp": 2230,
+    "council_tax_band": "D",
+    "size_sqft": 748,
+    "floor_level": 4,
+    "floor_label": "upper floor",
+    "new_build": false,
+    "furnished": "part furnished",
+    "available_from": "2026-07-01",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": false,
+    "accessibility": [
+      "stairs only"
+    ],
+    "keywords": [
+      "no lift",
+      "walk up",
+      "stairs only",
+      "camden",
+      "negative-test",
+      "no lift walk up stairs only"
+    ],
+    "description": "Walk-up flat with stairs only and no lift. This synthetic edge-case listing is in Camden near Camden Town.",
+    "nearby_stations": [
+      {
+        "name": "Camden Town",
+        "distance_miles": 0.11,
+        "walk_minutes": 2,
+        "line": "Northern"
+      }
+    ],
+    "nearby_landmarks": [
+      {
+        "name": "UCL",
+        "distance_miles": 0.96,
+        "walk_minutes": 19,
+        "category": "university"
+      },
+      {
+        "name": "Regent's University London",
+        "distance_miles": 1.0,
+        "walk_minutes": 20,
+        "category": "university"
+      }
+    ]
+  },
+  {
+    "id": "P1085",
+    "name": "Bethnal Green House Share 3 Bed",
+    "location": "Bethnal Green, E2",
+    "area": "London",
+    "postcode": "E2 6ZZ",
+    "lat": 51.5287,
+    "lng": -0.0571,
+    "station": "Bethnal Green",
+    "station_line": "Central",
+    "station_distance_miles": 0.13,
+    "station_walk_minutes": 3,
+    "station_ride_minutes": 18,
+    "building_type": "house",
+    "room_type": "room in house share",
+    "bedrooms": 4,
+    "monthly_rent_gbp": 2670,
+    "council_tax_band": "E",
+    "size_sqft": 877,
+    "floor_level": 2,
+    "floor_label": "upper floor",
+    "new_build": false,
+    "furnished": "unfurnished",
+    "available_from": "2026-07-01",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": false,
+    "accessibility": [],
+    "keywords": [
+      "house share",
+      "flatmates",
+      "shared house",
+      "bethnal green",
+      "negative-test",
+      "house share flatmates shared house"
+    ],
+    "description": "Room in a shared house with multiple flatmates. This synthetic edge-case listing is in Bethnal Green near Bethnal Green.",
+    "nearby_stations": [
+      {
+        "name": "Bethnal Green",
+        "distance_miles": 0.13,
+        "walk_minutes": 3,
+        "line": "Central"
+      },
+      {
+        "name": "Whitechapel",
+        "distance_miles": 0.65,
+        "walk_minutes": 13,
+        "line": "Elizabeth / District / H&C / Overground"
+      }
+    ],
+    "nearby_landmarks": [
+      {
+        "name": "Queen Mary University of London",
+        "distance_miles": 0.76,
+        "walk_minutes": 15,
+        "category": "university"
+      }
+    ]
+  },
+  {
+    "id": "P1086",
+    "name": "Canary Wharf No Pets Studio",
+    "location": "Canary Wharf, E14",
+    "area": "London",
+    "postcode": "E14 7ZZ",
+    "lat": 51.5062,
+    "lng": -0.019,
+    "station": "Canary Wharf",
+    "station_line": "Jubilee / Elizabeth / DLR",
+    "station_distance_miles": 0.18,
+    "station_walk_minutes": 4,
+    "station_ride_minutes": 19,
+    "building_type": "studio",
+    "room_type": "studio",
+    "bedrooms": 0,
+    "monthly_rent_gbp": 2070,
+    "council_tax_band": "B",
+    "size_sqft": 526,
+    "floor_level": 2,
+    "floor_label": "low floor",
+    "new_build": true,
+    "furnished": "furnished",
+    "available_from": "2026-07-01",
+    "tenancy_min_months": 12,
+    "bills_included": true,
+    "pets_allowed": false,
+    "accessibility": [
+      "lift"
+    ],
+    "keywords": [
+      "no pets",
+      "not pet friendly",
+      "canary wharf",
+      "negative-test",
+      "no pets not pet friendly"
+    ],
+    "description": "Well-presented flat where pets are not permitted. This synthetic edge-case listing is in Canary Wharf near Canary Wharf.",
+    "nearby_stations": [
+      {
+        "name": "Canary Wharf",
+        "distance_miles": 0.18,
+        "walk_minutes": 4,
+        "line": "Jubilee / Elizabeth / DLR"
+      },
+      {
+        "name": "South Quay",
+        "distance_miles": 0.4,
+        "walk_minutes": 8,
+        "line": "DLR"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1087",
+    "name": "Canada Water No Bills 1 Bed",
+    "location": "Canada Water, SE16",
+    "area": "London",
+    "postcode": "SE16 8ZZ",
+    "lat": 51.4964,
+    "lng": -0.0496,
+    "station": "Canada Water",
+    "station_line": "Jubilee / Overground",
+    "station_distance_miles": 0.11,
+    "station_walk_minutes": 2,
+    "station_ride_minutes": 20,
+    "building_type": "flat",
+    "room_type": "1 bed",
+    "bedrooms": 1,
+    "monthly_rent_gbp": 2510,
+    "council_tax_band": "C",
+    "size_sqft": 655,
+    "floor_level": 5,
+    "floor_label": "mid floor",
+    "new_build": false,
+    "furnished": "part furnished",
+    "available_from": "2026-07-01",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": true,
+    "accessibility": [],
+    "keywords": [
+      "no bills included",
+      "bills excluded",
+      "canada water",
+      "negative-test",
+      "no bills included bills excluded"
+    ],
+    "description": "Modern apartment where bills are excluded. This synthetic edge-case listing is in Canada Water near Canada Water.",
+    "nearby_stations": [
+      {
+        "name": "Canada Water",
+        "distance_miles": 0.11,
+        "walk_minutes": 2,
+        "line": "Jubilee / Overground"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1088",
+    "name": "Paddington No Parking 2 Bed",
+    "location": "Paddington, W2",
+    "area": "London",
+    "postcode": "W2 9ZZ",
+    "lat": 51.515,
+    "lng": -0.1731,
+    "station": "Paddington",
+    "station_line": "Elizabeth / Bakerloo / Circle / District / H&C / Rail",
+    "station_distance_miles": 0.11,
+    "station_walk_minutes": 2,
+    "station_ride_minutes": 21,
+    "building_type": "flat",
+    "room_type": "2 bed",
+    "bedrooms": 2,
+    "monthly_rent_gbp": 2950,
+    "council_tax_band": "D",
+    "size_sqft": 784,
+    "floor_level": 6,
+    "floor_label": "mid floor",
+    "new_build": false,
+    "furnished": "unfurnished",
+    "available_from": "2026-07-01",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": false,
+    "accessibility": [
+      "lift"
+    ],
+    "keywords": [
+      "no parking",
+      "street parking only",
+      "paddington",
+      "negative-test",
+      "no parking street parking only"
+    ],
+    "description": "Good transport links but no parking space. This synthetic edge-case listing is in Paddington near Paddington.",
+    "nearby_stations": [
+      {
+        "name": "Paddington",
+        "distance_miles": 0.11,
+        "walk_minutes": 2,
+        "line": "Elizabeth / Bakerloo / Circle / District / H&C / Rail"
+      }
+    ],
+    "nearby_landmarks": [
+      {
+        "name": "Regent's University London",
+        "distance_miles": 1.09,
+        "walk_minutes": 22,
+        "category": "university"
+      },
+      {
+        "name": "Imperial College London",
+        "distance_miles": 1.12,
+        "walk_minutes": 22,
+        "category": "university"
+      }
+    ]
+  },
+  {
+    "id": "P1089",
+    "name": "Acton No Garden 3 Bed",
+    "location": "Acton, W3",
+    "area": "London",
+    "postcode": "W3 1ZZ",
+    "lat": 51.5084,
+    "lng": -0.2594,
+    "station": "Acton Main Line",
+    "station_line": "Elizabeth",
+    "station_distance_miles": 0.69,
+    "station_walk_minutes": 14,
+    "station_ride_minutes": 22,
+    "building_type": "flat",
+    "room_type": "3 bed",
+    "bedrooms": 3,
+    "monthly_rent_gbp": 3390,
+    "council_tax_band": "E",
+    "size_sqft": 913,
+    "floor_level": 1,
+    "floor_label": "low floor",
+    "new_build": true,
+    "furnished": "furnished",
+    "available_from": "2026-07-01",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": false,
+    "accessibility": [],
+    "keywords": [
+      "no garden",
+      "no outdoor space",
+      "acton",
+      "negative-test",
+      "no garden no outdoor space"
+    ],
+    "description": "Compact flat with no garden or outdoor space. This synthetic edge-case listing is in Acton near Acton Main Line.",
+    "nearby_stations": [
+      {
+        "name": "Acton Main Line",
+        "distance_miles": 0.69,
+        "walk_minutes": 14,
+        "line": "Elizabeth"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1090",
+    "name": "Forest Gate Short Let Only Studio",
+    "location": "Forest Gate, E7",
+    "area": "London",
+    "postcode": "E7 2ZZ",
+    "lat": 51.5508,
+    "lng": 0.0207,
+    "station": "Forest Gate",
+    "station_line": "Elizabeth",
+    "station_distance_miles": 0.18,
+    "station_walk_minutes": 4,
+    "station_ride_minutes": 23,
+    "building_type": "studio",
+    "room_type": "studio",
+    "bedrooms": 0,
+    "monthly_rent_gbp": 2790,
+    "council_tax_band": "B",
+    "size_sqft": 562,
+    "floor_level": 8,
+    "floor_label": "high floor",
+    "new_build": false,
+    "furnished": "part furnished",
+    "available_from": "2026-07-01",
+    "tenancy_min_months": 3,
+    "bills_included": false,
+    "pets_allowed": false,
+    "accessibility": [
+      "lift"
+    ],
+    "keywords": [
+      "short let only",
+      "corporate let",
+      "forest gate",
+      "negative-test",
+      "short let only corporate let"
+    ],
+    "description": "Short-let only apartment unsuitable for long tenancy. This synthetic edge-case listing is in Forest Gate near Forest Gate.",
+    "nearby_stations": [
+      {
+        "name": "Forest Gate",
+        "distance_miles": 0.18,
+        "walk_minutes": 4,
+        "line": "Elizabeth"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1091",
+    "name": "Lewisham Student Restricted 1 Bed",
+    "location": "Lewisham, SE13",
+    "area": "London",
+    "postcode": "SE13 3ZZ",
+    "lat": 51.4681,
+    "lng": -0.0164,
+    "station": "Lewisham",
+    "station_line": "DLR / Rail",
+    "station_distance_miles": 0.19,
+    "station_walk_minutes": 4,
+    "station_ride_minutes": 24,
+    "building_type": "flat",
+    "room_type": "1 bed",
+    "bedrooms": 1,
+    "monthly_rent_gbp": 3230,
+    "council_tax_band": "C",
+    "size_sqft": 691,
+    "floor_level": 2,
+    "floor_label": "low floor",
+    "new_build": false,
+    "furnished": "unfurnished",
+    "available_from": "2026-07-01",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": false,
+    "accessibility": [],
+    "keywords": [
+      "no students",
+      "professionals only",
+      "lewisham",
+      "negative-test",
+      "no students professionals only"
+    ],
+    "description": "Professionals-only listing that does not accept students. This synthetic edge-case listing is in Lewisham near Lewisham.",
+    "nearby_stations": [
+      {
+        "name": "Lewisham",
+        "distance_miles": 0.19,
+        "walk_minutes": 4,
+        "line": "DLR / Rail"
+      },
+      {
+        "name": "Greenwich",
+        "distance_miles": 0.69,
+        "walk_minutes": 14,
+        "line": "DLR / Rail"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1092",
+    "name": "Bloomsbury Basement 2 Bed",
+    "location": "Bloomsbury, WC1N",
+    "area": "London",
+    "postcode": "WC1N 4ZZ",
+    "lat": 51.5204,
+    "lng": -0.125,
+    "station": "Russell Square",
+    "station_line": "Piccadilly",
+    "station_distance_miles": 0.18,
+    "station_walk_minutes": 4,
+    "station_ride_minutes": 25,
+    "building_type": "flat",
+    "room_type": "2 bed",
+    "bedrooms": 2,
+    "monthly_rent_gbp": 1870,
+    "council_tax_band": "D",
+    "size_sqft": 820,
+    "floor_level": -1,
+    "floor_label": "basement",
+    "new_build": true,
+    "furnished": "furnished",
+    "available_from": "2026-07-01",
+    "tenancy_min_months": 12,
+    "bills_included": true,
+    "pets_allowed": true,
+    "accessibility": [
+      "stairs only"
+    ],
+    "keywords": [
+      "basement",
+      "budget",
+      "stairs only",
+      "bloomsbury",
+      "negative-test",
+      "basement budget stairs only"
+    ],
+    "description": "Basement listing with limited natural light. This synthetic edge-case listing is in Bloomsbury near Russell Square.",
+    "nearby_stations": [
+      {
+        "name": "Russell Square",
+        "distance_miles": 0.18,
+        "walk_minutes": 4,
+        "line": "Piccadilly"
+      },
+      {
+        "name": "Holborn",
+        "distance_miles": 0.3,
+        "walk_minutes": 6,
+        "line": "Central / Piccadilly"
+      },
+      {
+        "name": "Tottenham Court Road",
+        "distance_miles": 0.39,
+        "walk_minutes": 8,
+        "line": "Central / Northern / Elizabeth"
+      },
+      {
+        "name": "Goodge Street",
+        "distance_miles": 0.42,
+        "walk_minutes": 8,
+        "line": "Northern"
+      },
+      {
+        "name": "Euston Square",
+        "distance_miles": 0.59,
+        "walk_minutes": 12,
+        "line": "Circle / H&C / Metropolitan"
+      }
+    ],
+    "nearby_landmarks": [
+      {
+        "name": "British Museum",
+        "distance_miles": 0.11,
+        "walk_minutes": 2,
+        "category": "museum"
+      },
+      {
+        "name": "UCL",
+        "distance_miles": 0.48,
+        "walk_minutes": 10,
+        "category": "university"
+      },
+      {
+        "name": "LSE",
+        "distance_miles": 0.55,
+        "walk_minutes": 11,
+        "category": "university"
+      },
+      {
+        "name": "King's College London",
+        "distance_miles": 0.73,
+        "walk_minutes": 15,
+        "category": "university"
+      },
+      {
+        "name": "City University",
+        "distance_miles": 1.1,
+        "walk_minutes": 22,
+        "category": "university"
+      }
+    ]
+  },
+  {
+    "id": "P1093",
+    "name": "Fitzrovia Noisy Nightlife 3 Bed",
+    "location": "Fitzrovia, W1T",
+    "area": "London",
+    "postcode": "W1T 5ZZ",
+    "lat": 51.5201,
+    "lng": -0.1361,
+    "station": "Goodge Street",
+    "station_line": "Northern",
+    "station_distance_miles": 0.07,
+    "station_walk_minutes": 1,
+    "station_ride_minutes": 26,
+    "building_type": "flat",
+    "room_type": "3 bed",
+    "bedrooms": 3,
+    "monthly_rent_gbp": 2310,
+    "council_tax_band": "E",
+    "size_sqft": 949,
+    "floor_level": 3,
+    "floor_label": "upper floor",
+    "new_build": false,
+    "furnished": "part furnished",
+    "available_from": "2026-07-01",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": false,
+    "accessibility": [],
+    "keywords": [
+      "noisy",
+      "nightlife",
+      "central",
+      "fitzrovia",
+      "negative-test",
+      "noisy nightlife central"
+    ],
+    "description": "Apartment above nightlife and a busy road. This synthetic edge-case listing is in Fitzrovia near Goodge Street.",
+    "nearby_stations": [
+      {
+        "name": "Goodge Street",
+        "distance_miles": 0.07,
+        "walk_minutes": 1,
+        "line": "Northern"
+      },
+      {
+        "name": "Warren Street",
+        "distance_miles": 0.32,
+        "walk_minutes": 6,
+        "line": "Northern / Victoria"
+      },
+      {
+        "name": "Tottenham Court Road",
+        "distance_miles": 0.35,
+        "walk_minutes": 7,
+        "line": "Central / Northern / Elizabeth"
+      },
+      {
+        "name": "Euston Square",
+        "distance_miles": 0.39,
+        "walk_minutes": 8,
+        "line": "Circle / H&C / Metropolitan"
+      },
+      {
+        "name": "Regent's Park",
+        "distance_miles": 0.5,
+        "walk_minutes": 10,
+        "line": "Bakerloo"
+      }
+    ],
+    "nearby_landmarks": [
+      {
+        "name": "UCL",
+        "distance_miles": 0.32,
+        "walk_minutes": 6,
+        "category": "university"
+      },
+      {
+        "name": "British Museum",
+        "distance_miles": 0.39,
+        "walk_minutes": 8,
+        "category": "museum"
+      },
+      {
+        "name": "LSE",
+        "distance_miles": 0.93,
+        "walk_minutes": 19,
+        "category": "university"
+      },
+      {
+        "name": "Regent's University London",
+        "distance_miles": 0.93,
+        "walk_minutes": 19,
+        "category": "university"
+      },
+      {
+        "name": "King's College London",
+        "distance_miles": 1.05,
+        "walk_minutes": 21,
+        "category": "university"
+      }
+    ]
+  },
+  {
+    "id": "P1094",
+    "name": "Camden Walk-Up No Lift Studio",
+    "location": "Camden, NW1",
+    "area": "London",
+    "postcode": "NW1 6ZZ",
+    "lat": 51.5378,
+    "lng": -0.1377,
+    "station": "Camden Town",
+    "station_line": "Northern",
+    "station_distance_miles": 0.23,
+    "station_walk_minutes": 5,
+    "station_ride_minutes": 27,
+    "building_type": "studio",
+    "room_type": "studio",
+    "bedrooms": 0,
+    "monthly_rent_gbp": 1710,
+    "council_tax_band": "B",
+    "size_sqft": 598,
+    "floor_level": 4,
+    "floor_label": "upper floor",
+    "new_build": false,
+    "furnished": "unfurnished",
+    "available_from": "2026-07-01",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": false,
+    "accessibility": [
+      "stairs only"
+    ],
+    "keywords": [
+      "no lift",
+      "walk up",
+      "stairs only",
+      "camden",
+      "negative-test",
+      "no lift walk up stairs only"
+    ],
+    "description": "Walk-up flat with stairs only and no lift. This synthetic edge-case listing is in Camden near Camden Town.",
+    "nearby_stations": [
+      {
+        "name": "Camden Town",
+        "distance_miles": 0.23,
+        "walk_minutes": 5,
+        "line": "Northern"
+      }
+    ],
+    "nearby_landmarks": [
+      {
+        "name": "UCL",
+        "distance_miles": 0.93,
+        "walk_minutes": 19,
+        "category": "university"
+      },
+      {
+        "name": "Regent's University London",
+        "distance_miles": 1.11,
+        "walk_minutes": 22,
+        "category": "university"
+      }
+    ]
+  },
+  {
+    "id": "P1095",
+    "name": "Bethnal Green House Share 1 Bed",
+    "location": "Bethnal Green, E2",
+    "area": "London",
+    "postcode": "E2 7ZZ",
+    "lat": 51.5287,
+    "lng": -0.0535,
+    "station": "Bethnal Green",
+    "station_line": "Central",
+    "station_distance_miles": 0.13,
+    "station_walk_minutes": 3,
+    "station_ride_minutes": 28,
+    "building_type": "house",
+    "room_type": "room in house share",
+    "bedrooms": 4,
+    "monthly_rent_gbp": 2150,
+    "council_tax_band": "C",
+    "size_sqft": 727,
+    "floor_level": 2,
+    "floor_label": "upper floor",
+    "new_build": true,
+    "furnished": "furnished",
+    "available_from": "2026-07-01",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": false,
+    "accessibility": [],
+    "keywords": [
+      "house share",
+      "flatmates",
+      "shared house",
+      "bethnal green",
+      "negative-test",
+      "house share flatmates shared house"
+    ],
+    "description": "Room in a shared house with multiple flatmates. This synthetic edge-case listing is in Bethnal Green near Bethnal Green.",
+    "nearby_stations": [
+      {
+        "name": "Bethnal Green",
+        "distance_miles": 0.13,
+        "walk_minutes": 3,
+        "line": "Central"
+      },
+      {
+        "name": "Whitechapel",
+        "distance_miles": 0.69,
+        "walk_minutes": 14,
+        "line": "Elizabeth / District / H&C / Overground"
+      }
+    ],
+    "nearby_landmarks": [
+      {
+        "name": "Queen Mary University of London",
+        "distance_miles": 0.62,
+        "walk_minutes": 12,
+        "category": "university"
+      }
+    ]
+  },
+  {
+    "id": "P1096",
+    "name": "Canary Wharf No Pets 2 Bed",
+    "location": "Canary Wharf, E14",
+    "area": "London",
+    "postcode": "E14 8ZZ",
+    "lat": 51.5062,
+    "lng": -0.0154,
+    "station": "Canary Wharf",
+    "station_line": "Jubilee / Elizabeth / DLR",
+    "station_distance_miles": 0.25,
+    "station_walk_minutes": 5,
+    "station_ride_minutes": 29,
+    "building_type": "flat",
+    "room_type": "2 bed",
+    "bedrooms": 2,
+    "monthly_rent_gbp": 2590,
+    "council_tax_band": "D",
+    "size_sqft": 856,
+    "floor_level": 2,
+    "floor_label": "low floor",
+    "new_build": false,
+    "furnished": "part furnished",
+    "available_from": "2026-07-01",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": false,
+    "accessibility": [
+      "lift"
+    ],
+    "keywords": [
+      "no pets",
+      "not pet friendly",
+      "canary wharf",
+      "negative-test",
+      "no pets not pet friendly"
+    ],
+    "description": "Well-presented flat where pets are not permitted. This synthetic edge-case listing is in Canary Wharf near Canary Wharf.",
+    "nearby_stations": [
+      {
+        "name": "Canary Wharf",
+        "distance_miles": 0.25,
+        "walk_minutes": 5,
+        "line": "Jubilee / Elizabeth / DLR"
+      },
+      {
+        "name": "South Quay",
+        "distance_miles": 0.4,
+        "walk_minutes": 8,
+        "line": "DLR"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1097",
+    "name": "Canada Water No Bills 3 Bed",
+    "location": "Canada Water, SE16",
+    "area": "London",
+    "postcode": "SE16 9ZZ",
+    "lat": 51.4964,
+    "lng": -0.0544,
+    "station": "Canada Water",
+    "station_line": "Jubilee / Overground",
+    "station_distance_miles": 0.23,
+    "station_walk_minutes": 5,
+    "station_ride_minutes": 30,
+    "building_type": "flat",
+    "room_type": "3 bed",
+    "bedrooms": 3,
+    "monthly_rent_gbp": 3030,
+    "council_tax_band": "E",
+    "size_sqft": 985,
+    "floor_level": 5,
+    "floor_label": "mid floor",
+    "new_build": false,
+    "furnished": "unfurnished",
+    "available_from": "2026-07-01",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": true,
+    "accessibility": [],
+    "keywords": [
+      "no bills included",
+      "bills excluded",
+      "canada water",
+      "negative-test",
+      "no bills included bills excluded"
+    ],
+    "description": "Modern apartment where bills are excluded. This synthetic edge-case listing is in Canada Water near Canada Water.",
+    "nearby_stations": [
+      {
+        "name": "Canada Water",
+        "distance_miles": 0.23,
+        "walk_minutes": 5,
+        "line": "Jubilee / Overground"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1098",
+    "name": "Paddington No Parking Studio",
+    "location": "Paddington, W2",
+    "area": "London",
+    "postcode": "W2 1ZZ",
+    "lat": 51.515,
+    "lng": -0.1779,
+    "station": "Paddington",
+    "station_line": "Elizabeth / Bakerloo / Circle / District / H&C / Rail",
+    "station_distance_miles": 0.11,
+    "station_walk_minutes": 2,
+    "station_ride_minutes": 31,
+    "building_type": "studio",
+    "room_type": "studio",
+    "bedrooms": 0,
+    "monthly_rent_gbp": 2430,
+    "council_tax_band": "B",
+    "size_sqft": 634,
+    "floor_level": 6,
+    "floor_label": "mid floor",
+    "new_build": true,
+    "furnished": "furnished",
+    "available_from": "2026-07-01",
+    "tenancy_min_months": 12,
+    "bills_included": true,
+    "pets_allowed": false,
+    "accessibility": [
+      "lift"
+    ],
+    "keywords": [
+      "no parking",
+      "street parking only",
+      "paddington",
+      "negative-test",
+      "no parking street parking only"
+    ],
+    "description": "Good transport links but no parking space. This synthetic edge-case listing is in Paddington near Paddington.",
+    "nearby_stations": [
+      {
+        "name": "Paddington",
+        "distance_miles": 0.11,
+        "walk_minutes": 2,
+        "line": "Elizabeth / Bakerloo / Circle / District / H&C / Rail"
+      }
+    ],
+    "nearby_landmarks": [
+      {
+        "name": "Imperial College London",
+        "distance_miles": 1.13,
+        "walk_minutes": 23,
+        "category": "university"
+      },
+      {
+        "name": "Regent's University London",
+        "distance_miles": 1.24,
+        "walk_minutes": 25,
+        "category": "university"
+      }
+    ]
+  },
+  {
+    "id": "P1099",
+    "name": "Acton No Garden 1 Bed",
+    "location": "Acton, W3",
+    "area": "London",
+    "postcode": "W3 2ZZ",
+    "lat": 51.5084,
+    "lng": -0.2642,
+    "station": "Acton Main Line",
+    "station_line": "Elizabeth",
+    "station_distance_miles": 0.61,
+    "station_walk_minutes": 12,
+    "station_ride_minutes": 32,
+    "building_type": "flat",
+    "room_type": "1 bed",
+    "bedrooms": 1,
+    "monthly_rent_gbp": 2870,
+    "council_tax_band": "C",
+    "size_sqft": 763,
+    "floor_level": 1,
+    "floor_label": "low floor",
+    "new_build": false,
+    "furnished": "part furnished",
+    "available_from": "2026-07-01",
+    "tenancy_min_months": 12,
+    "bills_included": false,
+    "pets_allowed": false,
+    "accessibility": [],
+    "keywords": [
+      "no garden",
+      "no outdoor space",
+      "acton",
+      "negative-test",
+      "no garden no outdoor space"
+    ],
+    "description": "Compact flat with no garden or outdoor space. This synthetic edge-case listing is in Acton near Acton Main Line.",
+    "nearby_stations": [
+      {
+        "name": "Acton Main Line",
+        "distance_miles": 0.61,
+        "walk_minutes": 12,
+        "line": "Elizabeth"
+      }
+    ],
+    "nearby_landmarks": []
+  },
+  {
+    "id": "P1100",
+    "name": "Forest Gate Short Let Only 2 Bed",
+    "location": "Forest Gate, E7",
+    "area": "London",
+    "postcode": "E7 3ZZ",
+    "lat": 51.5508,
+    "lng": 0.0243,
+    "station": "Forest Gate",
+    "station_line": "Elizabeth",
+    "station_distance_miles": 0.1,
+    "station_walk_minutes": 2,
+    "station_ride_minutes": 33,
+    "building_type": "flat",
+    "room_type": "2 bed",
+    "bedrooms": 2,
+    "monthly_rent_gbp": 3310,
+    "council_tax_band": "D",
+    "size_sqft": 892,
+    "floor_level": 8,
+    "floor_label": "high floor",
+    "new_build": false,
+    "furnished": "unfurnished",
+    "available_from": "2026-07-01",
+    "tenancy_min_months": 3,
+    "bills_included": false,
+    "pets_allowed": false,
+    "accessibility": [
+      "lift"
+    ],
+    "keywords": [
+      "short let only",
+      "corporate let",
+      "forest gate",
+      "negative-test",
+      "short let only corporate let"
+    ],
+    "description": "Short-let only apartment unsuitable for long tenancy. This synthetic edge-case listing is in Forest Gate near Forest Gate.",
+    "nearby_stations": [
+      {
+        "name": "Forest Gate",
+        "distance_miles": 0.1,
+        "walk_minutes": 2,
+        "line": "Elizabeth"
+      }
+    ],
+    "nearby_landmarks": []
+  }
+]

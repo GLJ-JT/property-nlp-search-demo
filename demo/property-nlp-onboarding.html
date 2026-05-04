@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Property NLP Onboarding</title>
+  <style>
+    :root {
+      --page: #f7f7f8;
+      --paper: #ffffff;
+      --ink: #322744;
+      --soft: #574d66;
+      --muted: #777181;
+      --line: #dedbe5;
+      --purple: #8046f1;
+      --purple-dark: #322744;
+      --purple-soft: #f0e9ff;
+      --green: #087d73;
+      --green-soft: #e0f7f2;
+      --amber: #8a5a00;
+      --amber-soft: #fff0c9;
+      --radius: 8px;
+      --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+      --sans: "SF Pro Display", "SF Pro Display", "Helvetica Neue", Arial, system-ui, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    html,
+    body {
+      width: 100%;
+      min-height: 100%;
+      margin: 0;
+      background: var(--page);
+      color: var(--ink);
+      font-family: var(--sans);
+      line-height: 1.4;
+      overflow: hidden;
+    }
+
+    button {
+      border: 0;
+      font: inherit;
+      cursor: pointer;
+    }
+
+    .app {
+      min-height: 100vh;
+      display: grid;
+      grid-template-rows: auto 1fr;
+      background:
+        radial-gradient(circle at 50% 0%, rgba(128, 70, 241, 0.08), transparent 34%),
+        linear-gradient(180deg, #ffffff 0%, #fbfafc 48%, #f7f7f8 100%);
+    }
+
+    .topbar {
+      min-height: 58px;
+      padding: 13px 18px 9px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.96);
+    }
+
+    .brand-logo {
+      width: 110px;
+      height: auto;
+      display: block;
+      fill: var(--purple);
+    }
+
+    .slides {
+      position: relative;
+      min-height: 0;
+      overflow: hidden;
+    }
+
+    .slide {
+      position: absolute;
+      inset: 0;
+      padding: 20px 18px 18px;
+      display: none;
+      grid-template-rows: 1fr auto;
+      gap: 18px;
+    }
+
+    .slide.active {
+      display: grid;
+      animation: slideForward 180ms var(--ease-out);
+    }
+
+    .slide.active.is-back {
+      animation-name: slideBack;
+    }
+
+    @keyframes slideForward {
+      from { opacity: 0; transform: translateX(18px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes slideBack {
+      from { opacity: 0; transform: translateX(-18px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    .visual {
+      min-height: 0;
+      display: grid;
+      align-content: center;
+      gap: 18px;
+    }
+
+    .headline {
+      display: grid;
+      gap: 10px;
+    }
+
+    .slide.active .headline,
+    .slide.active .query-card,
+    .slide.active .insight-card,
+    .slide.active .results-stack {
+      animation: revealUp 220ms var(--ease-out) 60ms both;
+    }
+
+    @keyframes revealUp {
+      from { opacity: 0; transform: translateY(8px) scale(0.99); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    .eyebrow {
+      width: fit-content;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--purple-soft);
+      color: var(--purple);
+      font-size: 11px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    h1 {
+      margin: 0;
+      color: var(--purple-dark);
+      font-size: 34px;
+      line-height: 1.02;
+      letter-spacing: -0.04em;
+    }
+
+    p {
+      margin: 0;
+      color: var(--soft);
+      font-size: 15px;
+    }
+
+    .query-card,
+    .result-card,
+    .insight-card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--paper);
+      box-shadow: 0 10px 24px rgba(50, 39, 68, 0.07);
+      transform-origin: center bottom;
+    }
+
+    .query-card {
+      padding: 16px;
+      display: grid;
+      gap: 12px;
+    }
+
+    .query-line {
+      min-height: 48px;
+      padding: 0 12px;
+      display: flex;
+      align-items: center;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      color: var(--purple-dark);
+      font-size: 14px;
+      font-weight: 800;
+      background: #fbfafc;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .typing {
+      display: inline-block;
+      max-width: 100%;
+      overflow: hidden;
+      border-right: 2px solid var(--purple);
+      animation: typing 2.4s steps(44, end) 1 both, cursor 700ms steps(1) 3;
+    }
+
+    @keyframes typing {
+      0%, 8% { width: 0; }
+      58%, 100% { width: 100%; }
+    }
+
+    @keyframes cursor {
+      50% { border-color: transparent; }
+    }
+
+    .parsed {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .token {
+      min-height: 30px;
+      padding: 0 10px;
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      background: var(--purple-soft);
+      color: var(--purple-dark);
+      font-size: 12px;
+      font-weight: 850;
+      opacity: 0;
+      transform: translateY(4px) scale(0.96);
+    }
+
+    .slide.active .token {
+      animation: tokenIn 180ms var(--ease-out) 300ms both;
+    }
+
+    .token:nth-child(2) { background: var(--green-soft); color: var(--green); }
+    .token:nth-child(3) { background: var(--amber-soft); color: var(--amber); }
+    .slide.active .token:nth-child(2) { animation-delay: 420ms; }
+    .slide.active .token:nth-child(3) { animation-delay: 540ms; }
+
+    @keyframes tokenIn {
+      from { opacity: 0; transform: translateY(4px) scale(0.96); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    .results-stack {
+      display: grid;
+      gap: 12px;
+    }
+
+    .result-card {
+      padding: 10px;
+      display: grid;
+      grid-template-columns: 82px 1fr;
+      gap: 12px;
+      align-items: center;
+      opacity: 0;
+      transform: translateY(10px) scale(0.985);
+    }
+
+    .slide.active .result-card {
+      animation: resultIn 200ms var(--ease-out) 120ms both;
+    }
+
+    .slide.active .result-card:nth-child(2) { animation-delay: 220ms; }
+
+    @keyframes resultIn {
+      from { opacity: 0; transform: translateY(10px) scale(0.985); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    .thumb {
+      height: 82px;
+      border-radius: 6px;
+      background:
+        linear-gradient(135deg, rgba(50, 39, 68, 0.06), rgba(50, 39, 68, 0.02)),
+        #efedf2;
+      border: 1px solid var(--line);
+    }
+
+    .result-copy {
+      display: grid;
+      gap: 5px;
+      min-width: 0;
+    }
+
+    .result-copy strong {
+      color: var(--purple-dark);
+      font-size: 17px;
+      letter-spacing: -0.02em;
+    }
+
+    .result-copy span {
+      color: var(--soft);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .insight-card {
+      padding: 16px;
+      display: grid;
+      gap: 10px;
+    }
+
+    .match-meter {
+      height: 10px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: #eeeaf4;
+    }
+
+    .match-meter span {
+      display: block;
+      height: 100%;
+      width: 0;
+      border-radius: inherit;
+      background: var(--purple);
+    }
+
+    .slide.active .match-meter span {
+      animation: meter 700ms var(--ease-out) 180ms both;
+    }
+
+    @keyframes meter {
+      from { width: 18%; }
+      to { width: 82%; }
+    }
+
+    .bottom {
+      display: grid;
+      gap: 16px;
+    }
+
+    .dots {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      padding: 0;
+      border-radius: 999px;
+      background: #d2ccdd;
+      transition: width 160ms var(--ease-out), background 160ms var(--ease-out);
+    }
+
+    .dot.active {
+      width: 24px;
+      background: var(--purple);
+    }
+
+    .actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .primary,
+    .ghost {
+      min-height: 50px;
+      border-radius: var(--radius);
+      font-size: 15px;
+      font-weight: 900;
+      transition: transform 140ms var(--ease-out);
+    }
+
+    .primary:active,
+    .ghost:active {
+      transform: scale(0.97);
+    }
+
+    .primary {
+      background: var(--purple);
+      color: #ffffff;
+      box-shadow: 0 8px 20px rgba(128, 70, 241, 0.2);
+    }
+
+    .ghost {
+      border: 1px solid var(--line);
+      background: #ffffff;
+      color: var(--purple-dark);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 1ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 1ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="app" aria-label="Property NLP smarter search onboarding">
+    <header class="topbar">
+      <div class="brand-logo" aria-label="Property NLP">Property NLP</div>
+    </header>
+
+    <div class="slides">
+      <section class="slide active" data-slide="0">
+        <div class="visual">
+          <div class="headline">
+            <span class="eyebrow">Smarter than ever</span>
+            <h1>Find homes the way you think.</h1>
+            <p>Tell us what matters: budget, commute, must-haves. We will do the sorting.</p>
+          </div>
+
+          <div class="query-card">
+            <div class="query-line">
+              <span class="typing">2 bed flat near a fast train, under £600k</span>
+            </div>
+            <div class="parsed">
+              <span class="token">2 bedrooms</span>
+              <span class="token">near station</span>
+              <span class="token">£600k max</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom">
+          <div class="dots" aria-label="Slide progress"></div>
+          <div class="actions">
+            <button class="ghost" data-skip>Skip</button>
+            <button class="primary" data-next>Next</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide" data-slide="1">
+        <div class="visual">
+          <div class="headline">
+            <span class="eyebrow">Less tapping</span>
+            <h1>Your search now understands more.</h1>
+            <p>Add the details you care about in one go. The search keeps the important bits in focus.</p>
+          </div>
+
+          <div class="insight-card">
+            <p><strong>Finding the right fit</strong></p>
+            <div class="match-meter"><span></span></div>
+            <div class="parsed">
+              <span class="token">garden</span>
+              <span class="token">pet-friendly</span>
+              <span class="token">30 min commute</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom">
+          <div class="dots" aria-label="Slide progress"></div>
+          <div class="actions">
+            <button class="ghost" data-prev>Back</button>
+            <button class="primary" data-next>Next</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide" data-slide="2">
+        <div class="visual">
+          <div class="headline">
+            <span class="eyebrow">Better matches</span>
+            <h1>See why each home fits.</h1>
+            <p>Every result highlights the details that matter, so the right homes are easier to spot.</p>
+          </div>
+
+          <div class="results-stack">
+            <article class="result-card">
+              <div class="thumb"></div>
+              <div class="result-copy">
+                <strong>£575,000</strong>
+                <span>2 bed flat · 11 min walk to station</span>
+                <span>Matches: budget, commute, balcony</span>
+              </div>
+            </article>
+            <article class="result-card">
+              <div class="thumb"></div>
+              <div class="result-copy">
+                <strong>£590,000</strong>
+                <span>2 bed maisonette · garden</span>
+                <span>Close match: outside preferred area</span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="bottom">
+          <div class="dots" aria-label="Slide progress"></div>
+          <div class="actions">
+            <button class="ghost" data-prev>Back</button>
+            <button class="primary" data-next>Next</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide" data-slide="3">
+        <div class="visual">
+          <div class="headline">
+            <span class="eyebrow">Ready when you are</span>
+            <h1>Start with what matters.</h1>
+            <p>Example: “A quiet 2 bed near Victoria Park, with outdoor space, under £700k.”</p>
+          </div>
+
+          <div class="query-card">
+            <div class="query-line">A quiet 2 bed near Victoria Park...</div>
+            <button class="primary" data-finish>Try smarter search</button>
+            <p>Classic filters are still there whenever you want them.</p>
+          </div>
+        </div>
+
+        <div class="bottom">
+          <div class="dots" aria-label="Slide progress"></div>
+          <div class="actions">
+            <button class="ghost" data-prev>Back</button>
+            <button class="primary" data-finish>Get started</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    const slides = Array.from(document.querySelectorAll(".slide"));
+    const dotGroups = Array.from(document.querySelectorAll(".dots"));
+    let currentSlide = 0;
+
+    function renderDots() {
+      dotGroups.forEach((group) => {
+        group.innerHTML = "";
+        slides.forEach((_, index) => {
+          const dot = document.createElement("button");
+          dot.className = index === currentSlide ? "dot active" : "dot";
+          dot.setAttribute("aria-label", `Slide ${index + 1}`);
+          dot.type = "button";
+          dot.addEventListener("click", () => showSlide(index));
+          group.append(dot);
+        });
+      });
+    }
+
+    function showSlide(index) {
+      const nextSlide = Math.max(0, Math.min(index, slides.length - 1));
+      const goingBack = nextSlide < currentSlide;
+      currentSlide = nextSlide;
+      slides.forEach((slide, slideIndex) => {
+        slide.classList.toggle("is-back", goingBack);
+        slide.classList.toggle("active", slideIndex === currentSlide);
+      });
+      renderDots();
+    }
+
+    function finishOnboarding() {
+      window.parent.postMessage({ type: "property-nlp:onboarding-complete" }, "*");
+    }
+
+    document.addEventListener("click", (event) => {
+      if (event.target.matches("[data-next]")) showSlide(currentSlide + 1);
+      if (event.target.matches("[data-prev]")) showSlide(currentSlide - 1);
+      if (event.target.matches("[data-skip]")) finishOnboarding();
+      if (event.target.matches("[data-finish]")) finishOnboarding();
+    });
+
+    let touchStartX = 0;
+    document.querySelector(".slides").addEventListener("touchstart", (event) => {
+      touchStartX = event.touches[0].clientX;
+    }, { passive: true });
+
+    document.querySelector(".slides").addEventListener("touchend", (event) => {
+      const deltaX = event.changedTouches[0].clientX - touchStartX;
+      if (Math.abs(deltaX) < 48) return;
+      showSlide(currentSlide + (deltaX < 0 ? 1 : -1));
+    }, { passive: true });
+
+    renderDots();
+  </script>
+</body>
+</html>

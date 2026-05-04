@@ -1,0 +1,58 @@
+[
+  {"name": "South Quay", "line": "DLR", "lat": 51.5005, "lng": -0.0173},
+  {"name": "Canary Wharf", "line": "Jubilee / Elizabeth / DLR", "lat": 51.5036, "lng": -0.0195},
+  {"name": "Angel", "line": "Northern", "lat": 51.5322, "lng": -0.1058},
+  {"name": "Stratford", "line": "Central / Jubilee / Elizabeth / DLR / Rail", "lat": 51.5413, "lng": -0.0032},
+  {"name": "Clapham North", "line": "Northern", "lat": 51.4650, "lng": -0.1295},
+  {"name": "King's Cross St Pancras", "line": "Piccadilly / Victoria / Northern / Circle / H&C / Metropolitan", "lat": 51.5308, "lng": -0.1238},
+  {"name": "Walthamstow Central", "line": "Victoria / Overground", "lat": 51.5830, "lng": -0.0198},
+  {"name": "Greenwich", "line": "DLR / Rail", "lat": 51.4781, "lng": -0.0149},
+  {"name": "Brixton", "line": "Victoria", "lat": 51.4626, "lng": -0.1149},
+  {"name": "Hammersmith", "line": "District / Piccadilly / H&C", "lat": 51.4927, "lng": -0.2240},
+  {"name": "Notting Hill Gate", "line": "Central / Circle / District", "lat": 51.5094, "lng": -0.1967},
+  {"name": "Russell Square", "line": "Piccadilly", "lat": 51.5230, "lng": -0.1244},
+  {"name": "Euston Square", "line": "Circle / H&C / Metropolitan", "lat": 51.5258, "lng": -0.1357},
+  {"name": "Goodge Street", "line": "Northern", "lat": 51.5205, "lng": -0.1347},
+  {"name": "Warren Street", "line": "Northern / Victoria", "lat": 51.5246, "lng": -0.1383},
+  {"name": "Shoreditch High Street", "line": "Overground", "lat": 51.5235, "lng": -0.0755},
+  {"name": "Nine Elms", "line": "Northern", "lat": 51.4799, "lng": -0.1284},
+  {"name": "Camden Town", "line": "Northern", "lat": 51.5392, "lng": -0.1426},
+  {"name": "Battersea Park", "line": "Rail", "lat": 51.4774, "lng": -0.1480},
+  {"name": "Ealing Broadway", "line": "Elizabeth / Central / District", "lat": 51.5152, "lng": -0.3017},
+  {"name": "Hackney Wick", "line": "Overground", "lat": 51.5434, "lng": -0.0246},
+  {"name": "Baker Street", "line": "Bakerloo / Jubilee / Metropolitan / Circle / H&C", "lat": 51.5226, "lng": -0.1571},
+  {"name": "Regent's Park", "line": "Bakerloo", "lat": 51.5234, "lng": -0.1464},
+  {"name": "Elephant and Castle", "line": "Northern / Bakerloo / Rail", "lat": 51.4943, "lng": -0.1001},
+  {"name": "Fulham Broadway", "line": "District", "lat": 51.4803, "lng": -0.1955},
+  {"name": "Waterloo", "line": "Jubilee / Northern / Bakerloo / Waterloo & City / Rail", "lat": 51.5033, "lng": -0.1147},
+  {"name": "Finsbury Park", "line": "Victoria / Piccadilly / Rail", "lat": 51.5646, "lng": -0.1060},
+  {"name": "Highbury and Islington", "line": "Victoria / Overground", "lat": 51.5465, "lng": -0.1037},
+  {"name": "Whitechapel", "line": "Elizabeth / District / H&C / Overground", "lat": 51.5195, "lng": -0.0598},
+  {"name": "Aldgate East", "line": "District / H&C", "lat": 51.5150, "lng": -0.0718},
+  {"name": "Victoria", "line": "Victoria / District / Circle / Rail", "lat": 51.4965, "lng": -0.1447},
+  {"name": "Canada Water", "line": "Jubilee / Overground", "lat": 51.4980, "lng": -0.0497},
+  {"name": "Putney Bridge", "line": "District", "lat": 51.4683, "lng": -0.2088},
+  {"name": "Mile End", "line": "Central / District / H&C", "lat": 51.5251, "lng": -0.0334},
+  {"name": "Sloane Square", "line": "District / Circle", "lat": 51.4924, "lng": -0.1565},
+  {"name": "Tottenham Hale", "line": "Victoria / Rail", "lat": 51.5883, "lng": -0.0601}
+  ,{"name": "Holborn", "line": "Central / Piccadilly", "lat": 51.5174, "lng": -0.1200}
+  ,{"name": "Tottenham Court Road", "line": "Central / Northern / Elizabeth", "lat": 51.5162, "lng": -0.1309}
+  ,{"name": "Bethnal Green", "line": "Central", "lat": 51.5272, "lng": -0.0553}
+  ,{"name": "Old Street", "line": "Northern / Rail", "lat": 51.5257, "lng": -0.0876}
+  ,{"name": "Deptford", "line": "Rail", "lat": 51.4789, "lng": -0.0262}
+  ,{"name": "Lewisham", "line": "DLR / Rail", "lat": 51.4657, "lng": -0.0142}
+  ,{"name": "Peckham Rye", "line": "Overground / Rail", "lat": 51.4700, "lng": -0.0697}
+  ,{"name": "Acton Main Line", "line": "Elizabeth", "lat": 51.5169, "lng": -0.2677}
+  ,{"name": "South Kensington", "line": "District / Circle / Piccadilly", "lat": 51.4941, "lng": -0.1738}
+  ,{"name": "Maze Hill", "line": "Rail", "lat": 51.4826, "lng": 0.0032}
+  ,{"name": "Richmond", "line": "District / Overground / Rail", "lat": 51.4631, "lng": -0.3018}
+  ,{"name": "Wembley Park", "line": "Jubilee / Metropolitan", "lat": 51.5635, "lng": -0.2795}
+  ,{"name": "East Croydon", "line": "Rail / Tram", "lat": 51.3757, "lng": -0.0923}
+  ,{"name": "Hounslow Central", "line": "Piccadilly", "lat": 51.4713, "lng": -0.3665}
+  ,{"name": "Enfield Chase", "line": "Rail", "lat": 51.6530, "lng": -0.0907}
+  ,{"name": "Southwark", "line": "Jubilee", "lat": 51.5043, "lng": -0.1058}
+  ,{"name": "Blackfriars", "line": "District / Circle / Rail", "lat": 51.5116, "lng": -0.1030}
+  ,{"name": "Hackney Downs", "line": "Overground / Rail", "lat": 51.5488, "lng": -0.0608}
+  ,{"name": "Paddington", "line": "Elizabeth / Bakerloo / Circle / District / H&C / Rail", "lat": 51.5154, "lng": -0.1755}
+  ,{"name": "Forest Gate", "line": "Elizabeth", "lat": 51.5494, "lng": 0.0242}
+]
