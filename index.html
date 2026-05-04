@@ -252,6 +252,168 @@
       gap: 8px;
     }
 
+    .number-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .number-card {
+      min-height: 150px;
+      padding: 16px;
+      border: 1px solid var(--line);
+      background: var(--sheet);
+      display: grid;
+      align-content: space-between;
+    }
+
+    .number-card strong {
+      display: block;
+      color: var(--ink);
+      font-size: clamp(34px, 5vw, 56px);
+      line-height: 1;
+      letter-spacing: 0;
+    }
+
+    .number-card span {
+      color: var(--accent);
+      font-family: var(--mono);
+      font-size: 12px;
+      font-weight: 860;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .number-card p {
+      color: var(--soft);
+      font-size: 14px;
+    }
+
+    .research-map,
+    .stack-map,
+    .forecast-grid {
+      display: grid;
+      gap: 12px;
+    }
+
+    .research-row,
+    .stack-row {
+      display: grid;
+      grid-template-columns: 92px minmax(0, 1fr);
+      gap: 14px;
+      padding: 15px;
+      border: 1px solid var(--line);
+      background: var(--sheet);
+      align-items: start;
+    }
+
+    .research-row .step,
+    .stack-row .step {
+      color: var(--accent);
+      font-family: var(--mono);
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .research-row p,
+    .stack-row p {
+      margin-top: 4px;
+      color: var(--soft);
+      font-size: 15px;
+    }
+
+    .comparison-bars {
+      display: grid;
+      gap: 14px;
+    }
+
+    .comparison {
+      padding: 15px;
+      border: 1px solid var(--line);
+      background: var(--sheet);
+      display: grid;
+      gap: 10px;
+    }
+
+    .comparison-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      align-items: baseline;
+    }
+
+    .comparison-head strong {
+      color: var(--ink);
+      font-size: 18px;
+    }
+
+    .comparison-head span {
+      color: var(--accent);
+      font-family: var(--mono);
+      font-size: 12px;
+      font-weight: 860;
+    }
+
+    .bar-pair {
+      display: grid;
+      gap: 7px;
+    }
+
+    .bar-line {
+      display: grid;
+      grid-template-columns: 88px minmax(0, 1fr) 68px;
+      gap: 8px;
+      align-items: center;
+      color: var(--muted);
+      font-family: var(--mono);
+      font-size: 11px;
+      font-weight: 820;
+    }
+
+    .track {
+      height: 12px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .track span {
+      display: block;
+      height: 100%;
+      width: var(--value);
+      background: var(--accent);
+    }
+
+    .bar-line.before .track span {
+      background: var(--muted);
+    }
+
+    .forecast-card {
+      padding: 18px;
+      border: 1px solid var(--line);
+      background: var(--sheet);
+      display: grid;
+      gap: 8px;
+    }
+
+    .forecast-card strong {
+      font-size: clamp(30px, 5vw, 48px);
+      line-height: 1;
+    }
+
+    .forecast-card span {
+      color: var(--accent);
+      font-family: var(--mono);
+      font-size: 12px;
+      font-weight: 860;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .forecast-card p {
+      color: var(--soft);
+      font-size: 15px;
+    }
+
     .quote {
       margin: 8px 0;
       padding: 22px;
@@ -492,6 +654,9 @@
       .meta-strip,
       .article,
       .wireframe,
+      .number-grid,
+      .research-row,
+      .stack-row,
       .demo-band {
         grid-template-columns: 1fr;
       }
@@ -575,13 +740,39 @@
       <div class="content">
         <h2>Research reframed the work from one search box to a reusable intent system.</h2>
         <p>I treated the project as a UX and development investigation rather than a visual redesign. The research question was simple: when users describe a property in natural language, where does confidence break?</p>
-        <p>The research inputs were organised into four groups:</p>
-        <ul>
-          <li><strong>Journey review:</strong> query entry, result scan, listing comparison, filter adjustment, save/share, and enquiry moments.</li>
-          <li><strong>Competitor pattern review:</strong> how major property portals handle search, map/list navigation, saved alerts, listing facts, and filter visibility.</li>
-          <li><strong>Query stress cases:</strong> mixed renter prompts covering budget, room type, commute, landmark proximity, exclusions, and soft preferences.</li>
-          <li><strong>Prototype usability testing:</strong> moderated-test script, black-and-white interactive wireframe, and simulated questionnaire feedback for 10 renter personas using scenario-based tasks.</li>
-        </ul>
+        <div class="number-grid">
+          <article class="number-card">
+            <div><span>Research inputs</span><strong>4</strong></div>
+            <p>Journey review, competitor pattern scan, stress prompts, and moderated-test simulation.</p>
+          </article>
+          <article class="number-card">
+            <div><span>Personas modelled</span><strong>10</strong></div>
+            <p>Renter tasks covering budget, commute, ambiguity, exclusions, and shortlist confidence.</p>
+          </article>
+          <article class="number-card">
+            <div><span>Wireframe mode</span><strong>B/W</strong></div>
+            <p>Monochrome coded prototype to test behaviour before visual styling.</p>
+          </article>
+        </div>
+
+        <div class="research-map">
+          <div class="research-row">
+            <div class="step">01</div>
+            <div><strong>Journey review</strong><p>Mapped query entry, result scan, listing comparison, filter adjustment, save/share, and enquiry moments.</p></div>
+          </div>
+          <div class="research-row">
+            <div class="step">02</div>
+            <div><strong>Competitor pattern review</strong><p>Checked how major property portals handle map/list navigation, saved alerts, listing facts, and filter visibility.</p></div>
+          </div>
+          <div class="research-row">
+            <div class="step">03</div>
+            <div><strong>Query stress cases</strong><p>Modelled mixed renter prompts covering budget, room type, commute, landmark proximity, exclusions, and soft preferences.</p></div>
+          </div>
+          <div class="research-row">
+            <div class="step">04</div>
+            <div><strong>Moderated-test simulation</strong><p>Used a coded black-and-white wireframe and simulated questionnaire feedback for 10 renter personas.</p></div>
+          </div>
+        </div>
 
         <figure class="artifact">
           <div class="artifact-visual">
@@ -609,6 +800,7 @@
           <figcaption class="caption">
             <strong>Moderated usability test artifact</strong>
             The test prototype used a black-and-white UX wireframe to focus attention on interaction logic: query, chips, clarification prompt, and ranked result reasons.
+            <br><br><a class="button" href="demo/research-wireframe.html">Open full wireframe</a>
           </figcaption>
         </figure>
       </div>
@@ -657,6 +849,38 @@
       <div class="content">
         <h2>The build combines frontend state, Python ranking, and structured property data.</h2>
         <p>The prototype was deliberately lightweight so it could be read, tested, and explained in an interview setting. It avoids hiding the product logic inside a black-box model.</p>
+        <div class="number-grid">
+          <article class="number-card">
+            <div><span>Frontend</span><strong>HTML</strong></div>
+            <p>Single-file demo surfaces with responsive UI, state handling, and hosted API calls.</p>
+          </article>
+          <article class="number-card">
+            <div><span>Backend</span><strong>Python</strong></div>
+            <p>Parser, scorer, API routes, property payloads, and local server support.</p>
+          </article>
+          <article class="number-card">
+            <div><span>Data</span><strong>JSON</strong></div>
+            <p>Structured listings with rent, landmarks, stations, amenities, and derived search tags.</p>
+          </article>
+        </div>
+        <div class="stack-map">
+          <div class="stack-row">
+            <div class="step">Input</div>
+            <div><strong>Natural-language query</strong><p>The user writes messy renter language. The interface keeps the original query visible.</p></div>
+          </div>
+          <div class="stack-row">
+            <div class="step">Parse</div>
+            <div><strong>Python intent extraction</strong><p>Rules identify budget, room type, landmarks, distance, amenities, exclusions, and soft preferences.</p></div>
+          </div>
+          <div class="stack-row">
+            <div class="step">Rank</div>
+            <div><strong>Hard filters plus soft scoring</strong><p>Must-haves remove bad matches. Preferences reorder viable listings. Reasons are returned with each result.</p></div>
+          </div>
+          <div class="stack-row">
+            <div class="step">Render</div>
+            <div><strong>Editable UI state</strong><p>Chips, clarification prompts, result cards, and empty states make the system inspectable.</p></div>
+          </div>
+        </div>
         <table class="data-table">
           <thead>
             <tr>
@@ -697,6 +921,43 @@
         <h2>Testing focused on task completion, confidence, and recovery.</h2>
         <p>The testing plan used a black-and-white interactive wireframe before visual consolidation. This kept the session focused on behaviour rather than styling. I modelled 10 renter personas completing common tasks and answering a short questionnaire, then used the results to guide refinement.</p>
         <p><strong>Task examples:</strong> find a studio near a university under a set budget; exclude basement flats; choose between 10-minute walk and 20-minute commute; edit one parsed filter; explain why the top result matched.</p>
+        <div class="number-grid">
+          <article class="number-card">
+            <div><span>Completion speed</span><strong>41%</strong></div>
+            <p>Modelled reduction in average task completion time after NLP + UI.</p>
+          </article>
+          <article class="number-card">
+            <div><span>Reformulations</span><strong>-55%</strong></div>
+            <p>Fewer repeated query rewrites because chips made intent editable.</p>
+          </article>
+          <article class="number-card">
+            <div><span>Confidence</span><strong>8.1</strong></div>
+            <p>Modelled confidence score after result reasons and clarification prompts.</p>
+          </article>
+        </div>
+        <div class="comparison-bars">
+          <div class="comparison">
+            <div class="comparison-head"><strong>Average task completion</strong><span>6m20s to 3m45s</span></div>
+            <div class="bar-pair">
+              <div class="bar-line before"><span>Before</span><div class="track"><span style="--value:100%;"></span></div><span>6m20s</span></div>
+              <div class="bar-line"><span>After</span><div class="track"><span style="--value:59%;"></span></div><span>3m45s</span></div>
+            </div>
+          </div>
+          <div class="comparison">
+            <div class="comparison-head"><strong>Query reformulations</strong><span>3.1 to 1.4 per task</span></div>
+            <div class="bar-pair">
+              <div class="bar-line before"><span>Before</span><div class="track"><span style="--value:100%;"></span></div><span>3.1</span></div>
+              <div class="bar-line"><span>After</span><div class="track"><span style="--value:45%;"></span></div><span>1.4</span></div>
+            </div>
+          </div>
+          <div class="comparison">
+            <div class="comparison-head"><strong>Successful shortlist task</strong><span>60% to 85%</span></div>
+            <div class="bar-pair">
+              <div class="bar-line before"><span>Before</span><div class="track"><span style="--value:60%;"></span></div><span>60%</span></div>
+              <div class="bar-line"><span>After</span><div class="track"><span style="--value:85%;"></span></div><span>85%</span></div>
+            </div>
+          </div>
+        </div>
         <table class="data-table">
           <thead>
             <tr>
@@ -778,6 +1039,28 @@
         <h2>Revenue potential depends on retention, lead quality, and premium product packaging.</h2>
         <p>For a major UK property portal, the commercial upside would not come from the search box alone. It would come from better session continuation, higher saved-search quality, more confident enquiries, and the ability to package AI-assisted search as part of premium agent or developer products.</p>
         <p>Using public UK property portal benchmarks as a rough market reference, a conservative model can be framed three ways:</p>
+        <div class="forecast-grid">
+          <article class="forecast-card">
+            <span>Low case</span>
+            <strong>£2.1m</strong>
+            <p>0.5% influence on a £425.1m revenue base.</p>
+          </article>
+          <article class="forecast-card">
+            <span>Mid case</span>
+            <strong>£4.3m</strong>
+            <p>1.0% influence through retention, engagement, or packaging.</p>
+          </article>
+          <article class="forecast-card">
+            <span>High case</span>
+            <strong>£6.4m</strong>
+            <p>1.5% influence if packaged into premium search or lead-quality tools.</p>
+          </article>
+          <article class="forecast-card">
+            <span>ARPA model</span>
+            <strong>£2.3m to £6.9m</strong>
+            <p>19,272 members paying £10 to £30 more per month.</p>
+          </article>
+        </div>
         <table class="data-table">
           <thead>
             <tr>
