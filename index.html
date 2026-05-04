@@ -259,10 +259,11 @@
     }
 
     .number-card {
-      min-height: 150px;
-      padding: 16px;
-      border: 1px solid var(--line);
-      background: var(--sheet);
+      min-height: 138px;
+      padding: 14px 0 16px;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      background: transparent;
       display: grid;
       align-content: space-between;
     }
@@ -301,10 +302,15 @@
       display: grid;
       grid-template-columns: 92px minmax(0, 1fr);
       gap: 14px;
-      padding: 15px;
-      border: 1px solid var(--line);
-      background: var(--sheet);
+      padding: 15px 0;
+      border-top: 1px solid var(--line);
+      background: transparent;
       align-items: start;
+    }
+
+    .research-row:last-child,
+    .stack-row:last-child {
+      border-bottom: 1px solid var(--line);
     }
 
     .research-row .step,
@@ -328,11 +334,15 @@
     }
 
     .comparison {
-      padding: 15px;
-      border: 1px solid var(--line);
-      background: var(--sheet);
+      padding: 16px 0;
+      border-top: 1px solid var(--line);
+      background: transparent;
       display: grid;
       gap: 10px;
+    }
+
+    .comparison:last-child {
+      border-bottom: 1px solid var(--line);
     }
 
     .comparison-head {
@@ -388,11 +398,15 @@
     }
 
     .forecast-card {
-      padding: 18px;
-      border: 1px solid var(--line);
-      background: var(--sheet);
+      padding: 16px 0;
+      border-top: 1px solid var(--line);
+      background: transparent;
       display: grid;
       gap: 8px;
+    }
+
+    .forecast-card:last-child {
+      border-bottom: 1px solid var(--line);
     }
 
     .forecast-card strong {
@@ -427,14 +441,15 @@
 
     .artifact {
       margin: 18px 0;
-      border: 1px solid var(--ink);
-      background: var(--sheet);
+      border-top: 1px solid var(--ink);
+      border-bottom: 1px solid var(--ink);
+      background: transparent;
     }
 
     .artifact-visual {
       min-height: 260px;
       padding: clamp(18px, 4vw, 32px);
-      background: color-mix(in oklch, var(--accent-soft) 55%, var(--sheet));
+      background: transparent;
       display: grid;
       place-items: center;
     }
@@ -520,9 +535,13 @@
     }
 
     .wire-note {
-      padding: 13px;
-      border: 1px solid var(--line);
-      background: var(--sheet);
+      padding: 13px 0;
+      border-top: 1px solid var(--line);
+      background: transparent;
+    }
+
+    .wire-note:last-child {
+      border-bottom: 1px solid var(--line);
     }
 
     .wire-note strong {
@@ -536,7 +555,7 @@
     }
 
     .caption {
-      padding: 14px 16px;
+      padding: 14px 0;
       border-top: 1px solid var(--ink);
       color: var(--soft);
       font-size: 14px;
@@ -551,14 +570,15 @@
     .data-table {
       width: 100%;
       border-collapse: collapse;
-      background: var(--sheet);
-      border: 1px solid var(--line);
+      background: transparent;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
       font-size: 15px;
     }
 
     .data-table th,
     .data-table td {
-      padding: 13px 14px;
+      padding: 13px 0;
       border-bottom: 1px solid var(--line);
       text-align: left;
       vertical-align: top;
@@ -585,9 +605,10 @@
     }
 
     .callout {
-      padding: 18px;
-      border: 1px solid var(--line);
-      background: var(--amber-soft);
+      padding: 18px 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      background: transparent;
       color: var(--ink);
     }
 

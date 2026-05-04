@@ -28,7 +28,7 @@
     }
 
     main {
-      width: min(1180px, calc(100% - 28px));
+      width: min(960px, calc(100% - 28px));
       margin: 18px auto 34px;
       display: grid;
       gap: 16px;
@@ -59,9 +59,65 @@
 
     .grid {
       display: grid;
-      grid-template-columns: 300px minmax(0, 1fr) 320px;
-      gap: 14px;
-      align-items: start;
+      grid-template-columns: minmax(280px, 390px) minmax(0, 1fr);
+      gap: 22px;
+      align-items: center;
+    }
+
+    .mobile-frame {
+      width: min(390px, 100%);
+      margin: 0 auto;
+      padding: 14px;
+      border: 3px solid var(--ink);
+      border-radius: 38px;
+      background: var(--ink);
+    }
+
+    .mobile-screen {
+      min-height: 760px;
+      overflow: hidden;
+      border-radius: 26px;
+      background: var(--sheet);
+      display: grid;
+      grid-template-rows: auto auto 1fr auto;
+    }
+
+    .mobile-status {
+      min-height: 34px;
+      padding: 0 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .mobile-header {
+      padding: 12px 16px;
+      border-top: 1px solid var(--ink);
+      border-bottom: 2px solid var(--ink);
+      display: grid;
+      gap: 8px;
+    }
+
+    .mobile-header h1 {
+      margin: 0;
+      font-size: 24px;
+      line-height: 1.05;
+    }
+
+    .mobile-header p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 650;
+    }
+
+    .mobile-body {
+      padding: 14px;
+      display: grid;
+      align-content: start;
+      gap: 12px;
     }
 
     .panel {
@@ -86,7 +142,7 @@
 
     textarea {
       width: 100%;
-      min-height: 112px;
+      min-height: 96px;
       border: 2px solid var(--ink);
       background: #fff;
       padding: 12px;
@@ -160,8 +216,8 @@
       border: 1px solid var(--ink);
       background: #fff;
       display: grid;
-      grid-template-columns: 112px minmax(0, 1fr);
-      min-height: 132px;
+      grid-template-columns: 88px minmax(0, 1fr);
+      min-height: 118px;
     }
 
     .thumb {
@@ -200,6 +256,23 @@
       border-radius: 999px;
       font-size: 10px;
       font-weight: 760;
+    }
+
+    .mobile-nav {
+      min-height: 56px;
+      border-top: 2px solid var(--ink);
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      align-items: center;
+      text-align: center;
+      font-size: 10px;
+      font-weight: 760;
+      color: var(--muted);
+    }
+
+    .test-notes {
+      display: grid;
+      gap: 12px;
     }
 
     .test-card {
@@ -248,82 +321,85 @@
     </header>
 
     <section class="grid">
-      <aside class="panel">
-        <h2>Task input</h2>
-        <div class="panel-body">
-          <textarea>studio near UCL under 2500 bills included lift quiet</textarea>
-          <div class="button">Run parser</div>
-          <div class="chips">
-            <span class="chip"><b>Room</b> studio</span>
-            <span class="chip"><b>Budget</b> £2,500</span>
-            <span class="chip"><b>Landmark</b> UCL</span>
-            <span class="chip"><b>Need</b> lift</span>
-            <span class="chip"><b>Prefer</b> quiet</span>
-          </div>
-          <div class="prompt">
-            <strong>What should near UCL mean?</strong>
-            <div class="prompt-options">
-              <span>10 min walk</span>
-              <span>20 min commute</span>
-              <span>Within 1 mile</span>
+      <div class="mobile-frame">
+        <div class="mobile-screen">
+          <div class="mobile-status"><span>9:41</span><span>LTE 100%</span></div>
+          <header class="mobile-header">
+            <h1>Search in your own words</h1>
+            <p>Research wireframe: mobile task flow, no visual polish.</p>
+          </header>
+          <div class="mobile-body">
+            <textarea>studio near UCL under 2500 bills included lift quiet</textarea>
+            <div class="button">Run parser</div>
+            <div class="chips">
+              <span class="chip"><b>Room</b> studio</span>
+              <span class="chip"><b>Budget</b> £2,500</span>
+              <span class="chip"><b>Landmark</b> UCL</span>
+              <span class="chip"><b>Need</b> lift</span>
+              <span class="chip"><b>Prefer</b> quiet</span>
             </div>
-          </div>
-        </div>
-      </aside>
-
-      <section class="panel">
-        <h2>Ranked output</h2>
-        <div class="panel-body">
-          <article class="result">
-            <div class="thumb"></div>
-            <div class="result-copy">
-              <div class="line short"></div>
-              <div class="line mid"></div>
-              <div class="line"></div>
-              <div class="reason-row">
-                <span>near UCL</span>
-                <span>within budget</span>
-                <span>studio</span>
-                <span>lift</span>
+            <div class="prompt">
+              <strong>What should near UCL mean?</strong>
+              <div class="prompt-options">
+                <span>10 min walk</span>
+                <span>20 min commute</span>
+                <span>Within 1 mile</span>
               </div>
             </div>
-          </article>
-          <article class="result">
-            <div class="thumb"></div>
-            <div class="result-copy">
-              <div class="line short"></div>
-              <div class="line mid"></div>
-              <div class="line"></div>
-              <div class="reason-row">
-                <span>close match</span>
-                <span>budget fit</span>
-                <span>quiet</span>
+            <article class="result">
+              <div class="thumb"></div>
+              <div class="result-copy">
+                <div class="line short"></div>
+                <div class="line mid"></div>
+                <div class="line"></div>
+                <div class="reason-row">
+                  <span>near UCL</span>
+                  <span>within budget</span>
+                  <span>studio</span>
+                  <span>lift</span>
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
+            <article class="result">
+              <div class="thumb"></div>
+              <div class="result-copy">
+                <div class="line short"></div>
+                <div class="line mid"></div>
+                <div class="line"></div>
+                <div class="reason-row">
+                  <span>close match</span>
+                  <span>budget fit</span>
+                  <span>quiet</span>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="mobile-nav"><span>Search</span><span>Filters</span><span>Saved</span><span>Profile</span></div>
         </div>
-      </section>
+      </div>
 
-      <aside class="panel">
-        <h2>Moderator notes</h2>
-        <div class="panel-body">
-          <div class="test-card">
-            <span>Task</span>
-            <strong>Find a suitable studio and explain why the top result fits.</strong>
+      <aside class="test-notes">
+        <section class="panel">
+          <h2>Moderator notes</h2>
+          <div class="panel-body">
+            <div class="test-card">
+              <span>Task</span>
+              <strong>Find a suitable studio and explain why the top result fits.</strong>
+            </div>
+            <div class="test-card">
+              <span>Confidence</span>
+              <div class="scale" style="--value:81%;"></div>
+            </div>
+            <div class="test-card">
+              <span>Control</span>
+              <div class="scale" style="--value:76%;"></div>
+            </div>
+            <div class="test-card">
+              <span>Observed friction</span>
+              <strong>Users wanted to edit one chip without restarting the search.</strong>
+            </div>
           </div>
-          <div class="test-card">
-            <span>Confidence</span>
-            <div class="scale" style="--value:81%;"></div>
-          </div>
-          <div class="test-card">
-            <span>Control</span>
-            <div class="scale" style="--value:76%;"></div>
-          </div>
-          <div class="test-card">
-            <span>Observed friction</span>
-            <strong>Users wanted to edit one chip without restarting the search.</strong>
-          </div>
-        </div>
+        </section>
       </aside>
     </section>
 
