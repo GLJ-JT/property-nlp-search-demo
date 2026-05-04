@@ -221,12 +221,40 @@
     .section-label {
       position: sticky;
       top: 86px;
+      display: grid;
+      gap: 16px;
+      align-self: start;
+    }
+
+    .section-label .current {
       color: var(--accent);
       font-family: var(--mono);
       font-size: 12px;
       font-weight: 860;
       letter-spacing: 0.08em;
       text-transform: uppercase;
+    }
+
+    .section-label nav {
+      display: grid;
+      gap: 8px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 720;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+
+    .section-label nav a {
+      width: fit-content;
+      border-bottom: 1px solid transparent;
+    }
+
+    .section-label nav a:hover,
+    .section-label nav a:focus-visible {
+      color: var(--ink);
+      border-bottom-color: var(--ink);
+      outline: 0;
     }
 
     .content {
@@ -674,6 +702,12 @@
       .section-label {
         position: static;
       }
+
+      .section-label nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 12px;
+      }
     }
 
     @media (max-width: 560px) {
@@ -693,12 +727,7 @@
       <span class="brand-mark">PN</span>
       <span>Property NLP Case Study</span>
     </a>
-    <nav class="nav" aria-label="Case study navigation">
-      <a href="#problem">Problem</a>
-      <a href="#research">Research</a>
-      <a href="#solution">Solution</a>
-      <a href="#testing">Testing</a>
-      <a href="#forecast">Forecast</a>
+    <nav class="nav" aria-label="Demo links">
       <a class="button primary" href="demo/iphone-frame.html">Open demo</a>
     </nav>
   </header>
@@ -735,7 +764,16 @@
     </section>
 
     <section id="problem" class="article">
-      <aside class="section-label">01 Problem</aside>
+      <aside class="section-label">
+        <span class="current">01 Problem</span>
+        <nav aria-label="Case study sections">
+          <a href="#problem">Problem</a>
+          <a href="#research">Research</a>
+          <a href="#solution">Solution</a>
+          <a href="#testing">Testing</a>
+          <a href="#forecast">Forecast</a>
+        </nav>
+      </aside>
       <div class="content">
         <h2>The problem was not search volume. It was search confidence.</h2>
         <p>Property portals already give users filters, maps, saved alerts, and listing pages. The weak point appears when high-intent renters arrive with a sentence rather than a clean filter set: "studio near UCL under 2500 bills included lift quiet".</p>
@@ -746,7 +784,16 @@
     </section>
 
     <section id="research" class="article">
-      <aside class="section-label">02 Research</aside>
+      <aside class="section-label">
+        <span class="current">02 Research</span>
+        <nav aria-label="Case study sections">
+          <a href="#problem">Problem</a>
+          <a href="#research">Research</a>
+          <a href="#solution">Solution</a>
+          <a href="#testing">Testing</a>
+          <a href="#forecast">Forecast</a>
+        </nav>
+      </aside>
       <div class="content">
         <h2>Research reframed the work from one search box to a reusable intent system.</h2>
         <div class="research-prose">
@@ -783,7 +830,16 @@
     </section>
 
     <section class="article">
-      <aside class="section-label">03 Root cause</aside>
+      <aside class="section-label">
+        <span class="current">03 Root cause</span>
+        <nav aria-label="Case study sections">
+          <a href="#problem">Problem</a>
+          <a href="#research">Research</a>
+          <a href="#solution">Solution</a>
+          <a href="#testing">Testing</a>
+          <a href="#forecast">Forecast</a>
+        </nav>
+      </aside>
       <div class="content">
         <h2>The root cause was invisible interpretation.</h2>
         <p>The interface could not show users what it believed the query meant. That made every result feel slightly suspicious. Users were not only asking "is this property good?" They were also asking "did the system remember what I asked for?"</p>
@@ -798,7 +854,16 @@
     </section>
 
     <section id="solution" class="article showcase">
-      <aside class="section-label">04 Solution</aside>
+      <aside class="section-label">
+        <span class="current">04 Solution</span>
+        <nav aria-label="Case study sections">
+          <a href="#problem">Problem</a>
+          <a href="#research">Research</a>
+          <a href="#solution">Solution</a>
+          <a href="#testing">Testing</a>
+          <a href="#forecast">Forecast</a>
+        </nav>
+      </aside>
       <div class="content">
         <h2>The solution was an NLP-assisted search interface with visible intent control.</h2>
         <p>The final design keeps the familiar search experience but adds a structured layer underneath it. Users type naturally. The system parses the sentence into chips. Results explain why they match. If the parser is unsure, the product asks a small clarification question instead of pretending to know.</p>
@@ -824,7 +889,16 @@
     </section>
 
     <section class="article">
-      <aside class="section-label">05 Tech stack</aside>
+      <aside class="section-label">
+        <span class="current">05 Tech stack</span>
+        <nav aria-label="Case study sections">
+          <a href="#problem">Problem</a>
+          <a href="#research">Research</a>
+          <a href="#solution">Solution</a>
+          <a href="#testing">Testing</a>
+          <a href="#forecast">Forecast</a>
+        </nav>
+      </aside>
       <div class="content">
         <h2>The build combines frontend state, Python ranking, and structured property data.</h2>
         <p>The prototype was deliberately lightweight so it could be read, tested, and explained in an interview setting. It avoids hiding the product logic inside a black-box model.</p>
@@ -895,7 +969,16 @@
     </section>
 
     <section id="testing" class="article">
-      <aside class="section-label">06 Testing</aside>
+      <aside class="section-label">
+        <span class="current">06 Testing</span>
+        <nav aria-label="Case study sections">
+          <a href="#problem">Problem</a>
+          <a href="#research">Research</a>
+          <a href="#solution">Solution</a>
+          <a href="#testing">Testing</a>
+          <a href="#forecast">Forecast</a>
+        </nav>
+      </aside>
       <div class="content">
         <h2>Testing focused on task completion, confidence, and recovery.</h2>
         <p>The testing plan used a black-and-white interactive mobile wireframe before visual consolidation. This kept the sessions focused on behaviour rather than styling. I tested with 10 real users completing common renter tasks and answering a short questionnaire, then used the results to guide refinement.</p>
@@ -981,7 +1064,16 @@
     </section>
 
     <section class="article">
-      <aside class="section-label">07 Refinement</aside>
+      <aside class="section-label">
+        <span class="current">07 Refinement</span>
+        <nav aria-label="Case study sections">
+          <a href="#problem">Problem</a>
+          <a href="#research">Research</a>
+          <a href="#solution">Solution</a>
+          <a href="#testing">Testing</a>
+          <a href="#forecast">Forecast</a>
+        </nav>
+      </aside>
       <div class="content">
         <h2>Feedback pushed the UI toward simpler language and clearer control.</h2>
         <p>The first version made the backend too visible. Users did not need to see every parsed field. They needed enough structure to feel in control.</p>
@@ -997,7 +1089,16 @@
     </section>
 
     <section class="article showcase">
-      <aside class="section-label">08 Output</aside>
+      <aside class="section-label">
+        <span class="current">08 Output</span>
+        <nav aria-label="Case study sections">
+          <a href="#problem">Problem</a>
+          <a href="#research">Research</a>
+          <a href="#solution">Solution</a>
+          <a href="#testing">Testing</a>
+          <a href="#forecast">Forecast</a>
+        </nav>
+      </aside>
       <div class="content">
         <h2>The final output is a bundled product demo, not a static case-study mock.</h2>
         <p>The final repository includes an editorial case study, iPhone demo, onboarding flow, full web app, infrastructure whiteboard, Python backend, hosted API fallback, and structured JSON data.</p>
@@ -1016,7 +1117,16 @@
     </section>
 
     <section id="forecast" class="article">
-      <aside class="section-label">09 Forecast</aside>
+      <aside class="section-label">
+        <span class="current">09 Forecast</span>
+        <nav aria-label="Case study sections">
+          <a href="#problem">Problem</a>
+          <a href="#research">Research</a>
+          <a href="#solution">Solution</a>
+          <a href="#testing">Testing</a>
+          <a href="#forecast">Forecast</a>
+        </nav>
+      </aside>
       <div class="content">
         <h2>Revenue potential depends on retention, lead quality, and premium product packaging.</h2>
         <p>For a major UK property portal, the commercial upside would not come from the search box alone. It would come from better session continuation, higher saved-search quality, more confident enquiries, and the ability to package AI-assisted search as part of premium agent or developer products.</p>
@@ -1084,7 +1194,16 @@
     </section>
 
     <section class="article">
-      <aside class="section-label">10 Reflection</aside>
+      <aside class="section-label">
+        <span class="current">10 Reflection</span>
+        <nav aria-label="Case study sections">
+          <a href="#problem">Problem</a>
+          <a href="#research">Research</a>
+          <a href="#solution">Solution</a>
+          <a href="#testing">Testing</a>
+          <a href="#forecast">Forecast</a>
+        </nav>
+      </aside>
       <div class="content">
         <h2>The project shows a complete product system. The next layer is production evidence.</h2>
         <p>The strongest part of the case study is that it does not stop at an interface idea. It connects the user problem, interaction model, parser logic, backend data, and commercial forecast into one working artifact.</p>
