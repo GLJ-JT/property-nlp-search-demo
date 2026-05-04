@@ -212,21 +212,21 @@
       border-top: 1px solid var(--line);
     }
 
-    .article {
+    .case-study-shell {
       display: grid;
       grid-template-columns: 220px minmax(0, 1fr);
       gap: clamp(22px, 5vw, 58px);
       align-items: start;
     }
 
-    .section-label {
+    .case-nav {
       position: sticky;
       top: 86px;
       display: grid;
       align-self: start;
     }
 
-    .section-label nav {
+    .case-nav nav {
       display: grid;
       gap: 8px;
       color: var(--muted);
@@ -236,21 +236,26 @@
       text-transform: none;
     }
 
-    .section-label nav a {
+    .case-nav nav a {
       width: fit-content;
       border-bottom: 1px solid transparent;
+      transition: color 160ms ease, border-color 160ms ease;
     }
 
-    .section-label nav a.active {
+    .case-nav nav a.active {
       color: var(--accent);
       font-weight: 760;
     }
 
-    .section-label nav a:hover,
-    .section-label nav a:focus-visible {
+    .case-nav nav a:hover,
+    .case-nav nav a:focus-visible {
       color: var(--ink);
       border-bottom-color: var(--ink);
       outline: 0;
+    }
+
+    .article {
+      display: block;
     }
 
     .content {
@@ -694,7 +699,7 @@
       }
 
       .meta-strip,
-      .article,
+      .case-study-shell,
       .wireframe,
       .number-grid,
       .research-row,
@@ -704,11 +709,11 @@
         grid-template-columns: 1fr;
       }
 
-      .section-label {
+      .case-nav {
         position: static;
       }
 
-      .section-label nav {
+      .case-nav nav {
         display: flex;
         flex-wrap: wrap;
         gap: 8px 12px;
@@ -768,16 +773,24 @@
       </div>
     </section>
 
-    <section id="problem" class="article">
-      <aside class="section-label">
+    <div class="case-study-shell">
+      <aside class="case-nav">
         <nav aria-label="Case study sections">
           <a class="active" href="#problem">01 Problem</a>
           <a href="#research">02 Research</a>
-          <a href="#solution">03 Solution</a>
-          <a href="#testing">04 Testing</a>
-          <a href="#forecast">05 Forecast</a>
+          <a href="#root-cause">03 Root cause</a>
+          <a href="#solution">04 Solution</a>
+          <a href="#tech-stack">05 Tech stack</a>
+          <a href="#testing">06 Testing</a>
+          <a href="#refinement">07 Refinement</a>
+          <a href="#output">08 Output</a>
+          <a href="#forecast">09 Forecast</a>
+          <a href="#reflection">10 Reflection</a>
         </nav>
       </aside>
+
+      <div class="case-study-content">
+        <section id="problem" class="article">
       <div class="content">
         <h2>The problem was not search volume. It was search confidence.</h2>
         <p>Property portals already give users filters, maps, saved alerts, and listing pages. The weak point appears when high-intent renters arrive with a sentence rather than a clean filter set: "studio near UCL under 2500 bills included lift quiet".</p>
@@ -787,16 +800,7 @@
       </div>
     </section>
 
-    <section id="research" class="article">
-      <aside class="section-label">
-        <nav aria-label="Case study sections">
-          <a href="#problem">01 Problem</a>
-          <a class="active" href="#research">02 Research</a>
-          <a href="#solution">03 Solution</a>
-          <a href="#testing">04 Testing</a>
-          <a href="#forecast">05 Forecast</a>
-        </nav>
-      </aside>
+        <section id="research" class="article">
       <div class="content">
         <h2>Research reframed the work from one search box to a reusable intent system.</h2>
         <div class="research-prose">
@@ -832,16 +836,7 @@
       </div>
     </section>
 
-    <section class="article">
-      <aside class="section-label">
-        <nav aria-label="Case study sections">
-          <a class="active" href="#problem">01 Problem</a>
-          <a href="#research">02 Research</a>
-          <a href="#solution">03 Solution</a>
-          <a href="#testing">04 Testing</a>
-          <a href="#forecast">05 Forecast</a>
-        </nav>
-      </aside>
+        <section id="root-cause" class="article">
       <div class="content">
         <h2>The root cause was invisible interpretation.</h2>
         <p>The interface could not show users what it believed the query meant. That made every result feel slightly suspicious. Users were not only asking "is this property good?" They were also asking "did the system remember what I asked for?"</p>
@@ -855,16 +850,7 @@
       </div>
     </section>
 
-    <section id="solution" class="article showcase">
-      <aside class="section-label">
-        <nav aria-label="Case study sections">
-          <a href="#problem">01 Problem</a>
-          <a href="#research">02 Research</a>
-          <a class="active" href="#solution">03 Solution</a>
-          <a href="#testing">04 Testing</a>
-          <a href="#forecast">05 Forecast</a>
-        </nav>
-      </aside>
+        <section id="solution" class="article showcase">
       <div class="content">
         <h2>The solution was an NLP-assisted search interface with visible intent control.</h2>
         <p>The final design keeps the familiar search experience but adds a structured layer underneath it. Users type naturally. The system parses the sentence into chips. Results explain why they match. If the parser is unsure, the product asks a small clarification question instead of pretending to know.</p>
@@ -889,16 +875,7 @@
       </div>
     </section>
 
-    <section class="article">
-      <aside class="section-label">
-        <nav aria-label="Case study sections">
-          <a href="#problem">01 Problem</a>
-          <a href="#research">02 Research</a>
-          <a class="active" href="#solution">03 Solution</a>
-          <a href="#testing">04 Testing</a>
-          <a href="#forecast">05 Forecast</a>
-        </nav>
-      </aside>
+        <section id="tech-stack" class="article">
       <div class="content">
         <h2>The build combines frontend state, Python ranking, and structured property data.</h2>
         <p>The prototype was deliberately lightweight so it could be read, tested, and explained in an interview setting. It avoids hiding the product logic inside a black-box model.</p>
@@ -968,16 +945,7 @@
       </div>
     </section>
 
-    <section id="testing" class="article">
-      <aside class="section-label">
-        <nav aria-label="Case study sections">
-          <a href="#problem">01 Problem</a>
-          <a href="#research">02 Research</a>
-          <a href="#solution">03 Solution</a>
-          <a class="active" href="#testing">04 Testing</a>
-          <a href="#forecast">05 Forecast</a>
-        </nav>
-      </aside>
+        <section id="testing" class="article">
       <div class="content">
         <h2>Testing focused on task completion, confidence, and recovery.</h2>
         <p>The testing plan used a black-and-white interactive mobile wireframe before visual consolidation. This kept the sessions focused on behaviour rather than styling. I tested with 10 real users completing common renter tasks and answering a short questionnaire, then used the results to guide refinement.</p>
@@ -1062,16 +1030,7 @@
       </div>
     </section>
 
-    <section class="article">
-      <aside class="section-label">
-        <nav aria-label="Case study sections">
-          <a href="#problem">01 Problem</a>
-          <a href="#research">02 Research</a>
-          <a class="active" href="#solution">03 Solution</a>
-          <a href="#testing">04 Testing</a>
-          <a href="#forecast">05 Forecast</a>
-        </nav>
-      </aside>
+        <section id="refinement" class="article">
       <div class="content">
         <h2>Feedback pushed the UI toward simpler language and clearer control.</h2>
         <p>The first version made the backend too visible. Users did not need to see every parsed field. They needed enough structure to feel in control.</p>
@@ -1086,16 +1045,7 @@
       </div>
     </section>
 
-    <section class="article showcase">
-      <aside class="section-label">
-        <nav aria-label="Case study sections">
-          <a href="#problem">01 Problem</a>
-          <a href="#research">02 Research</a>
-          <a class="active" href="#solution">03 Solution</a>
-          <a href="#testing">04 Testing</a>
-          <a href="#forecast">05 Forecast</a>
-        </nav>
-      </aside>
+        <section id="output" class="article showcase">
       <div class="content">
         <h2>The final output is a bundled product demo, not a static case-study mock.</h2>
         <p>The final repository includes an editorial case study, iPhone demo, onboarding flow, full web app, infrastructure whiteboard, Python backend, hosted API fallback, and structured JSON data.</p>
@@ -1113,16 +1063,7 @@
       </div>
     </section>
 
-    <section id="forecast" class="article">
-      <aside class="section-label">
-        <nav aria-label="Case study sections">
-          <a href="#problem">01 Problem</a>
-          <a href="#research">02 Research</a>
-          <a href="#solution">03 Solution</a>
-          <a href="#testing">04 Testing</a>
-          <a class="active" href="#forecast">05 Forecast</a>
-        </nav>
-      </aside>
+        <section id="forecast" class="article">
       <div class="content">
         <h2>Revenue potential depends on retention, lead quality, and premium product packaging.</h2>
         <p>For a major UK property portal, the commercial upside would not come from the search box alone. It would come from better session continuation, higher saved-search quality, more confident enquiries, and the ability to package AI-assisted search as part of premium agent or developer products.</p>
@@ -1189,16 +1130,7 @@
       </div>
     </section>
 
-    <section class="article">
-      <aside class="section-label">
-        <nav aria-label="Case study sections">
-          <a href="#problem">01 Problem</a>
-          <a href="#research">02 Research</a>
-          <a href="#solution">03 Solution</a>
-          <a href="#testing">04 Testing</a>
-          <a class="active" href="#forecast">05 Forecast</a>
-        </nav>
-      </aside>
+        <section id="reflection" class="article">
       <div class="content">
         <h2>The project shows a complete product system. The next layer is production evidence.</h2>
         <p>The strongest part of the case study is that it does not stop at an interface idea. It connects the user problem, interaction model, parser logic, backend data, and commercial forecast into one working artifact.</p>
@@ -1208,9 +1140,39 @@
       </div>
     </section>
 
+      </div>
+    </div>
+
     <footer>
       <p>JOE TAO · Product design, UX engineering, and AI-assisted prototyping. This public case study is neutral and uses no third-party portal branding. The hosted backend URL remains for demo functionality.</p>
     </footer>
   </main>
+  <script>
+    const caseNavLinks = [...document.querySelectorAll('.case-nav a')];
+    const caseSections = caseNavLinks
+      .map((link) => document.querySelector(link.getAttribute('href')))
+      .filter(Boolean);
+
+    const setActiveCaseSection = (id) => {
+      caseNavLinks.forEach((link) => {
+        link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
+      });
+    };
+
+    const caseSectionObserver = new IntersectionObserver((entries) => {
+      const visible = entries
+        .filter((entry) => entry.isIntersecting)
+        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+      if (visible) {
+        setActiveCaseSection(visible.target.id);
+      }
+    }, {
+      rootMargin: '-30% 0px -55% 0px',
+      threshold: [0.05, 0.2, 0.5]
+    });
+
+    caseSections.forEach((section) => caseSectionObserver.observe(section));
+  </script>
 </body>
 </html>
