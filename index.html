@@ -222,17 +222,7 @@
       position: sticky;
       top: 86px;
       display: grid;
-      gap: 16px;
       align-self: start;
-    }
-
-    .section-label .current {
-      color: var(--accent);
-      font-family: var(--mono);
-      font-size: 12px;
-      font-weight: 860;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
     }
 
     .section-label nav {
@@ -248,6 +238,11 @@
     .section-label nav a {
       width: fit-content;
       border-bottom: 1px solid transparent;
+    }
+
+    .section-label nav a.active {
+      color: var(--accent);
+      font-weight: 760;
     }
 
     .section-label nav a:hover,
@@ -774,13 +769,12 @@
 
     <section id="problem" class="article">
       <aside class="section-label">
-        <span class="current">01 Problem</span>
         <nav aria-label="Case study sections">
-          <a href="#problem">Problem</a>
-          <a href="#research">Research</a>
-          <a href="#solution">Solution</a>
-          <a href="#testing">Testing</a>
-          <a href="#forecast">Forecast</a>
+          <a class="active" href="#problem">01 Problem</a>
+          <a href="#research">02 Research</a>
+          <a href="#solution">03 Solution</a>
+          <a href="#testing">04 Testing</a>
+          <a href="#forecast">05 Forecast</a>
         </nav>
       </aside>
       <div class="content">
@@ -794,13 +788,12 @@
 
     <section id="research" class="article">
       <aside class="section-label">
-        <span class="current">02 Research</span>
         <nav aria-label="Case study sections">
-          <a href="#problem">Problem</a>
-          <a href="#research">Research</a>
-          <a href="#solution">Solution</a>
-          <a href="#testing">Testing</a>
-          <a href="#forecast">Forecast</a>
+          <a href="#problem">01 Problem</a>
+          <a class="active" href="#research">02 Research</a>
+          <a href="#solution">03 Solution</a>
+          <a href="#testing">04 Testing</a>
+          <a href="#forecast">05 Forecast</a>
         </nav>
       </aside>
       <div class="content">
@@ -840,13 +833,12 @@
 
     <section class="article">
       <aside class="section-label">
-        <span class="current">03 Root cause</span>
         <nav aria-label="Case study sections">
-          <a href="#problem">Problem</a>
-          <a href="#research">Research</a>
-          <a href="#solution">Solution</a>
-          <a href="#testing">Testing</a>
-          <a href="#forecast">Forecast</a>
+          <a class="active" href="#problem">01 Problem</a>
+          <a href="#research">02 Research</a>
+          <a href="#solution">03 Solution</a>
+          <a href="#testing">04 Testing</a>
+          <a href="#forecast">05 Forecast</a>
         </nav>
       </aside>
       <div class="content">
@@ -864,13 +856,12 @@
 
     <section id="solution" class="article showcase">
       <aside class="section-label">
-        <span class="current">04 Solution</span>
         <nav aria-label="Case study sections">
-          <a href="#problem">Problem</a>
-          <a href="#research">Research</a>
-          <a href="#solution">Solution</a>
-          <a href="#testing">Testing</a>
-          <a href="#forecast">Forecast</a>
+          <a href="#problem">01 Problem</a>
+          <a href="#research">02 Research</a>
+          <a class="active" href="#solution">03 Solution</a>
+          <a href="#testing">04 Testing</a>
+          <a href="#forecast">05 Forecast</a>
         </nav>
       </aside>
       <div class="content">
@@ -899,13 +890,12 @@
 
     <section class="article">
       <aside class="section-label">
-        <span class="current">05 Tech stack</span>
         <nav aria-label="Case study sections">
-          <a href="#problem">Problem</a>
-          <a href="#research">Research</a>
-          <a href="#solution">Solution</a>
-          <a href="#testing">Testing</a>
-          <a href="#forecast">Forecast</a>
+          <a href="#problem">01 Problem</a>
+          <a href="#research">02 Research</a>
+          <a class="active" href="#solution">03 Solution</a>
+          <a href="#testing">04 Testing</a>
+          <a href="#forecast">05 Forecast</a>
         </nav>
       </aside>
       <div class="content">
@@ -979,13 +969,12 @@
 
     <section id="testing" class="article">
       <aside class="section-label">
-        <span class="current">06 Testing</span>
         <nav aria-label="Case study sections">
-          <a href="#problem">Problem</a>
-          <a href="#research">Research</a>
-          <a href="#solution">Solution</a>
-          <a href="#testing">Testing</a>
-          <a href="#forecast">Forecast</a>
+          <a href="#problem">01 Problem</a>
+          <a href="#research">02 Research</a>
+          <a href="#solution">03 Solution</a>
+          <a class="active" href="#testing">04 Testing</a>
+          <a href="#forecast">05 Forecast</a>
         </nav>
       </aside>
       <div class="content">
@@ -1074,13 +1063,12 @@
 
     <section class="article">
       <aside class="section-label">
-        <span class="current">07 Refinement</span>
         <nav aria-label="Case study sections">
-          <a href="#problem">Problem</a>
-          <a href="#research">Research</a>
-          <a href="#solution">Solution</a>
-          <a href="#testing">Testing</a>
-          <a href="#forecast">Forecast</a>
+          <a href="#problem">01 Problem</a>
+          <a href="#research">02 Research</a>
+          <a class="active" href="#solution">03 Solution</a>
+          <a href="#testing">04 Testing</a>
+          <a href="#forecast">05 Forecast</a>
         </nav>
       </aside>
       <div class="content">
@@ -1099,13 +1087,12 @@
 
     <section class="article showcase">
       <aside class="section-label">
-        <span class="current">08 Output</span>
         <nav aria-label="Case study sections">
-          <a href="#problem">Problem</a>
-          <a href="#research">Research</a>
-          <a href="#solution">Solution</a>
-          <a href="#testing">Testing</a>
-          <a href="#forecast">Forecast</a>
+          <a href="#problem">01 Problem</a>
+          <a href="#research">02 Research</a>
+          <a class="active" href="#solution">03 Solution</a>
+          <a href="#testing">04 Testing</a>
+          <a href="#forecast">05 Forecast</a>
         </nav>
       </aside>
       <div class="content">
@@ -1127,13 +1114,12 @@
 
     <section id="forecast" class="article">
       <aside class="section-label">
-        <span class="current">09 Forecast</span>
         <nav aria-label="Case study sections">
-          <a href="#problem">Problem</a>
-          <a href="#research">Research</a>
-          <a href="#solution">Solution</a>
-          <a href="#testing">Testing</a>
-          <a href="#forecast">Forecast</a>
+          <a href="#problem">01 Problem</a>
+          <a href="#research">02 Research</a>
+          <a href="#solution">03 Solution</a>
+          <a href="#testing">04 Testing</a>
+          <a class="active" href="#forecast">05 Forecast</a>
         </nav>
       </aside>
       <div class="content">
@@ -1204,13 +1190,12 @@
 
     <section class="article">
       <aside class="section-label">
-        <span class="current">10 Reflection</span>
         <nav aria-label="Case study sections">
-          <a href="#problem">Problem</a>
-          <a href="#research">Research</a>
-          <a href="#solution">Solution</a>
-          <a href="#testing">Testing</a>
-          <a href="#forecast">Forecast</a>
+          <a href="#problem">01 Problem</a>
+          <a href="#research">02 Research</a>
+          <a href="#solution">03 Solution</a>
+          <a href="#testing">04 Testing</a>
+          <a class="active" href="#forecast">05 Forecast</a>
         </nav>
       </aside>
       <div class="content">
