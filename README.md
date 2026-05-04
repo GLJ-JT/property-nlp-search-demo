@@ -105,7 +105,7 @@ python3 engine/property_search.py "studio near ucl under 2500 not basement" --js
 
 ## GitHub Pages Note
 
-The HTML can be hosted statically, but GitHub Pages cannot run the Python backend. For a fully live remote demo, point the frontend at a hosted API such as Hugging Face Spaces, Render, or another small Python service.
+The HTML can be hosted statically. GitHub Pages cannot run the Python backend, so the browser demo falls back to a hosted Hugging Face Space when it is not opened from `127.0.0.1` or `localhost`.
 
 For interview use, the most reliable path is the local Python server:
 

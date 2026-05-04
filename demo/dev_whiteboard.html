@@ -678,7 +678,7 @@
   </main>
 
   <script>
-    const HOSTED_API_BASE = "";
+    const HOSTED_API_BASE = "https://gggggearless-zoopla-nlp-property-search.hf.space";
     const isLocalApiHost = ["127.0.0.1", "localhost"].includes(window.location.hostname);
     const queryInput = document.getElementById("query");
     const topInput = document.getElementById("top-n");
@@ -712,9 +712,6 @@
     }
 
     async function callSpaceApi(endpoint, data = []) {
-      if (!HOSTED_API_BASE) {
-        throw new Error("Start the local Python server to use the live API.");
-      }
       const response = await fetch(`${HOSTED_API_BASE}/gradio_api/call/${endpoint}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -873,7 +870,7 @@
       runButton.disabled = true;
       runButton.textContent = "Running";
       errorBox.classList.remove("visible");
-      apiStatus.textContent = localApiAvailable() ? "local python api" : "local api needed";
+      apiStatus.textContent = localApiAvailable() ? "local python api" : "hosted python api";
       try {
         const payload = await fetchSearchPayload(query, topInput.value, minScoreInput.value);
         renderChips(payload.parsed_query || {});

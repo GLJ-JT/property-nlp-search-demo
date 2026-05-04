@@ -1739,7 +1739,7 @@
       schema: document.getElementById("schema-panel")
     };
     const schemaCode = document.getElementById("schema-code");
-    const HOSTED_API_BASE = "";
+    const HOSTED_API_BASE = "https://gggggearless-zoopla-nlp-property-search.hf.space";
     const isLocalApiHost = ["127.0.0.1", "localhost"].includes(window.location.hostname);
     let totalProperties = null;
     let currentChips = [];
@@ -1834,9 +1834,6 @@
     }
 
     async function callSpaceApi(endpoint, data = []) {
-      if (!HOSTED_API_BASE) {
-        throw new Error("Start the local Python server to use the live API.");
-      }
       const response = await fetch(`${HOSTED_API_BASE}/gradio_api/call/${endpoint}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
