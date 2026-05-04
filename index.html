@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Property NLP Search System Case Study</title>
-  <meta name="description" content="A portfolio case study for a property NLP search system that turns messy renter language into editable filters, explainable ranking, and reusable search patterns.">
+  <title>Property NLP Search Case Study</title>
+  <meta name="description" content="UX and development case study for a natural-language property search prototype with editable intent, explainable ranking, usability testing, and revenue modelling.">
   <style>
     :root {
       --paper: oklch(97.5% 0.008 296);
@@ -14,8 +14,6 @@
       --muted: oklch(58% 0.027 296);
       --line: oklch(86.5% 0.015 296);
       --accent: oklch(55% 0.2 292);
-      --accent-2: oklch(49% 0.12 172);
-      --accent-3: oklch(55% 0.13 66);
       --accent-soft: oklch(94% 0.035 292);
       --green-soft: oklch(94% 0.035 172);
       --amber-soft: oklch(94% 0.04 66);
@@ -35,13 +33,13 @@
     body {
       margin: 0;
       background:
-        linear-gradient(90deg, rgba(128, 70, 241, 0.055) 0 1px, transparent 1px),
-        linear-gradient(rgba(128, 70, 241, 0.04) 0 1px, transparent 1px),
+        linear-gradient(90deg, rgba(128, 70, 241, 0.045) 0 1px, transparent 1px),
+        linear-gradient(rgba(128, 70, 241, 0.035) 0 1px, transparent 1px),
         var(--paper);
-      background-size: 28px 28px;
+      background-size: 30px 30px;
       color: var(--ink);
       font-family: var(--sans);
-      line-height: 1.5;
+      line-height: 1.58;
       letter-spacing: 0;
     }
 
@@ -54,7 +52,7 @@
       position: sticky;
       top: 0;
       z-index: 20;
-      min-height: 68px;
+      min-height: 66px;
       padding: 0 clamp(18px, 4vw, 52px);
       border-bottom: 1px solid var(--line);
       background: color-mix(in oklch, var(--paper) 92%, transparent);
@@ -112,26 +110,18 @@
     }
 
     main {
-      width: min(1180px, calc(100% - 36px));
+      width: min(1040px, calc(100% - 36px));
       margin: 0 auto;
     }
 
-    section {
-      padding: 76px 0;
-      border-top: 1px solid var(--line);
-    }
-
     .hero {
-      min-height: calc(100vh - 68px);
-      padding: clamp(46px, 8vw, 96px) 0 38px;
+      padding: clamp(54px, 9vw, 108px) 0 46px;
       border-top: 0;
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) minmax(320px, 0.52fr);
-      gap: clamp(30px, 6vw, 72px);
-      align-items: end;
     }
 
-    .eyebrow {
+    .eyebrow,
+    .kicker,
+    .table-label {
       margin: 0 0 12px;
       color: var(--accent);
       font-family: var(--mono);
@@ -144,16 +134,17 @@
     h1 {
       max-width: 900px;
       margin: 0;
-      font-size: clamp(45px, 8.2vw, 96px);
-      line-height: 0.94;
+      font-size: clamp(44px, 7.4vw, 88px);
+      line-height: 0.98;
       letter-spacing: 0;
       font-weight: 870;
     }
 
     h2 {
+      max-width: 820px;
       margin: 0;
-      font-size: clamp(32px, 4.5vw, 58px);
-      line-height: 1.02;
+      font-size: clamp(30px, 4.3vw, 52px);
+      line-height: 1.05;
       letter-spacing: 0;
       font-weight: 830;
     }
@@ -161,7 +152,7 @@
     h3 {
       margin: 0;
       font-size: 22px;
-      line-height: 1.16;
+      line-height: 1.18;
     }
 
     p {
@@ -173,7 +164,7 @@
       margin-top: 24px;
       color: var(--soft);
       font-size: clamp(18px, 2vw, 22px);
-      line-height: 1.45;
+      line-height: 1.48;
     }
 
     .hero-actions {
@@ -183,38 +174,23 @@
       gap: 10px;
     }
 
-    .project-card {
-      border: 1px solid var(--ink);
+    .meta-strip {
+      margin-top: 42px;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .meta {
+      min-height: 116px;
+      padding: 16px;
+      border: 1px solid var(--line);
       background: var(--sheet);
-      box-shadow: 10px 10px 0 color-mix(in oklch, var(--accent) 24%, transparent);
-    }
-
-    .project-card header {
-      padding: 14px 16px;
-      border-bottom: 1px solid var(--ink);
-      display: flex;
-      justify-content: space-between;
-      gap: 16px;
-      font-family: var(--mono);
-      font-size: 12px;
-      font-weight: 820;
-    }
-
-    .project-meta {
-      padding: 18px;
       display: grid;
-      gap: 16px;
+      align-content: space-between;
     }
 
-    .meta-row {
-      display: grid;
-      gap: 4px;
-    }
-
-    .meta-row span,
-    .metric span,
-    .caption span,
-    .section-kicker {
+    .meta span {
       color: var(--muted);
       font-family: var(--mono);
       font-size: 12px;
@@ -223,345 +199,239 @@
       text-transform: uppercase;
     }
 
-    .meta-row strong {
-      font-size: 18px;
-    }
-
-    .metrics {
-      margin-top: 46px;
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 14px;
-    }
-
-    .metric {
-      min-height: 152px;
-      padding: 18px;
-      border: 1px solid var(--line);
-      background: var(--sheet);
-      display: grid;
-      align-content: space-between;
-    }
-
-    .metric strong {
+    .meta strong {
       display: block;
       margin-top: 10px;
-      font-size: clamp(31px, 5vw, 52px);
-      line-height: 1;
-      color: var(--ink);
+      font-size: 22px;
+      line-height: 1.12;
     }
 
-    .metric p {
-      color: var(--soft);
-      font-size: 15px;
+    section {
+      padding: 72px 0;
+      border-top: 1px solid var(--line);
     }
 
-    .section-head {
-      max-width: 850px;
-      margin-bottom: 30px;
-    }
-
-    .section-head p {
-      max-width: 760px;
-      margin-top: 16px;
-      color: var(--soft);
-      font-size: 18px;
-    }
-
-    .figure {
-      margin: 34px 0;
-      border: 1px solid var(--ink);
-      background: var(--sheet);
-    }
-
-    .figure-visual {
-      min-height: 340px;
-      padding: clamp(18px, 4vw, 34px);
+    .article {
       display: grid;
-      place-items: center;
-      background:
-        radial-gradient(circle at 22% 18%, color-mix(in oklch, var(--accent) 18%, transparent), transparent 28%),
-        radial-gradient(circle at 88% 78%, color-mix(in oklch, var(--accent-2) 16%, transparent), transparent 30%),
-        color-mix(in oklch, var(--accent-soft) 55%, var(--sheet));
+      grid-template-columns: 220px minmax(0, 1fr);
+      gap: clamp(22px, 5vw, 58px);
+      align-items: start;
     }
 
-    .phone-row,
-    .board-row,
-    .system-row {
-      width: min(880px, 100%);
-      display: grid;
-      gap: 14px;
-    }
-
-    .phone-row {
-      grid-template-columns: 0.62fr 1fr;
-      align-items: center;
-    }
-
-    .phone-shell {
-      width: min(230px, 100%);
-      aspect-ratio: 9 / 18.8;
-      margin: 0 auto;
-      padding: 14px;
-      border: 2px solid var(--ink);
-      border-radius: 38px;
-      background: var(--ink);
-      box-shadow: 0 18px 44px rgba(38, 30, 52, 0.18);
-    }
-
-    .phone-screen {
-      height: 100%;
-      border-radius: 27px;
-      background: var(--sheet);
-      padding: 22px 14px;
-      display: grid;
-      gap: 12px;
-      align-content: start;
-    }
-
-    .mini-search {
-      min-height: 58px;
-      padding: 10px;
-      border: 1px solid var(--line);
-      border-radius: 10px;
-      color: var(--soft);
-      font-size: 12px;
-      font-weight: 700;
-    }
-
-    .mini-chip-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-    }
-
-    .mini-chip {
-      padding: 5px 7px;
-      border-radius: 999px;
-      background: var(--accent-soft);
-      color: var(--accent);
-      font-size: 10px;
-      font-weight: 780;
-    }
-
-    .mini-card {
-      min-height: 74px;
-      padding: 10px;
-      border: 1px solid var(--line);
-      background: var(--paper);
-      display: grid;
-      gap: 5px;
-    }
-
-    .mini-card strong {
-      font-size: 13px;
-    }
-
-    .mini-card span {
-      color: var(--muted);
-      font-size: 11px;
-    }
-
-    .flow-stack {
-      display: grid;
-      gap: 10px;
-    }
-
-    .flow-item {
-      padding: 14px;
-      border: 1px solid var(--line);
-      background: color-mix(in oklch, var(--sheet) 88%, var(--accent-soft));
-    }
-
-    .flow-item strong {
-      display: block;
-      margin-bottom: 5px;
-    }
-
-    .flow-item span {
-      color: var(--soft);
-      font-size: 14px;
-    }
-
-    .board-row {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-    .board-panel {
-      min-height: 180px;
-      padding: 14px;
-      border: 1px solid var(--ink);
-      background: var(--sheet);
-      display: grid;
-      align-content: start;
-      gap: 10px;
-    }
-
-    .board-panel span {
-      color: var(--accent);
-      font-family: var(--mono);
-      font-size: 12px;
-      font-weight: 850;
-    }
-
-    .board-line {
-      height: 9px;
-      background: var(--line);
-    }
-
-    .board-line:nth-child(3) {
-      width: 76%;
-      background: color-mix(in oklch, var(--accent) 35%, var(--line));
-    }
-
-    .board-line:nth-child(4) {
-      width: 58%;
-    }
-
-    .system-row {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
-
-    .system-node {
-      min-height: 126px;
-      padding: 14px;
-      border: 1px solid var(--ink);
-      background: var(--sheet);
-      display: grid;
-      align-content: space-between;
-    }
-
-    .system-node span {
+    .section-label {
+      position: sticky;
+      top: 86px;
       color: var(--accent);
       font-family: var(--mono);
       font-size: 12px;
       font-weight: 860;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
     }
 
-    .caption {
-      padding: 16px 18px;
-      border-top: 1px solid var(--ink);
-      background: var(--sheet);
-    }
-
-    .caption p {
-      max-width: 880px;
-      margin-top: 6px;
-      color: var(--soft);
-      font-size: 15px;
-    }
-
-    .two-col {
-      display: grid;
-      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-      gap: clamp(24px, 5vw, 58px);
-      align-items: start;
-    }
-
-    .copy {
+    .content {
+      max-width: 760px;
       display: grid;
       gap: 18px;
     }
 
-    .copy p {
-      max-width: 70ch;
+    .content p,
+    .content li {
       color: var(--soft);
       font-size: 17px;
     }
 
-    .copy strong {
+    .content strong {
       color: var(--ink);
     }
 
+    .content ul {
+      margin: 0;
+      padding-left: 20px;
+      display: grid;
+      gap: 8px;
+    }
+
     .quote {
+      margin: 8px 0;
       padding: 22px;
       border: 1px solid var(--ink);
       background: var(--sheet);
       font-family: var(--serif);
       font-size: clamp(22px, 3vw, 34px);
-      line-height: 1.13;
+      line-height: 1.18;
+      color: var(--ink);
     }
 
-    .insight-list,
-    .pattern-list,
-    .state-list,
-    .impact-list {
+    .artifact {
+      margin: 18px 0;
+      border: 1px solid var(--ink);
+      background: var(--sheet);
+    }
+
+    .artifact-visual {
+      min-height: 260px;
+      padding: clamp(18px, 4vw, 32px);
+      background: color-mix(in oklch, var(--accent-soft) 55%, var(--sheet));
       display: grid;
-      gap: 12px;
+      place-items: center;
     }
 
-    .insight,
-    .pattern,
-    .state,
-    .impact {
-      padding: 16px;
+    .wireframe {
+      width: min(720px, 100%);
+      display: grid;
+      grid-template-columns: 0.64fr 1fr;
+      gap: 18px;
+      align-items: center;
+    }
+
+    .phone {
+      width: min(218px, 100%);
+      aspect-ratio: 9 / 18.6;
+      margin: 0 auto;
+      padding: 14px;
+      border: 2px solid var(--ink);
+      border-radius: 36px;
+      background: var(--ink);
+    }
+
+    .screen {
+      height: 100%;
+      padding: 18px 12px;
+      border-radius: 26px;
+      background: var(--sheet);
+      display: grid;
+      align-content: start;
+      gap: 10px;
+    }
+
+    .wire-input,
+    .wire-card,
+    .wire-block {
       border: 1px solid var(--line);
-      background: color-mix(in oklch, var(--sheet) 90%, var(--accent-soft));
-      display: grid;
-      gap: 8px;
+      background: var(--paper);
     }
 
-    .insight:nth-child(2n),
-    .pattern:nth-child(2n),
-    .state:nth-child(2n),
-    .impact:nth-child(2n) {
-      background: color-mix(in oklch, var(--sheet) 90%, var(--green-soft));
-    }
-
-    .insight strong,
-    .pattern strong,
-    .state strong,
-    .impact strong {
-      font-size: 18px;
-      line-height: 1.2;
-    }
-
-    .insight p,
-    .pattern p,
-    .state p,
-    .impact p {
+    .wire-input {
+      min-height: 62px;
+      padding: 10px;
       color: var(--soft);
+      font-size: 11px;
+      font-weight: 760;
+    }
+
+    .wire-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+
+    .wire-chip {
+      padding: 4px 6px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 10px;
+      font-weight: 800;
+    }
+
+    .wire-card {
+      min-height: 60px;
+      padding: 8px;
+      display: grid;
+      gap: 5px;
+    }
+
+    .wire-line {
+      height: 8px;
+      background: var(--line);
+    }
+
+    .wire-line.short {
+      width: 62%;
+      background: color-mix(in oklch, var(--accent) 35%, var(--line));
+    }
+
+    .wire-notes {
+      display: grid;
+      gap: 10px;
+    }
+
+    .wire-note {
+      padding: 13px;
+      border: 1px solid var(--line);
+      background: var(--sheet);
+    }
+
+    .wire-note strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .wire-note span {
+      color: var(--soft);
+      font-size: 14px;
+    }
+
+    .caption {
+      padding: 14px 16px;
+      border-top: 1px solid var(--ink);
+      color: var(--soft);
+      font-size: 14px;
+    }
+
+    .caption strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--ink);
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--sheet);
+      border: 1px solid var(--line);
       font-size: 15px;
     }
 
-    .matrix {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 12px;
+    .data-table th,
+    .data-table td {
+      padding: 13px 14px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
     }
 
-    .matrix .state {
-      min-height: 130px;
-    }
-
-    .button-sample {
-      width: fit-content;
-      min-height: 40px;
-      padding: 0 14px;
-      border: 1px solid var(--accent);
-      border-radius: 7px;
-      display: inline-flex;
-      align-items: center;
-      background: var(--accent);
-      color: oklch(98% 0.006 296);
-      font-size: 13px;
-      font-weight: 820;
-    }
-
-    .button-sample.secondary {
-      background: var(--sheet);
-      color: var(--accent);
-    }
-
-    .button-sample.disabled {
-      border-color: var(--line);
-      background: var(--line);
+    .data-table th {
       color: var(--muted);
+      font-family: var(--mono);
+      font-size: 12px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
     }
 
-    .button-sample.loading {
-      background: var(--ink);
-      border-color: var(--ink);
+    .data-table tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .data-table td {
+      color: var(--soft);
+    }
+
+    .data-table strong {
+      color: var(--ink);
+    }
+
+    .callout {
+      padding: 18px;
+      border: 1px solid var(--line);
+      background: var(--amber-soft);
+      color: var(--ink);
+    }
+
+    .callout strong {
+      display: block;
+      margin-bottom: 6px;
     }
 
     .demo-band {
@@ -576,8 +446,8 @@
     }
 
     .demo-band p {
-      max-width: 760px;
-      margin-top: 10px;
+      max-width: 720px;
+      margin-top: 8px;
       color: oklch(82% 0.03 296);
     }
 
@@ -587,16 +457,17 @@
       color: var(--ink);
     }
 
-    .reflection {
-      padding: 26px;
-      border: 1px solid var(--ink);
-      background: var(--sheet);
+    .source-list {
+      display: grid;
+      gap: 8px;
+      font-size: 14px;
     }
 
-    .reflection p {
-      max-width: 84ch;
-      color: var(--soft);
-      font-size: 18px;
+    .source-list a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
     }
 
     footer {
@@ -605,7 +476,7 @@
       font-size: 14px;
     }
 
-    @media (max-width: 920px) {
+    @media (max-width: 860px) {
       .topbar {
         position: static;
         align-items: flex-start;
@@ -618,33 +489,25 @@
         justify-content: flex-start;
       }
 
-      .hero,
-      .metrics,
-      .two-col,
-      .phone-row,
-      .board-row,
-      .system-row,
-      .matrix,
+      .meta-strip,
+      .article,
+      .wireframe,
       .demo-band {
         grid-template-columns: 1fr;
       }
 
-      .hero {
-        min-height: auto;
+      .section-label {
+        position: static;
       }
     }
 
     @media (max-width: 560px) {
       main {
-        width: min(100% - 24px, 1180px);
+        width: min(100% - 24px, 1040px);
       }
 
       section {
-        padding: 56px 0;
-      }
-
-      .project-card {
-        box-shadow: 6px 6px 0 color-mix(in oklch, var(--accent) 24%, transparent);
+        padding: 54px 0;
       }
     }
   </style>
@@ -656,391 +519,318 @@
       <span>Property NLP Case Study</span>
     </a>
     <nav class="nav" aria-label="Case study navigation">
-      <a href="#context">Context</a>
       <a href="#problem">Problem</a>
-      <a href="#system">System</a>
-      <a href="#impact">Impact</a>
+      <a href="#research">Research</a>
+      <a href="#solution">Solution</a>
+      <a href="#testing">Testing</a>
+      <a href="#forecast">Forecast</a>
       <a class="button primary" href="demo/iphone-frame.html">Open demo</a>
     </nav>
   </header>
 
   <main>
-    <section class="hero" aria-labelledby="hero-title">
-      <div>
-        <p class="eyebrow">Proptech NLP system case study</p>
-        <h1 id="hero-title">Turning renter search friction into a reusable intent system.</h1>
-        <p class="lede">Property search users often know what they want, but not in filter language. This case study turns messy renter language into editable filters, explainable ranking, and a working mobile-first search prototype.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="demo/iphone-frame.html">View iPhone prototype</a>
-          <a class="button" href="demo/dev_whiteboard.html">Inspect backend logic</a>
-          <a class="button" href="https://github.com/GLJ-JT/property-nlp-search-demo">GitHub repo</a>
-        </div>
+    <section class="hero">
+      <p class="eyebrow">UX engineering case study</p>
+      <h1>Turning property search hesitation into an explainable NLP interface.</h1>
+      <p class="lede">A mobile-first prototype that converts messy renter language into editable intent chips, explainable ranking, and a reusable search pattern for property discovery.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="demo/iphone-frame.html">View iPhone prototype</a>
+        <a class="button" href="demo/dev_whiteboard.html">Inspect backend logic</a>
+        <a class="button" href="https://github.com/GLJ-JT/property-nlp-search-demo">GitHub repo</a>
       </div>
 
-      <aside class="project-card" aria-label="Project details">
-        <header>
-          <span>Case study</span>
-          <span>2026</span>
-        </header>
-        <div class="project-meta">
-          <div class="meta-row">
-            <span>Category</span>
-            <strong>Product strategy, NLP UX, design systems</strong>
-          </div>
-          <div class="meta-row">
-            <span>Surface</span>
-            <strong>Mobile search, web app, backend dashboard</strong>
-          </div>
-          <div class="meta-row">
-            <span>Tools</span>
-            <strong>HTML, CSS, JavaScript, Python, JSON, Hugging Face</strong>
-          </div>
-          <div class="meta-row">
-            <span>Role</span>
-            <strong>Research framing, UX system, prototype, backend logic</strong>
-          </div>
-        </div>
-      </aside>
+      <div class="meta-strip" aria-label="Case study summary">
+        <article class="meta">
+          <span>Role</span>
+          <strong>UX, UI, frontend, Python backend</strong>
+        </article>
+        <article class="meta">
+          <span>Surface</span>
+          <strong>Mobile search and web app</strong>
+        </article>
+        <article class="meta">
+          <span>Validation</span>
+          <strong>Moderated test script and simulated n=10 questionnaire</strong>
+        </article>
+        <article class="meta">
+          <span>Output</span>
+          <strong>Live demo with hosted API fallback</strong>
+        </article>
+      </div>
     </section>
 
-    <div class="metrics" aria-label="Prototype impact signals">
-      <article class="metric">
-        <div>
-          <span>Stress cases</span>
-          <strong>50</strong>
-        </div>
-        <p>Ranking prompts used to test whether messy renter intent returns sensible matches.</p>
-      </article>
-      <article class="metric">
-        <div>
-          <span>Negative tests</span>
-          <strong>100</strong>
-        </div>
-        <p>Edge cases for exclusions such as no basement, no house share, no pets, and wrong commute logic.</p>
-      </article>
-      <article class="metric">
-        <div>
-          <span>Prototype surfaces</span>
-          <strong>4</strong>
-        </div>
-        <p>iPhone frame, onboarding, full web app, and infrastructure whiteboard in one bundle.</p>
-      </article>
-      <article class="metric">
-        <div>
-          <span>Live backend</span>
-          <strong>API</strong>
-        </div>
-        <p>Python search logic runs locally or through a hosted backend fallback.</p>
-      </article>
-    </div>
+    <section id="problem" class="article">
+      <aside class="section-label">01 Problem</aside>
+      <div class="content">
+        <h2>The problem was not search volume. It was search confidence.</h2>
+        <p>Property portals already give users filters, maps, saved alerts, and listing pages. The weak point appears when high-intent renters arrive with a sentence rather than a clean filter set: "studio near UCL under 2500 bills included lift quiet".</p>
+        <p>In a standard flow, that intent is broken apart. Budget might become a filter. Location might become a search term. Other constraints become manual memory. The user then has to inspect listings one by one to check whether the product understood them.</p>
+        <p><strong>The product risk is confidence leakage.</strong> If users cannot see that their requirements have been understood, they create their own comparison workflow through screenshots, notes, agent messages, WhatsApp, WeChat, Telegram, or another portal.</p>
+        <div class="quote">The user does not need the interface to feel clever. They need it to prove it understood the tradeoffs.</div>
+      </div>
+    </section>
 
-    <figure class="figure">
-      <div class="figure-visual">
-        <div class="phone-row">
-          <div class="phone-shell" aria-hidden="true">
-            <div class="phone-screen">
-              <div class="mini-search">studio near UCL under 2500 bills included lift quiet</div>
-              <div class="mini-chip-row">
-                <span class="mini-chip">studio</span>
-                <span class="mini-chip">UCL</span>
-                <span class="mini-chip">£2,500 max</span>
-                <span class="mini-chip">lift</span>
+    <section id="research" class="article">
+      <aside class="section-label">02 Research</aside>
+      <div class="content">
+        <h2>Research reframed the work from one search box to a reusable intent system.</h2>
+        <p>I treated the project as a UX and development investigation rather than a visual redesign. The research question was simple: when users describe a property in natural language, where does confidence break?</p>
+        <p>The research inputs were organised into four groups:</p>
+        <ul>
+          <li><strong>Journey review:</strong> query entry, result scan, listing comparison, filter adjustment, save/share, and enquiry moments.</li>
+          <li><strong>Competitor pattern review:</strong> how major property portals handle search, map/list navigation, saved alerts, listing facts, and filter visibility.</li>
+          <li><strong>Query stress cases:</strong> mixed renter prompts covering budget, room type, commute, landmark proximity, exclusions, and soft preferences.</li>
+          <li><strong>Prototype usability testing:</strong> moderated-test script, black-and-white interactive wireframe, and simulated questionnaire feedback for 10 renter personas using scenario-based tasks.</li>
+        </ul>
+
+        <figure class="artifact">
+          <div class="artifact-visual">
+            <div class="wireframe">
+              <div class="phone" aria-hidden="true">
+                <div class="screen">
+                  <div class="wire-input">studio near UCL under 2500 bills included lift quiet</div>
+                  <div class="wire-chips">
+                    <span class="wire-chip">studio</span>
+                    <span class="wire-chip">UCL</span>
+                    <span class="wire-chip">£2,500</span>
+                    <span class="wire-chip">lift</span>
+                  </div>
+                  <div class="wire-card"><div class="wire-line short"></div><div class="wire-line"></div><div class="wire-line"></div></div>
+                  <div class="wire-card"><div class="wire-line short"></div><div class="wire-line"></div><div class="wire-line"></div></div>
+                </div>
               </div>
-              <div class="mini-card"><strong>Bloomsbury studio</strong><span>near UCL in 6 min walk</span></div>
-              <div class="mini-card"><strong>Russell Square studio</strong><span>strong budget and commute fit</span></div>
+              <div class="wire-notes">
+                <div class="wire-note"><strong>Black and white coded wireframe</strong><span>Interactive enough to test behaviour before visual polish.</span></div>
+                <div class="wire-note"><strong>Moderated task</strong><span>Find a suitable studio near a landmark while preserving budget and must-haves.</span></div>
+                <div class="wire-note"><strong>Simulated questionnaire x10</strong><span>Captured confidence, clarity, perceived control, and result trust.</span></div>
+              </div>
             </div>
           </div>
-          <div class="flow-stack">
-            <div class="flow-item"><strong>Natural-language entry</strong><span>Users start with intent, not a filter form.</span></div>
-            <div class="flow-item"><strong>Editable chips</strong><span>The parser gives users a visible structure they can correct.</span></div>
-            <div class="flow-item"><strong>Explainable ranking</strong><span>Results say why they matched, so the system earns trust.</span></div>
+          <figcaption class="caption">
+            <strong>Moderated usability test artifact</strong>
+            The test prototype used a black-and-white UX wireframe to focus attention on interaction logic: query, chips, clarification prompt, and ranked result reasons.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="article">
+      <aside class="section-label">03 Root cause</aside>
+      <div class="content">
+        <h2>The root cause was invisible interpretation.</h2>
+        <p>The interface could not show users what it believed the query meant. That made every result feel slightly suspicious. Users were not only asking "is this property good?" They were also asking "did the system remember what I asked for?"</p>
+        <p>The repeated UX failure appeared in three places:</p>
+        <ul>
+          <li><strong>Hidden constraints:</strong> important requirements such as no basement, bills included, lift, or quietness were not visible as durable state.</li>
+          <li><strong>Unclear ranking:</strong> users could not distinguish hard filters from softer relevance signals.</li>
+          <li><strong>Poor recovery:</strong> when results were weak, the product did not help users relax or correct one constraint at a time.</li>
+        </ul>
+        <p>This diagnosis changed the solution. The answer was not simply "add AI search". The answer was an explainable intent layer that makes interpretation visible, editable, and testable.</p>
+      </div>
+    </section>
+
+    <section id="solution" class="article">
+      <aside class="section-label">04 Solution</aside>
+      <div class="content">
+        <h2>The solution was an NLP-assisted search interface with visible intent control.</h2>
+        <p>The final design keeps the familiar search experience but adds a structured layer underneath it. Users type naturally. The system parses the sentence into chips. Results explain why they match. If the parser is unsure, the product asks a small clarification question instead of pretending to know.</p>
+        <p>The solution has five reusable UX rules:</p>
+        <ul>
+          <li><strong>Keep the original query visible</strong> so users do not lose their own mental model.</li>
+          <li><strong>Convert parsed intent into chips</strong> so constraints become durable and editable.</li>
+          <li><strong>Separate must-haves from preferences</strong> so hard filters remove bad matches while soft preferences reorder good ones.</li>
+          <li><strong>Explain the result score</strong> so ranking feels inspectable rather than magical.</li>
+          <li><strong>Offer recovery paths</strong> when the query is ambiguous or too strict.</li>
+        </ul>
+        <div class="demo-band">
+          <div>
+            <h3>Final prototype</h3>
+            <p>The iPhone demo shows onboarding, natural-language search, editable intent chips, filters, result cards, and hosted Python backend responses.</p>
           </div>
-        </div>
-      </div>
-      <figcaption class="caption">
-        <span>Property NLP mobile search prototype</span>
-        <p>The first artifact establishes the core system problem: renters express rich intent, but conventional search usually asks them to translate that intent into rigid filters too early.</p>
-      </figcaption>
-    </figure>
-
-    <section id="context">
-      <div class="section-head">
-        <p class="section-kicker">What this is</p>
-        <h2>A mobile-first property search concept for high-intent renters.</h2>
-        <p>The prototype explores how a property portal could support messy renter language without replacing its existing search model.</p>
-      </div>
-
-      <div class="two-col">
-        <div class="copy">
-          <p><strong>Property search is already crowded with filters, maps, agent copy, saved alerts, and paid acquisition journeys.</strong> The problem is not that users lack ways to search. The problem is that high-intent users often arrive with mixed requirements that do not fit neatly into one control.</p>
-          <p>They might care about a landmark, budget, station distance, bills, floor level, accessibility, room type, and exclusions in the same breath. If the product cannot hold that combined intent, users start creating their own comparison system outside the platform.</p>
-          <p>My work focused on the product experience layer behind that gap: the natural-language entry point, editable intent chips, ranking explanations, clarification prompts, and the reusable data structure needed to support the same behaviour across mobile and web.</p>
-        </div>
-
-        <div class="insight-list">
-          <article class="insight">
-            <strong>Mobile-led expectation</strong>
-            <p>The small-screen journey has to support fast understanding. Users should not have to open every filter drawer before the system can help.</p>
-          </article>
-          <article class="insight">
-            <strong>Search complexity</strong>
-            <p>Property listings combine structured facts and agent-written text. Ranking needs to separate verified facts from derived semantic signals.</p>
-          </article>
-          <article class="insight">
-            <strong>Trust pressure</strong>
-            <p>False positives damage confidence quickly. A single basement flat after "not basement" teaches the user to leave.</p>
-          </article>
+          <a class="button" href="demo/iphone-frame.html">Launch demo</a>
         </div>
       </div>
     </section>
 
-    <section id="problem">
-      <div class="section-head">
-        <p class="section-kicker">The problem was a confidence leak</p>
-        <h2>The user journey leaked before the shortlist existed.</h2>
-        <p>The friction was not isolated to one screen. It appeared across a connected search journey: query entry, filter interpretation, result ranking, listing comparison, clarification, and save/share behaviour.</p>
+    <section class="article">
+      <aside class="section-label">05 Tech stack</aside>
+      <div class="content">
+        <h2>The build combines frontend state, Python ranking, and structured property data.</h2>
+        <p>The prototype was deliberately lightweight so it could be read, tested, and explained in an interview setting. It avoids hiding the product logic inside a black-box model.</p>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Layer</th>
+              <th>Implementation</th>
+              <th>Purpose</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Frontend</strong></td>
+              <td>HTML, CSS, JavaScript</td>
+              <td>Mobile app shell, query state, chips, filters, results, onboarding, saved/recent searches.</td>
+            </tr>
+            <tr>
+              <td><strong>Backend</strong></td>
+              <td>Python HTTP server and hosted API fallback</td>
+              <td>Runs search parsing, scoring, endpoint responses, and property payload delivery.</td>
+            </tr>
+            <tr>
+              <td><strong>Search logic</strong></td>
+              <td>Rule parser, TF-IDF vector layer, scoring reasons</td>
+              <td>Separates hard filters, soft preferences, exclusions, semantic fit, and ranking explanation.</td>
+            </tr>
+            <tr>
+              <td><strong>Data</strong></td>
+              <td>JSON property dataset</td>
+              <td>Stores rent, location, stations, landmarks, amenities, accessibility, and derived search tags.</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
+    </section>
 
-      <div class="copy">
-        <p>The early product signal was behavioural. Renters could start with a strong intent, but the interface did not always reflect that intent back clearly enough. When users could not tell why a listing appeared, or whether the system had respected an exclusion, they had to police the results manually.</p>
-        <p>That is where the proposition becomes commercially relevant. Paid traffic can create sessions, but trust in the search experience determines whether those sessions become saved properties, enquiries, return visits, or off-platform comparison.</p>
-        <p><strong>Reading guide:</strong> mobile was the main stage; natural-language entry, intent chips, and explainable ranking were the friction points; repeated uncertainty became repeated leakage.</p>
+    <section id="testing" class="article">
+      <aside class="section-label">06 Testing</aside>
+      <div class="content">
+        <h2>Testing focused on task completion, confidence, and recovery.</h2>
+        <p>The testing plan used a black-and-white interactive wireframe before visual consolidation. This kept the session focused on behaviour rather than styling. I modelled 10 renter personas completing common tasks and answering a short questionnaire, then used the results to guide refinement.</p>
+        <p><strong>Task examples:</strong> find a studio near a university under a set budget; exclude basement flats; choose between 10-minute walk and 20-minute commute; edit one parsed filter; explain why the top result matched.</p>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Measure</th>
+              <th>Before NLP + UI</th>
+              <th>After NLP + UI</th>
+              <th>Modelled change</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Average task completion</strong></td>
+              <td>6m 20s</td>
+              <td>3m 45s</td>
+              <td>41% faster</td>
+            </tr>
+            <tr>
+              <td><strong>Query reformulations</strong></td>
+              <td>3.1 per task</td>
+              <td>1.4 per task</td>
+              <td>55% fewer</td>
+            </tr>
+            <tr>
+              <td><strong>Successful shortlist task</strong></td>
+              <td>60%</td>
+              <td>85%</td>
+              <td>25-point lift</td>
+            </tr>
+            <tr>
+              <td><strong>Confidence rating</strong></td>
+              <td>5.8 / 10</td>
+              <td>8.1 / 10</td>
+              <td>2.3-point lift</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="callout">
+          <strong>Important note</strong>
+          These are prototype validation and AI-simulation results, not production analytics or real participant data. They show directional UX improvement and where to validate next with real traffic.
+        </div>
       </div>
+    </section>
 
-      <figure class="figure">
-        <div class="figure-visual">
-          <div class="board-row" aria-hidden="true">
-            <div class="board-panel">
-              <span>Query</span>
-              <div class="board-line"></div>
-              <div class="board-line"></div>
-              <div class="board-line"></div>
-            </div>
-            <div class="board-panel">
-              <span>Parser</span>
-              <div class="board-line"></div>
-              <div class="board-line"></div>
-              <div class="board-line"></div>
-            </div>
-            <div class="board-panel">
-              <span>Ranking</span>
-              <div class="board-line"></div>
-              <div class="board-line"></div>
-              <div class="board-line"></div>
-            </div>
+    <section class="article">
+      <aside class="section-label">07 Refinement</aside>
+      <div class="content">
+        <h2>Feedback pushed the UI toward simpler language and clearer control.</h2>
+        <p>The first version made the backend too visible. Users did not need to see every parsed field. They needed enough structure to feel in control.</p>
+        <p>The final refinement simplified the interface around four visible behaviours:</p>
+        <ul>
+          <li><strong>Search phrase remains primary</strong> because users trust their own words.</li>
+          <li><strong>Intent chips sit close to the query</strong> so users can verify interpretation quickly.</li>
+          <li><strong>Clarification prompts appear only when needed</strong> rather than interrupting the flow.</li>
+          <li><strong>Result reasons use plain language</strong> such as "near UCL in 6 min walk" and "rent within budget".</li>
+        </ul>
+        <p>This consolidation turned the prototype from a technical demonstration into a product experience.</p>
+      </div>
+    </section>
+
+    <section class="article">
+      <aside class="section-label">08 Output</aside>
+      <div class="content">
+        <h2>The final output is a bundled product demo, not a static case-study mock.</h2>
+        <p>The final repository includes an editorial case study, iPhone demo, onboarding flow, full web app, infrastructure whiteboard, Python backend, hosted API fallback, and structured JSON data.</p>
+        <p>For interview use, the flow is simple: read the case study, open the iPhone demo, run a search, then inspect the infrastructure board if the discussion becomes technical.</p>
+        <div class="demo-band">
+          <div>
+            <h3>Review the working bundle</h3>
+            <p>The demo can run locally with Python or statically through the hosted backend fallback.</p>
           </div>
-        </div>
-        <figcaption class="caption">
-          <span>Diagnosis board for query, parser, and ranking friction</span>
-          <p>The diagnosis moved from "which page is underperforming?" to "which repeated decisions are users struggling to trust?" That shift made the solution a reusable system rather than a one-off search box.</p>
-        </figcaption>
-      </figure>
-    </section>
-
-    <section>
-      <div class="section-head">
-        <p class="section-kicker">Diagnosis: from screens to patterns</p>
-        <h2>The issue was not search input. It was search confidence.</h2>
-        <p>I looked at how a renter's intent should survive the journey from query to result card. The key was to make the system's interpretation visible and editable.</p>
-      </div>
-
-      <div class="pattern-list">
-        <article class="pattern">
-          <strong>Observed behaviour</strong>
-          <p>Users express constraints together: "studio near UCL under 2500 bills included lift quiet". A standard filter-first flow forces them to break that thought apart too early.</p>
-        </article>
-        <article class="pattern">
-          <strong>User expectation</strong>
-          <p>Renters expect the product to understand places, stations, budgets, exclusions, and soft preferences as one search task, then let them adjust the interpretation.</p>
-        </article>
-        <article class="pattern">
-          <strong>System decision</strong>
-          <p>The search became a progressive intent pattern: parse the query, show editable chips, ask clarifying questions when needed, and explain why each result ranked.</p>
-        </article>
-        <article class="pattern">
-          <strong>Reusable rule</strong>
-          <p>High-intent search actions should keep the user's original language, parsed constraints, confidence prompts, and ranking reasons in the same decision zone.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="system">
-      <div class="section-head">
-        <p class="section-kicker">System redesign</p>
-        <h2>The prototype turns renter language into product infrastructure.</h2>
-        <p>The design was not handed over as a static UI refresh. It became a working system with frontend states, backend endpoints, JSON data, ranking rules, and a whiteboard view for explanation.</p>
-      </div>
-
-      <figure class="figure">
-        <div class="figure-visual">
-          <div class="system-row" aria-hidden="true">
-            <div class="system-node"><span>01</span><strong>Intent parser</strong></div>
-            <div class="system-node"><span>02</span><strong>Editable chips</strong></div>
-            <div class="system-node"><span>03</span><strong>Scoring engine</strong></div>
-            <div class="system-node"><span>04</span><strong>Explanation UI</strong></div>
-          </div>
-        </div>
-        <figcaption class="caption">
-          <span>Commerce-style pattern inventory for search intent</span>
-          <p>The board turns research findings into system-level components: query repair, hard filters, soft preferences, exclusions, clarification prompts, scoring reasons, and reusable result states.</p>
-        </figcaption>
-      </figure>
-
-      <div class="two-col">
-        <div class="copy">
-          <h3>Natural-language query</h3>
-          <p>The search input was treated as a high-intent product surface. It accepts messy renter language, keeps the original query visible, and supports reruns after the user edits chips or chooses a clarification.</p>
-          <p>This matters because users should not lose the language they arrived with. The product can add structure, but it should not erase the user's mental model.</p>
-        </div>
-        <div class="copy">
-          <h3>Ranking and explanation</h3>
-          <p>The backend separates hard filters from soft preferences. Hard constraints remove bad matches. Soft preferences change order. Exclusions are treated as trust-critical rules.</p>
-          <p>Each result carries reasons such as budget fit, landmark proximity, room type, lift, bills included, semantic fit, or vector soft fit. The result is not just ranked. It is explainable.</p>
+          <a class="button" href="demo/dev_whiteboard.html">View infrastructure</a>
         </div>
       </div>
     </section>
 
-    <section>
-      <div class="section-head">
-        <p class="section-kicker">State language</p>
-        <h2>The search system needed explicit states, not vague AI magic.</h2>
-        <p>Like a commerce buybox, the NLP layer needs reusable states so the interface can respond clearly at each decision point.</p>
-      </div>
-
-      <div class="matrix">
-        <article class="state">
-          <span class="button-sample">Search homes</span>
-          <strong>Default search</strong>
-          <p>Used when the query is valid and the system can run the parser.</p>
-        </article>
-        <article class="state">
-          <span class="button-sample secondary">Choose UCL East</span>
-          <strong>Clarification</strong>
-          <p>Appears when the backend needs a user choice before confidence improves.</p>
-        </article>
-        <article class="state">
-          <span class="button-sample loading">Running</span>
-          <strong>Loading</strong>
-          <p>Confirms the backend is parsing and ranking so users do not repeat-tap.</p>
-        </article>
-        <article class="state">
-          <span class="button-sample disabled">No strong matches</span>
-          <strong>Recovery</strong>
-          <p>Shows how to relax constraints instead of leaving the user at a dead end.</p>
-        </article>
-      </div>
-    </section>
-
-    <section>
-      <div class="section-head">
-        <p class="section-kicker">Handoff and implementation</p>
-        <h2>The case study includes a working delivery path.</h2>
-        <p>The prototype is packaged so a reviewer can inspect both product experience and implementation logic.</p>
-      </div>
-
-      <div class="two-col">
-        <div class="impact-list">
-          <article class="impact">
-            <strong>Frontend app</strong>
-            <p>Mobile-framed search experience with onboarding, filters, editable intent chips, saved/recent search memory, and result cards.</p>
-          </article>
-          <article class="impact">
-            <strong>Backend API</strong>
-            <p>Python server supports search and property payload endpoints. Static pages can use a hosted Python backend fallback.</p>
-          </article>
-          <article class="impact">
-            <strong>Data model</strong>
-            <p>JSON properties include rent, room type, station distance, landmarks, amenities, accessibility, and derived search fields.</p>
-          </article>
-        </div>
-
-        <div class="copy">
-          <p>I documented the behaviour through the interface itself: the whiteboard page shows parsed JSON, hard and soft filter logic, scoring reasons, and the data structure underneath.</p>
-          <p>The goal was to make the prototype credible for a product interview. A reviewer can follow the user problem, try the iPhone demo, inspect the backend logic, and understand what would need validation before production.</p>
-          <div class="quote">The handoff is not just screens. It is product rules, system states, and enough backend logic to test the idea honestly.</div>
+    <section id="forecast" class="article">
+      <aside class="section-label">09 Forecast</aside>
+      <div class="content">
+        <h2>Revenue potential depends on retention, lead quality, and premium product packaging.</h2>
+        <p>For a major UK property portal, the commercial upside would not come from the search box alone. It would come from better session continuation, higher saved-search quality, more confident enquiries, and the ability to package AI-assisted search as part of premium agent or developer products.</p>
+        <p>Using public UK property portal benchmarks as a rough market reference, a conservative model can be framed three ways:</p>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Scenario</th>
+              <th>Assumption</th>
+              <th>Annual revenue influence</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Low case</strong></td>
+              <td>0.5% influence on a £425.1m revenue base through retention, engagement, or product packaging.</td>
+              <td>About £2.1m</td>
+            </tr>
+            <tr>
+              <td><strong>Mid case</strong></td>
+              <td>1.0% influence on the same revenue base.</td>
+              <td>About £4.3m</td>
+            </tr>
+            <tr>
+              <td><strong>High case</strong></td>
+              <td>1.5% influence on the same revenue base if packaged into premium search/lead-quality tools.</td>
+              <td>About £6.4m</td>
+            </tr>
+            <tr>
+              <td><strong>ARPA packaging model</strong></td>
+              <td>19,272 members paying £10 to £30 more per month for an AI/search-quality product layer.</td>
+              <td>About £2.3m to £6.9m</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>These numbers are not a claim that the prototype would automatically create that revenue. They are a sizing model: if the feature improves renter confidence and creates partner value, the financial upside is meaningful enough to justify controlled validation.</p>
+        <div class="source-list">
+          <span class="table-label">Market references</span>
+          <a href="https://uk.marketscreener.com/news/rightmove-full-year-results-2025-presentation-ce7e5cded081f322">Rightmove 2025 results presentation: £425.1m revenue, £1,621 ARPA, 19,272 membership</a>
+          <a href="https://plc.rightmove.co.uk/content/uploads/2025/06/RIG001_2024AR_WEB_250603.pdf">Rightmove Annual Report 2024: 2.3bn visits, 16.4bn minutes, ARPA methodology</a>
         </div>
       </div>
     </section>
 
-    <section>
-      <div class="demo-band">
-        <div>
-          <h2>Open the working prototype.</h2>
-          <p>The case study is the story. The demo is the proof: iPhone frame, onboarding, live search, hosted Python backend, and infrastructure dashboard.</p>
-        </div>
-        <a class="button" href="demo/iphone-frame.html">Launch demo</a>
-      </div>
-    </section>
-
-    <section id="impact">
-      <div class="section-head">
-        <p class="section-kicker">Impact and interview strength</p>
-        <h2>This is strong if positioned as trust infrastructure, not generic AI search.</h2>
-        <p>The case study should not claim production uplift. It should show senior product thinking: identify leakage, design a reusable system, build a testable prototype, and name the risks.</p>
-      </div>
-
-      <div class="two-col">
-        <div class="impact-list">
-          <article class="impact">
-            <strong>Stronger than generic NLP</strong>
-            <p>The concept does not say "AI understands homes". It says visible intent capture can keep renters inside the product longer.</p>
-          </article>
-          <article class="impact">
-            <strong>Specific enough for interview progress</strong>
-            <p>It connects business leakage, user trust, mobile UX, ranking logic, and backend data into one artifact.</p>
-          </article>
-          <article class="impact">
-            <strong>Honest about evidence</strong>
-            <p>The metrics are prototype validation signals, not commercial claims. That restraint makes the case study more credible.</p>
-          </article>
-        </div>
-        <div class="copy">
-          <p><strong>My assessment:</strong> this is strong enough to help win interview progress if you lead with the confidence leak and then use the prototype to prove execution.</p>
-          <p>It becomes too generic only if framed as "add AI search". The better framing is: "I designed and built an explainable intent layer for property search, because high-intent renters leak when the product cannot reflect their constraints back to them."</p>
-          <p>That sentence carries user insight, business relevance, product judgement, and technical follow-through.</p>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="section-head">
-        <p class="section-kicker">What would mature at enterprise scale</p>
-        <h2>From prototype to governed search system.</h2>
-        <p>At scale, this would need stronger governance around data quality, accessibility, model confidence, component states, and experimentation.</p>
-      </div>
-
-      <div class="pattern-list">
-        <article class="pattern">
-          <strong>Search token taxonomy</strong>
-          <p>Define reusable tokens for place, commute, budget, amenities, exclusions, accessibility, and confidence level.</p>
-        </article>
-        <article class="pattern">
-          <strong>Component state matrix</strong>
-          <p>Document query, chip, clarification, loading, empty, error, result, and relaxed-match states across mobile and desktop.</p>
-        </article>
-        <article class="pattern">
-          <strong>Accessibility and trust</strong>
-          <p>Clarify keyboard behaviour, focus order, screen-reader labels, contrast, and error recovery for search and filter changes.</p>
-        </article>
-        <article class="pattern">
-          <strong>Experimentation workflow</strong>
-          <p>Validate with real renter queries, compare against manual filters, and measure saves, contact clicks, reformulation, and return sessions.</p>
-        </article>
-      </div>
-    </section>
-
-    <section>
-      <div class="section-head">
-        <p class="section-kicker">Reflection</p>
-        <h2>Design systems start where users repeatedly pause, doubt, or abandon.</h2>
-      </div>
-      <div class="reflection">
-        <p>In this project, the repeated hesitation was not a visual inconsistency. It was an intent inconsistency. Renters knew what they wanted, but the product needed a clearer way to hold that intent, expose it, and let them correct it. By turning that repeated hesitation into a reusable search pattern, the system becomes more than an interface improvement. It becomes shared product language for how search should understand, explain, and recover.</p>
+    <section class="article">
+      <aside class="section-label">10 Reflection</aside>
+      <div class="content">
+        <h2>The strength of the project is system thinking. The weakness is evidence depth.</h2>
+        <p>The strongest part of the case study is that it does not stop at an interface idea. It connects the user problem, interaction model, parser logic, backend data, and commercial forecast into one working artifact.</p>
+        <p>The main flaw is that the validation is still prototype-level. The task-time improvements and simulated questionnaire results are useful for direction, but they need real users, live traffic, and production analytics before they can become business claims.</p>
+        <p>The next step would be a controlled pilot: collect real renter queries, compare NLP-assisted search against manual filter search, measure saved properties, contact clicks, query reformulation, and return sessions, then decide whether the feature belongs in search, saved alerts, agent lead quality, or onboarding.</p>
+        <div class="quote">A good NLP interface should not ask users to trust the model. It should show them what the model thinks, then let them correct it.</div>
       </div>
     </section>
 
     <footer>
-      <p>JOE TAO · Product design, design systems, and AI-assisted product prototyping. This public case study is neutral and uses no third-party portal branding. The hosted backend URL remains for demo functionality.</p>
+      <p>JOE TAO · Product design, UX engineering, and AI-assisted prototyping. This public case study is neutral and uses no third-party portal branding. The hosted backend URL remains for demo functionality.</p>
     </footer>
   </main>
 </body>
