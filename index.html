@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Property NLP Search Case Study</title>
-  <meta name="description" content="UX and development case study for a natural-language property search prototype with editable intent, explainable ranking, usability testing, and revenue modelling.">
+  <meta name="description" content="UX and development case study for a natural-language property search prototype that shows renters how their messy query was understood before asking them to trust the results.">
   <style>
     :root {
       --paper: oklch(97.5% 0.008 296);
@@ -746,7 +746,7 @@
     <section class="hero">
       <p class="eyebrow">UX engineering case study</p>
       <h1>Turning property search hesitation into an explainable NLP interface.</h1>
-      <p class="lede">A mobile-first prototype that converts messy renter language into editable intent chips, explainable ranking, and a reusable search pattern for property discovery.</p>
+      <p class="lede">A mobile-first prototype that shows renters how their messy query was understood before asking them to trust the results.</p>
       <div class="hero-actions">
         <a class="button primary" href="demo/iphone-frame.html">View iPhone prototype</a>
         <a class="button" href="demo/dev_whiteboard.html">Inspect backend logic</a>
@@ -807,7 +807,7 @@
           <p>I treated the project as a UX and development investigation rather than a visual redesign. The research question was simple: when users describe a property in natural language, where does confidence break?</p>
           <p>The first pass mapped the full renter journey from query entry to result scanning, filter adjustment, save/share behaviour, and enquiry intent. I then reviewed common property portal patterns to understand what users already expect: maps, filters, saved alerts, listing facts, and visible location context. That review made one thing clear: natural-language search cannot replace familiar controls unless it also shows how the sentence has been interpreted.</p>
           <p>To test that assumption, I built a black-and-white mobile wireframe and used it in moderated usability sessions with 10 real users. The prototype deliberately avoided brand styling so the sessions stayed focused on comprehension, control, and trust. Participants were asked to complete realistic renter tasks, such as finding a studio near a landmark under budget, choosing between walk time and commute time, excluding unwanted listing types, and explaining why the top result matched.</p>
-          <p>The sessions showed that users were not asking for a more magical search box. They wanted visible evidence that the system had understood them. Confidence improved when the interface kept the original query visible, translated requirements into editable chips, asked clarification questions only when needed, and explained each result in plain language.</p>
+          <p>The sessions showed that users were not asking for a search box that acted clever. They wanted visible evidence that the system had understood them. Confidence improved when the interface kept the original query visible, translated requirements into editable chips, asked clarification questions only when needed, and explained each result in plain language.</p>
           <div class="research-facts">
             <p><strong>Method</strong> Mixed-method usability testing: qualitative observation plus lightweight quantitative task metrics.</p>
             <p><strong>Participants</strong> 10 real users completed renter tasks covering budget, commute, ambiguity, exclusions, and shortlist confidence.</p>
@@ -853,13 +853,13 @@
         <section id="solution" class="article showcase">
       <div class="content">
         <h2>The solution was an NLP-assisted search interface with visible intent control.</h2>
-        <p>The final design keeps the familiar search experience but adds a structured layer underneath it. Users type naturally. The system parses the sentence into chips. Results explain why they match. If the parser is unsure, the product asks a small clarification question instead of pretending to know.</p>
+        <p>I kept the familiar search and filter model, then added a visible interpretation layer. Users type naturally. The system parses the sentence into chips. Results explain why they match. If the parser is unsure, the product asks a small clarification question instead of pretending to know.</p>
         <p>The solution has five reusable UX rules:</p>
         <ul>
           <li><strong>Keep the original query visible</strong> so users do not lose their own mental model.</li>
           <li><strong>Convert parsed intent into chips</strong> so constraints become durable and editable.</li>
           <li><strong>Separate must-haves from preferences</strong> so hard filters remove bad matches while soft preferences reorder good ones.</li>
-          <li><strong>Explain the result score</strong> so ranking feels inspectable rather than magical.</li>
+          <li><strong>Explain the result score</strong> so ranking feels inspectable instead of hidden.</li>
           <li><strong>Offer recovery paths</strong> when the query is ambiguous or too strict.</li>
         </ul>
         <div class="app-embed">
@@ -1066,7 +1066,7 @@
         <section id="forecast" class="article">
       <div class="content">
         <h2>Revenue potential depends on retention, lead quality, and premium product packaging.</h2>
-        <p>For a major UK property portal, the commercial upside would not come from the search box alone. It would come from better session continuation, higher saved-search quality, more confident enquiries, and the ability to package AI-assisted search as part of premium agent or developer products.</p>
+        <p>For a major UK property portal, the commercial upside would not come from the search box alone. It would come from fewer moments where users lose confidence, leave the session, or move the same search into another channel. If visible intent improves shortlist quality and enquiry confidence, the feature becomes easier to test as part of premium agent or developer products.</p>
         <p>Using public UK property portal benchmarks as a rough market reference, a conservative model can be framed three ways:</p>
         <div class="forecast-grid">
           <article class="forecast-card">
