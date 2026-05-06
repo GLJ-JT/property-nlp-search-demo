@@ -1,20 +1,20 @@
-# Property NLP Search Case Study
+# Case Study Draft
 
 ## Problem
 
-The diagnosis moved from "can property search understand natural language?" to "how does a renter know the system understood the messy parts of their request?"
+A modern property portal already has a strong search surface, including street-level search and familiar filters. The bigger gap is that most portals still do not support natural-language search as a first-class layer.
 
-A query like "studio near UCL under 2500, bills included, lift, quiet, not basement" does not map neatly to one control. It mixes budget, location, amenities, exclusions, and soft preferences in one sentence. Standard filters make the renter split that sentence apart and remember the rest while scanning listings.
+That matters because many renters, especially relocation-heavy and high-net-worth users, do not want to start by speaking to agents across XHS, WeChat, Telegram, or WhatsApp. If the first query is strong enough, the app can hold them earlier, keep them inside the product longer, and reduce leakage into other channels.
 
-The product risk is confidence leakage. If users cannot see that their requirements have been understood, they create their own comparison workflow through screenshots, notes, agent messages, or another portal.
+The broader business issue is not awareness. It is trust at the moment of intent. If the portal cannot understand what the renter means, the renter leaves to compare elsewhere and then comes back later with the same intent copied into a different channel.
 
 ## Proposal
 
-I kept the normal search and filter model, then added a visible interpretation layer. The system parses messy renter language into structured intent, shows that intent back as editable chips, separates hard exclusions from soft preferences, and explains why each result ranked where it did.
+This proposal builds a lightweight NLP concept that sits on top of the current flow. The user can still search normally, but the system also parses messy natural language into structured intent, shows that intent back as editable chips, and explains why each result ranked where it did.
 
 ## What should and should not happen
 
-The prototype should prove understanding before asking for trust. It should keep the existing search bar and filter logic, add intent chips below the query, explain ranking clearly, and let users correct the interpretation. It should not replace the whole portal search model, hide normal filters, pretend to be production ready, or turn a concept into a revenue claim without live validation.
+It should keep the existing search bar and filter logic, add intent chips below the query, explain ranking clearly, and make the user feel in control. It should not replace the whole portal search model, hide the filter system, pretend to be production ready, or suggest teamwide adoption without validation.
 
 ## Tech stack
 
@@ -22,30 +22,28 @@ This prototype is intentionally lightweight. It uses a Python parser and scorer,
 
 ## Modelled outcome
 
-The expected UX change is not a cleverer search box for its own sake. It is fewer moments where users wonder whether the system forgot a constraint. If that confidence holds, the search session has a better chance of reaching shortlist, save, share, or enquiry behaviour before the user leaves to compare elsewhere.
+The projected UX is a stickier search session, fewer early handoffs to agents, more saves and shares, and a better chance of converting high-intent users before they leave the platform.
 
-Any revenue uplift should be treated as a modelled opportunity, not a hard claim.
+Any revenue uplift should be treated as a modeled opportunity, not a hard claim.
 
-In plain terms, the concept aims to make the renter's intent visible enough that they can stay inside the product longer before moving the same search into another channel.
+In plain terms, the concept aims to keep the renter inside the portal longer before they speak to agents elsewhere, which is where the leak usually starts.
 
 ## Testing and critique
 
-Because this was a solo concept built under time and resource constraints, I used stress prompts to test edge cases, exclusions, and ranking leakage. That gave useful prototype evidence, but it is still not live market proof.
+Because this was a solo concept built under time and resource constraints, I used AI-generated stress prompts to test the UX validity. That gave useful signals around edge cases, exclusions, and ranking leakage, but it is still a concept, not live market proof.
 
 ## Self-critique
 
-What I did right was make the problem legible, keep the flow explainable, and build a working backbone rather than a static mock. What I would avoid next time is overclaiming revenue certainty, hiding too much behind the model, overfitting to one user segment, or pushing the concept past the evidence available.
+Likely pitfalls include overconfident parsing, weak synonym coverage, bad agent-copy data, users who prefer normal filters first, and revenue claims that sound too certain. It would improve with more real-world testing, stronger geo data, broader multilingual coverage, and better governance around rights and data before any production use.
 
 ## Current vs projected UX
 
-In the current experience, the renter types a messy query and filters may help, but intent is still mostly hidden. The user compares across listings and other channels, and the search session can leak before a shortlist forms.
-
-In the projected experience, the renter types the same messy query, the system parses it into chips and visible constraints, ranking explains itself in plain language, and the user can correct the search before trusting the results.
+In the current experience, the renter types a messy query, filters may help, but intent is still mostly hidden, the user compares across listings and other channels, and the search session leaks before a shortlist forms. In the projected experience, the renter types the same messy query, the system parses it into chips and visible constraints, ranking explains itself in plain language, and the user stays inside the flow long enough to shortlist, save, and share.
 
 ## Revenue view
 
-The revenue discussion should stay modelled, not invented. The concept does not prove uplift. It argues that if visible intent reduces search leakage, the product has a clearer path to better retention, enquiry quality, and premium search packaging.
+The revenue discussion should stay modeled, not invented. The concept does not prove uplift. It argues that fewer users leaking into off-platform negotiation should improve the odds of conversion, retention, and return visits.
 
 ## Reflection
 
-The next proof point would be live query data: what renters type, which chips they edit, which constraints cause empty results, which explanations increase confidence, and whether shortlist or enquiry behaviour improves against the normal filter flow.
+What I did right was make the problem legible, keep the flow explainable, and build a working backbone rather than a mock idea. What I would avoid next time is overclaiming revenue certainty, making the system feel too magical, overfitting to one user segment, or pushing the concept past the evidence available.
